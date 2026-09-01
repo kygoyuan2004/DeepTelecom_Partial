@@ -1,0 +1,72 @@
+{
+  "inventory_schema_version": "deeptelecom-inventory-v1",
+  "server_id": "a100",
+  "freeze_time_utc": "2026-09-01T15:00:18Z",
+  "completed_time_utc": "2026-09-01T15:01:40Z",
+  "formal_payload_count": 9538,
+  "candidate_total": 9537,
+  "valid_candidate": 5505,
+  "collision_candidate": 4032,
+  "invalid_count": 1,
+  "incomplete_count": 0,
+  "candidate_class_counts": {
+    "level_v0": 2383,
+    "pitch30_v10": 2387,
+    "pitch45_v10": 2378,
+    "single_blade_v0": 2389
+  },
+  "source_counts": {
+    "a100-old-shards-2000-3999": {
+      "formal": 5898,
+      "candidate": 5897,
+      "valid_candidate": 1905,
+      "collision_candidate": 3992,
+      "invalid": 1
+    },
+    "a100-round-40000-40449": {
+      "formal": 1800,
+      "candidate": 1800,
+      "valid_candidate": 1800,
+      "collision_candidate": 0,
+      "invalid": 0
+    },
+    "a100-round-40450-40899": {
+      "formal": 1800,
+      "candidate": 1800,
+      "valid_candidate": 1800,
+      "collision_candidate": 0,
+      "invalid": 0
+    },
+    "a100-legacy-floor-wall": {
+      "formal": 40,
+      "candidate": 40,
+      "valid_candidate": 0,
+      "collision_candidate": 40,
+      "invalid": 0
+    }
+  },
+  "candidate_payload_bytes": 31575816701,
+  "local_exact_duplicate_groups": 0,
+  "local_exact_duplicate_instances": 0,
+  "problem_record_count": 2,
+  "schema_ids": [
+    "dtuav-etoile-32key-v1",
+    "dtuav-floor-wall-24key-v1"
+  ],
+  "known_invalid": [
+    "pitch45_v10_2268"
+  ],
+  "expected": {
+    "formal_payload_count": 9538,
+    "candidate_total": 9537,
+    "candidate_class_counts": {
+      "level_v0": 2383,
+      "pitch30_v10": 2387,
+      "pitch45_v10": 2378,
+      "single_blade_v0": 2389
+    }
+  },
+  "baseline_match": true,
+  "inventory_id": "a100-666836f60552a6d561cf3e87",
+  "samples_manifest_jsonl_gz_sha256": "2bdde9d45fde4644c9bdaa0a0c2a1827199ac64ace4f63b192b2ba7757f49ef2"
+}

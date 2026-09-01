@@ -1,0 +1,1441 @@
+{
+  "registry_version": "deeptelecom-global-registry-v1",
+  "plan_id": "dtuav-v1-plan-25e97f486b6be3542a0facb773ea7b2248b9538dc16d60a3d9e9c232fdacccf2",
+  "release": "v1.0.0",
+  "candidate_count": 44988,
+  "accepted_unique_count": 44988,
+  "candidate_payload_bytes": 148827628128,
+  "accepted_payload_bytes": 148827628128,
+  "class_counts": {
+    "level_v0": 11249,
+    "pitch30_v10": 11236,
+    "pitch45_v10": 11219,
+    "single_blade_v0": 11284
+  },
+  "tensor_schema_counts": {
+    "dtuav-etoile-32key-v1": 44948,
+    "dtuav-floor-wall-24key-v1": 40
+  },
+  "source_server_counts": {
+    "a100": 9537,
+    "rtx3090x4": 16464,
+    "rtx4090": 18987
+  },
+  "decision_counts": {
+    "accepted": 44988
+  },
+  "local_duplicate_excluded_count": 39240,
+  "original_id_conflict_group_count": 70,
+  "held_conflict_count": 0,
+  "invalid_manifest_record_count": 6187,
+  "shard_count": 140,
+  "shard_count_by_owner": {
+    "a100": 30,
+    "rtx3090x4": 51,
+    "rtx4090": 59
+  },
+  "target_shard_bytes": 1073741824,
+  "planned_total_tar_bytes": 148989562880,
+  "shards": [
+    {
+      "target_shard": "data/v1/shards/shard-00000.tar",
+      "shard_index": 0,
+      "owner_server": "a100",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1073111040,
+      "first_global_sample_id": "DTUAV-V1-000007",
+      "last_global_sample_id": "DTUAV-V1-001309"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00001.tar",
+      "shard_index": 1,
+      "owner_server": "a100",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1072619520,
+      "first_global_sample_id": "DTUAV-V1-001312",
+      "last_global_sample_id": "DTUAV-V1-002520"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00002.tar",
+      "shard_index": 2,
+      "owner_server": "a100",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071032320,
+      "first_global_sample_id": "DTUAV-V1-002527",
+      "last_global_sample_id": "DTUAV-V1-003850"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00003.tar",
+      "shard_index": 3,
+      "owner_server": "a100",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1072629760,
+      "first_global_sample_id": "DTUAV-V1-003865",
+      "last_global_sample_id": "DTUAV-V1-005217"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00004.tar",
+      "shard_index": 4,
+      "owner_server": "a100",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1073561600,
+      "first_global_sample_id": "DTUAV-V1-005220",
+      "last_global_sample_id": "DTUAV-V1-006611"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00005.tar",
+      "shard_index": 5,
+      "owner_server": "a100",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1073070080,
+      "first_global_sample_id": "DTUAV-V1-006612",
+      "last_global_sample_id": "DTUAV-V1-008080"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00006.tar",
+      "shard_index": 6,
+      "owner_server": "a100",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071298560,
+      "first_global_sample_id": "DTUAV-V1-008089",
+      "last_global_sample_id": "DTUAV-V1-009581"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00007.tar",
+      "shard_index": 7,
+      "owner_server": "a100",
+      "sample_count": 292,
+      "member_count": 876,
+      "planned_tar_size_bytes": 1070120960,
+      "first_global_sample_id": "DTUAV-V1-009584",
+      "last_global_sample_id": "DTUAV-V1-011101"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00008.tar",
+      "shard_index": 8,
+      "owner_server": "a100",
+      "sample_count": 263,
+      "member_count": 789,
+      "planned_tar_size_bytes": 1073346560,
+      "first_global_sample_id": "DTUAV-V1-011103",
+      "last_global_sample_id": "DTUAV-V1-012247"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00009.tar",
+      "shard_index": 9,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071206400,
+      "first_global_sample_id": "DTUAV-V1-012249",
+      "last_global_sample_id": "DTUAV-V1-013486"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00010.tar",
+      "shard_index": 10,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071411200,
+      "first_global_sample_id": "DTUAV-V1-013496",
+      "last_global_sample_id": "DTUAV-V1-014757"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00011.tar",
+      "shard_index": 11,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1072537600,
+      "first_global_sample_id": "DTUAV-V1-014765",
+      "last_global_sample_id": "DTUAV-V1-015985"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00012.tar",
+      "shard_index": 12,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071124480,
+      "first_global_sample_id": "DTUAV-V1-016002",
+      "last_global_sample_id": "DTUAV-V1-017121"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00013.tar",
+      "shard_index": 13,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071237120,
+      "first_global_sample_id": "DTUAV-V1-017130",
+      "last_global_sample_id": "DTUAV-V1-018280"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00014.tar",
+      "shard_index": 14,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071482880,
+      "first_global_sample_id": "DTUAV-V1-018301",
+      "last_global_sample_id": "DTUAV-V1-019592"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00015.tar",
+      "shard_index": 15,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071851520,
+      "first_global_sample_id": "DTUAV-V1-019597",
+      "last_global_sample_id": "DTUAV-V1-020861"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00016.tar",
+      "shard_index": 16,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071534080,
+      "first_global_sample_id": "DTUAV-V1-020865",
+      "last_global_sample_id": "DTUAV-V1-022088"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00017.tar",
+      "shard_index": 17,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070848000,
+      "first_global_sample_id": "DTUAV-V1-022089",
+      "last_global_sample_id": "DTUAV-V1-023257"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00018.tar",
+      "shard_index": 18,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071247360,
+      "first_global_sample_id": "DTUAV-V1-023258",
+      "last_global_sample_id": "DTUAV-V1-024495"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00019.tar",
+      "shard_index": 19,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071257600,
+      "first_global_sample_id": "DTUAV-V1-024501",
+      "last_global_sample_id": "DTUAV-V1-025668"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00020.tar",
+      "shard_index": 20,
+      "owner_server": "a100",
+      "sample_count": 259,
+      "member_count": 777,
+      "planned_tar_size_bytes": 1073684480,
+      "first_global_sample_id": "DTUAV-V1-025672",
+      "last_global_sample_id": "DTUAV-V1-026839"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00021.tar",
+      "shard_index": 21,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070858240,
+      "first_global_sample_id": "DTUAV-V1-026845",
+      "last_global_sample_id": "DTUAV-V1-028077"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00022.tar",
+      "shard_index": 22,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071155200,
+      "first_global_sample_id": "DTUAV-V1-028079",
+      "last_global_sample_id": "DTUAV-V1-029222"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00023.tar",
+      "shard_index": 23,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071022080,
+      "first_global_sample_id": "DTUAV-V1-029226",
+      "last_global_sample_id": "DTUAV-V1-030571"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00024.tar",
+      "shard_index": 24,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070172160,
+      "first_global_sample_id": "DTUAV-V1-030574",
+      "last_global_sample_id": "DTUAV-V1-031857"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00025.tar",
+      "shard_index": 25,
+      "owner_server": "a100",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071390720,
+      "first_global_sample_id": "DTUAV-V1-031860",
+      "last_global_sample_id": "DTUAV-V1-033075"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00026.tar",
+      "shard_index": 26,
+      "owner_server": "a100",
+      "sample_count": 486,
+      "member_count": 1458,
+      "planned_tar_size_bytes": 1072650240,
+      "first_global_sample_id": "DTUAV-V1-033080",
+      "last_global_sample_id": "DTUAV-V1-035277"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00027.tar",
+      "shard_index": 27,
+      "owner_server": "a100",
+      "sample_count": 827,
+      "member_count": 2481,
+      "planned_tar_size_bytes": 1073612800,
+      "first_global_sample_id": "DTUAV-V1-035282",
+      "last_global_sample_id": "DTUAV-V1-039075"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00028.tar",
+      "shard_index": 28,
+      "owner_server": "a100",
+      "sample_count": 826,
+      "member_count": 2478,
+      "planned_tar_size_bytes": 1072906240,
+      "first_global_sample_id": "DTUAV-V1-039087",
+      "last_global_sample_id": "DTUAV-V1-043078"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00029.tar",
+      "shard_index": 29,
+      "owner_server": "a100",
+      "sample_count": 405,
+      "member_count": 1215,
+      "planned_tar_size_bytes": 526192640,
+      "first_global_sample_id": "DTUAV-V1-043082",
+      "last_global_sample_id": "DTUAV-V1-044988"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00030.tar",
+      "shard_index": 30,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071564800,
+      "first_global_sample_id": "DTUAV-V1-000001",
+      "last_global_sample_id": "DTUAV-V1-000708"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00031.tar",
+      "shard_index": 31,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1072455680,
+      "first_global_sample_id": "DTUAV-V1-000709",
+      "last_global_sample_id": "DTUAV-V1-001433"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00032.tar",
+      "shard_index": 32,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071923200,
+      "first_global_sample_id": "DTUAV-V1-001434",
+      "last_global_sample_id": "DTUAV-V1-002217"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00033.tar",
+      "shard_index": 33,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1070274560,
+      "first_global_sample_id": "DTUAV-V1-002218",
+      "last_global_sample_id": "DTUAV-V1-002927"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00034.tar",
+      "shard_index": 34,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1070919680,
+      "first_global_sample_id": "DTUAV-V1-002928",
+      "last_global_sample_id": "DTUAV-V1-003601"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00035.tar",
+      "shard_index": 35,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1072619520,
+      "first_global_sample_id": "DTUAV-V1-003606",
+      "last_global_sample_id": "DTUAV-V1-004320"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00036.tar",
+      "shard_index": 36,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1072691200,
+      "first_global_sample_id": "DTUAV-V1-004322",
+      "last_global_sample_id": "DTUAV-V1-004996"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00037.tar",
+      "shard_index": 37,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071953920,
+      "first_global_sample_id": "DTUAV-V1-005000",
+      "last_global_sample_id": "DTUAV-V1-005727"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00038.tar",
+      "shard_index": 38,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071534080,
+      "first_global_sample_id": "DTUAV-V1-005728",
+      "last_global_sample_id": "DTUAV-V1-006399"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00039.tar",
+      "shard_index": 39,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1072220160,
+      "first_global_sample_id": "DTUAV-V1-006401",
+      "last_global_sample_id": "DTUAV-V1-007057"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00040.tar",
+      "shard_index": 40,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071687680,
+      "first_global_sample_id": "DTUAV-V1-007061",
+      "last_global_sample_id": "DTUAV-V1-007781"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00041.tar",
+      "shard_index": 41,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1072803840,
+      "first_global_sample_id": "DTUAV-V1-007782",
+      "last_global_sample_id": "DTUAV-V1-008400"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00042.tar",
+      "shard_index": 42,
+      "owner_server": "rtx4090",
+      "sample_count": 294,
+      "member_count": 882,
+      "planned_tar_size_bytes": 1073704960,
+      "first_global_sample_id": "DTUAV-V1-008404",
+      "last_global_sample_id": "DTUAV-V1-009062"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00043.tar",
+      "shard_index": 43,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1073520640,
+      "first_global_sample_id": "DTUAV-V1-009063",
+      "last_global_sample_id": "DTUAV-V1-009725"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00044.tar",
+      "shard_index": 44,
+      "owner_server": "rtx4090",
+      "sample_count": 294,
+      "member_count": 882,
+      "planned_tar_size_bytes": 1073203200,
+      "first_global_sample_id": "DTUAV-V1-009726",
+      "last_global_sample_id": "DTUAV-V1-010411"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00045.tar",
+      "shard_index": 45,
+      "owner_server": "rtx4090",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071861760,
+      "first_global_sample_id": "DTUAV-V1-010418",
+      "last_global_sample_id": "DTUAV-V1-011085"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00046.tar",
+      "shard_index": 46,
+      "owner_server": "rtx4090",
+      "sample_count": 265,
+      "member_count": 795,
+      "planned_tar_size_bytes": 1071001600,
+      "first_global_sample_id": "DTUAV-V1-011086",
+      "last_global_sample_id": "DTUAV-V1-011764"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00047.tar",
+      "shard_index": 47,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070858240,
+      "first_global_sample_id": "DTUAV-V1-011770",
+      "last_global_sample_id": "DTUAV-V1-012433"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00048.tar",
+      "shard_index": 48,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071329280,
+      "first_global_sample_id": "DTUAV-V1-012435",
+      "last_global_sample_id": "DTUAV-V1-013010"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00049.tar",
+      "shard_index": 49,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071155200,
+      "first_global_sample_id": "DTUAV-V1-013013",
+      "last_global_sample_id": "DTUAV-V1-013607"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00050.tar",
+      "shard_index": 50,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071185920,
+      "first_global_sample_id": "DTUAV-V1-013609",
+      "last_global_sample_id": "DTUAV-V1-014240"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00051.tar",
+      "shard_index": 51,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071308800,
+      "first_global_sample_id": "DTUAV-V1-014243",
+      "last_global_sample_id": "DTUAV-V1-014874"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00052.tar",
+      "shard_index": 52,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070899200,
+      "first_global_sample_id": "DTUAV-V1-014875",
+      "last_global_sample_id": "DTUAV-V1-015449"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00053.tar",
+      "shard_index": 53,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071462400,
+      "first_global_sample_id": "DTUAV-V1-015451",
+      "last_global_sample_id": "DTUAV-V1-016081"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00054.tar",
+      "shard_index": 54,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071441920,
+      "first_global_sample_id": "DTUAV-V1-016083",
+      "last_global_sample_id": "DTUAV-V1-016724"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00055.tar",
+      "shard_index": 55,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071206400,
+      "first_global_sample_id": "DTUAV-V1-016727",
+      "last_global_sample_id": "DTUAV-V1-017312"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00056.tar",
+      "shard_index": 56,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071800320,
+      "first_global_sample_id": "DTUAV-V1-017313",
+      "last_global_sample_id": "DTUAV-V1-017906"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00057.tar",
+      "shard_index": 57,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071523840,
+      "first_global_sample_id": "DTUAV-V1-017910",
+      "last_global_sample_id": "DTUAV-V1-018544"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00058.tar",
+      "shard_index": 58,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071718400,
+      "first_global_sample_id": "DTUAV-V1-018546",
+      "last_global_sample_id": "DTUAV-V1-019128"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00059.tar",
+      "shard_index": 59,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071728640,
+      "first_global_sample_id": "DTUAV-V1-019129",
+      "last_global_sample_id": "DTUAV-V1-019753"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00060.tar",
+      "shard_index": 60,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070479360,
+      "first_global_sample_id": "DTUAV-V1-019754",
+      "last_global_sample_id": "DTUAV-V1-020358"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00061.tar",
+      "shard_index": 61,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071851520,
+      "first_global_sample_id": "DTUAV-V1-020359",
+      "last_global_sample_id": "DTUAV-V1-020939"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00062.tar",
+      "shard_index": 62,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070305280,
+      "first_global_sample_id": "DTUAV-V1-020940",
+      "last_global_sample_id": "DTUAV-V1-021546"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00063.tar",
+      "shard_index": 63,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070796800,
+      "first_global_sample_id": "DTUAV-V1-021547",
+      "last_global_sample_id": "DTUAV-V1-022136"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00064.tar",
+      "shard_index": 64,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071902720,
+      "first_global_sample_id": "DTUAV-V1-022137",
+      "last_global_sample_id": "DTUAV-V1-022745"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00065.tar",
+      "shard_index": 65,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070714880,
+      "first_global_sample_id": "DTUAV-V1-022748",
+      "last_global_sample_id": "DTUAV-V1-023396"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00066.tar",
+      "shard_index": 66,
+      "owner_server": "rtx4090",
+      "sample_count": 259,
+      "member_count": 777,
+      "planned_tar_size_bytes": 1073530880,
+      "first_global_sample_id": "DTUAV-V1-023400",
+      "last_global_sample_id": "DTUAV-V1-024038"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00067.tar",
+      "shard_index": 67,
+      "owner_server": "rtx4090",
+      "sample_count": 259,
+      "member_count": 777,
+      "planned_tar_size_bytes": 1073387520,
+      "first_global_sample_id": "DTUAV-V1-024041",
+      "last_global_sample_id": "DTUAV-V1-024674"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00068.tar",
+      "shard_index": 68,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070489600,
+      "first_global_sample_id": "DTUAV-V1-024676",
+      "last_global_sample_id": "DTUAV-V1-025274"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00069.tar",
+      "shard_index": 69,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070592000,
+      "first_global_sample_id": "DTUAV-V1-025277",
+      "last_global_sample_id": "DTUAV-V1-025869"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00070.tar",
+      "shard_index": 70,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070305280,
+      "first_global_sample_id": "DTUAV-V1-025870",
+      "last_global_sample_id": "DTUAV-V1-026458"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00071.tar",
+      "shard_index": 71,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070632960,
+      "first_global_sample_id": "DTUAV-V1-026460",
+      "last_global_sample_id": "DTUAV-V1-027088"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00072.tar",
+      "shard_index": 72,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070233600,
+      "first_global_sample_id": "DTUAV-V1-027089",
+      "last_global_sample_id": "DTUAV-V1-027680"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00073.tar",
+      "shard_index": 73,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069905920,
+      "first_global_sample_id": "DTUAV-V1-027681",
+      "last_global_sample_id": "DTUAV-V1-028317"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00074.tar",
+      "shard_index": 74,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070653440,
+      "first_global_sample_id": "DTUAV-V1-028323",
+      "last_global_sample_id": "DTUAV-V1-028948"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00075.tar",
+      "shard_index": 75,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069916160,
+      "first_global_sample_id": "DTUAV-V1-028951",
+      "last_global_sample_id": "DTUAV-V1-029533"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00076.tar",
+      "shard_index": 76,
+      "owner_server": "rtx4090",
+      "sample_count": 259,
+      "member_count": 777,
+      "planned_tar_size_bytes": 1073704960,
+      "first_global_sample_id": "DTUAV-V1-029534",
+      "last_global_sample_id": "DTUAV-V1-030143"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00077.tar",
+      "shard_index": 77,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070909440,
+      "first_global_sample_id": "DTUAV-V1-030144",
+      "last_global_sample_id": "DTUAV-V1-030707"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00078.tar",
+      "shard_index": 78,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069998080,
+      "first_global_sample_id": "DTUAV-V1-030709",
+      "last_global_sample_id": "DTUAV-V1-031339"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00079.tar",
+      "shard_index": 79,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070110720,
+      "first_global_sample_id": "DTUAV-V1-031343",
+      "last_global_sample_id": "DTUAV-V1-031915"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00080.tar",
+      "shard_index": 80,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069977600,
+      "first_global_sample_id": "DTUAV-V1-031916",
+      "last_global_sample_id": "DTUAV-V1-032524"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00081.tar",
+      "shard_index": 81,
+      "owner_server": "rtx4090",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071124480,
+      "first_global_sample_id": "DTUAV-V1-032527",
+      "last_global_sample_id": "DTUAV-V1-033104"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00082.tar",
+      "shard_index": 82,
+      "owner_server": "rtx4090",
+      "sample_count": 326,
+      "member_count": 978,
+      "planned_tar_size_bytes": 1072486400,
+      "first_global_sample_id": "DTUAV-V1-033106",
+      "last_global_sample_id": "DTUAV-V1-033940"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00083.tar",
+      "shard_index": 83,
+      "owner_server": "rtx4090",
+      "sample_count": 826,
+      "member_count": 2478,
+      "planned_tar_size_bytes": 1073469440,
+      "first_global_sample_id": "DTUAV-V1-033941",
+      "last_global_sample_id": "DTUAV-V1-035863"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00084.tar",
+      "shard_index": 84,
+      "owner_server": "rtx4090",
+      "sample_count": 825,
+      "member_count": 2475,
+      "planned_tar_size_bytes": 1073346560,
+      "first_global_sample_id": "DTUAV-V1-035865",
+      "last_global_sample_id": "DTUAV-V1-037762"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00085.tar",
+      "shard_index": 85,
+      "owner_server": "rtx4090",
+      "sample_count": 823,
+      "member_count": 2469,
+      "planned_tar_size_bytes": 1072537600,
+      "first_global_sample_id": "DTUAV-V1-037764",
+      "last_global_sample_id": "DTUAV-V1-039733"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00086.tar",
+      "shard_index": 86,
+      "owner_server": "rtx4090",
+      "sample_count": 825,
+      "member_count": 2475,
+      "planned_tar_size_bytes": 1073356800,
+      "first_global_sample_id": "DTUAV-V1-039736",
+      "last_global_sample_id": "DTUAV-V1-041746"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00087.tar",
+      "shard_index": 87,
+      "owner_server": "rtx4090",
+      "sample_count": 828,
+      "member_count": 2484,
+      "planned_tar_size_bytes": 1073704960,
+      "first_global_sample_id": "DTUAV-V1-041747",
+      "last_global_sample_id": "DTUAV-V1-043682"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00088.tar",
+      "shard_index": 88,
+      "owner_server": "rtx4090",
+      "sample_count": 546,
+      "member_count": 1638,
+      "planned_tar_size_bytes": 709447680,
+      "first_global_sample_id": "DTUAV-V1-043685",
+      "last_global_sample_id": "DTUAV-V1-044974"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00089.tar",
+      "shard_index": 89,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071626240,
+      "first_global_sample_id": "DTUAV-V1-000003",
+      "last_global_sample_id": "DTUAV-V1-000783"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00090.tar",
+      "shard_index": 90,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1070612480,
+      "first_global_sample_id": "DTUAV-V1-000785",
+      "last_global_sample_id": "DTUAV-V1-001615"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00091.tar",
+      "shard_index": 91,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071810560,
+      "first_global_sample_id": "DTUAV-V1-001617",
+      "last_global_sample_id": "DTUAV-V1-002390"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00092.tar",
+      "shard_index": 92,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1070254080,
+      "first_global_sample_id": "DTUAV-V1-002391",
+      "last_global_sample_id": "DTUAV-V1-003189"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00093.tar",
+      "shard_index": 93,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071585280,
+      "first_global_sample_id": "DTUAV-V1-003190",
+      "last_global_sample_id": "DTUAV-V1-004028"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00094.tar",
+      "shard_index": 94,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071267840,
+      "first_global_sample_id": "DTUAV-V1-004029",
+      "last_global_sample_id": "DTUAV-V1-004842"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00095.tar",
+      "shard_index": 95,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1070264320,
+      "first_global_sample_id": "DTUAV-V1-004843",
+      "last_global_sample_id": "DTUAV-V1-005591"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00096.tar",
+      "shard_index": 96,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1070704640,
+      "first_global_sample_id": "DTUAV-V1-005599",
+      "last_global_sample_id": "DTUAV-V1-006427"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00097.tar",
+      "shard_index": 97,
+      "owner_server": "rtx3090x4",
+      "sample_count": 294,
+      "member_count": 882,
+      "planned_tar_size_bytes": 1072803840,
+      "first_global_sample_id": "DTUAV-V1-006429",
+      "last_global_sample_id": "DTUAV-V1-007239"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00098.tar",
+      "shard_index": 98,
+      "owner_server": "rtx3090x4",
+      "sample_count": 294,
+      "member_count": 882,
+      "planned_tar_size_bytes": 1073111040,
+      "first_global_sample_id": "DTUAV-V1-007243",
+      "last_global_sample_id": "DTUAV-V1-008013"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00099.tar",
+      "shard_index": 99,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1070858240,
+      "first_global_sample_id": "DTUAV-V1-008016",
+      "last_global_sample_id": "DTUAV-V1-008817"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00100.tar",
+      "shard_index": 100,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1071247360,
+      "first_global_sample_id": "DTUAV-V1-008820",
+      "last_global_sample_id": "DTUAV-V1-009646"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00101.tar",
+      "shard_index": 101,
+      "owner_server": "rtx3090x4",
+      "sample_count": 294,
+      "member_count": 882,
+      "planned_tar_size_bytes": 1072752640,
+      "first_global_sample_id": "DTUAV-V1-009647",
+      "last_global_sample_id": "DTUAV-V1-010440"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00102.tar",
+      "shard_index": 102,
+      "owner_server": "rtx3090x4",
+      "sample_count": 293,
+      "member_count": 879,
+      "planned_tar_size_bytes": 1070080000,
+      "first_global_sample_id": "DTUAV-V1-010441",
+      "last_global_sample_id": "DTUAV-V1-011219"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00103.tar",
+      "shard_index": 103,
+      "owner_server": "rtx3090x4",
+      "sample_count": 259,
+      "member_count": 777,
+      "planned_tar_size_bytes": 1069834240,
+      "first_global_sample_id": "DTUAV-V1-011220",
+      "last_global_sample_id": "DTUAV-V1-011883"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00104.tar",
+      "shard_index": 104,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070776320,
+      "first_global_sample_id": "DTUAV-V1-011885",
+      "last_global_sample_id": "DTUAV-V1-012574"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00105.tar",
+      "shard_index": 105,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070868480,
+      "first_global_sample_id": "DTUAV-V1-012575",
+      "last_global_sample_id": "DTUAV-V1-013278"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00106.tar",
+      "shard_index": 106,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070551040,
+      "first_global_sample_id": "DTUAV-V1-013281",
+      "last_global_sample_id": "DTUAV-V1-013970"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00107.tar",
+      "shard_index": 107,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1072209920,
+      "first_global_sample_id": "DTUAV-V1-013977",
+      "last_global_sample_id": "DTUAV-V1-014645"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00108.tar",
+      "shard_index": 108,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069916160,
+      "first_global_sample_id": "DTUAV-V1-014649",
+      "last_global_sample_id": "DTUAV-V1-015359"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00109.tar",
+      "shard_index": 109,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070878720,
+      "first_global_sample_id": "DTUAV-V1-015360",
+      "last_global_sample_id": "DTUAV-V1-016076"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00110.tar",
+      "shard_index": 110,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070602240,
+      "first_global_sample_id": "DTUAV-V1-016077",
+      "last_global_sample_id": "DTUAV-V1-016797"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00111.tar",
+      "shard_index": 111,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071851520,
+      "first_global_sample_id": "DTUAV-V1-016798",
+      "last_global_sample_id": "DTUAV-V1-017502"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00112.tar",
+      "shard_index": 112,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070755840,
+      "first_global_sample_id": "DTUAV-V1-017504",
+      "last_global_sample_id": "DTUAV-V1-018229"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00113.tar",
+      "shard_index": 113,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071554560,
+      "first_global_sample_id": "DTUAV-V1-018232",
+      "last_global_sample_id": "DTUAV-V1-018961"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00114.tar",
+      "shard_index": 114,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070899200,
+      "first_global_sample_id": "DTUAV-V1-018964",
+      "last_global_sample_id": "DTUAV-V1-019596"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00115.tar",
+      "shard_index": 115,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071155200,
+      "first_global_sample_id": "DTUAV-V1-019602",
+      "last_global_sample_id": "DTUAV-V1-020300"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00116.tar",
+      "shard_index": 116,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070520320,
+      "first_global_sample_id": "DTUAV-V1-020301",
+      "last_global_sample_id": "DTUAV-V1-021018"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00117.tar",
+      "shard_index": 117,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071339520,
+      "first_global_sample_id": "DTUAV-V1-021030",
+      "last_global_sample_id": "DTUAV-V1-021758"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00118.tar",
+      "shard_index": 118,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1071472640,
+      "first_global_sample_id": "DTUAV-V1-021761",
+      "last_global_sample_id": "DTUAV-V1-022504"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00119.tar",
+      "shard_index": 119,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070243840,
+      "first_global_sample_id": "DTUAV-V1-022508",
+      "last_global_sample_id": "DTUAV-V1-023150"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00120.tar",
+      "shard_index": 120,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070581760,
+      "first_global_sample_id": "DTUAV-V1-023156",
+      "last_global_sample_id": "DTUAV-V1-023830"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00121.tar",
+      "shard_index": 121,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069680640,
+      "first_global_sample_id": "DTUAV-V1-023833",
+      "last_global_sample_id": "DTUAV-V1-024507"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00122.tar",
+      "shard_index": 122,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069957120,
+      "first_global_sample_id": "DTUAV-V1-024515",
+      "last_global_sample_id": "DTUAV-V1-025230"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00123.tar",
+      "shard_index": 123,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069557760,
+      "first_global_sample_id": "DTUAV-V1-025234",
+      "last_global_sample_id": "DTUAV-V1-025951"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00124.tar",
+      "shard_index": 124,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070049280,
+      "first_global_sample_id": "DTUAV-V1-025953",
+      "last_global_sample_id": "DTUAV-V1-026736"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00125.tar",
+      "shard_index": 125,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070417920,
+      "first_global_sample_id": "DTUAV-V1-026740",
+      "last_global_sample_id": "DTUAV-V1-027393"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00126.tar",
+      "shard_index": 126,
+      "owner_server": "rtx3090x4",
+      "sample_count": 259,
+      "member_count": 777,
+      "planned_tar_size_bytes": 1073274880,
+      "first_global_sample_id": "DTUAV-V1-027394",
+      "last_global_sample_id": "DTUAV-V1-028085"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00127.tar",
+      "shard_index": 127,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069905920,
+      "first_global_sample_id": "DTUAV-V1-028089",
+      "last_global_sample_id": "DTUAV-V1-028835"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00128.tar",
+      "shard_index": 128,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070028800,
+      "first_global_sample_id": "DTUAV-V1-028836",
+      "last_global_sample_id": "DTUAV-V1-029484"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00129.tar",
+      "shard_index": 129,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070284800,
+      "first_global_sample_id": "DTUAV-V1-029489",
+      "last_global_sample_id": "DTUAV-V1-030190"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00130.tar",
+      "shard_index": 130,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070080000,
+      "first_global_sample_id": "DTUAV-V1-030197",
+      "last_global_sample_id": "DTUAV-V1-030922"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00131.tar",
+      "shard_index": 131,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070295040,
+      "first_global_sample_id": "DTUAV-V1-030926",
+      "last_global_sample_id": "DTUAV-V1-031591"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00132.tar",
+      "shard_index": 132,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1070520320,
+      "first_global_sample_id": "DTUAV-V1-031595",
+      "last_global_sample_id": "DTUAV-V1-032332"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00133.tar",
+      "shard_index": 133,
+      "owner_server": "rtx3090x4",
+      "sample_count": 258,
+      "member_count": 774,
+      "planned_tar_size_bytes": 1069639680,
+      "first_global_sample_id": "DTUAV-V1-032333",
+      "last_global_sample_id": "DTUAV-V1-033068"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00134.tar",
+      "shard_index": 134,
+      "owner_server": "rtx3090x4",
+      "sample_count": 311,
+      "member_count": 933,
+      "planned_tar_size_bytes": 1072424960,
+      "first_global_sample_id": "DTUAV-V1-033077",
+      "last_global_sample_id": "DTUAV-V1-033917"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00135.tar",
+      "shard_index": 135,
+      "owner_server": "rtx3090x4",
+      "sample_count": 828,
+      "member_count": 2484,
+      "planned_tar_size_bytes": 1073336320,
+      "first_global_sample_id": "DTUAV-V1-033919",
+      "last_global_sample_id": "DTUAV-V1-036133"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00136.tar",
+      "shard_index": 136,
+      "owner_server": "rtx3090x4",
+      "sample_count": 828,
+      "member_count": 2484,
+      "planned_tar_size_bytes": 1072711680,
+      "first_global_sample_id": "DTUAV-V1-036134",
+      "last_global_sample_id": "DTUAV-V1-038560"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00137.tar",
+      "shard_index": 137,
+      "owner_server": "rtx3090x4",
+      "sample_count": 828,
+      "member_count": 2484,
+      "planned_tar_size_bytes": 1073510400,
+      "first_global_sample_id": "DTUAV-V1-038562",
+      "last_global_sample_id": "DTUAV-V1-040740"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00138.tar",
+      "shard_index": 138,
+      "owner_server": "rtx3090x4",
+      "sample_count": 824,
+      "member_count": 2472,
+      "planned_tar_size_bytes": 1073305600,
+      "first_global_sample_id": "DTUAV-V1-040743",
+      "last_global_sample_id": "DTUAV-V1-042994"
+    },
+    {
+      "target_shard": "data/v1/shards/shard-00139.tar",
+      "shard_index": 139,
+      "owner_server": "rtx3090x4",
+      "sample_count": 740,
+      "member_count": 2220,
+      "planned_tar_size_bytes": 961986560,
+      "first_global_sample_id": "DTUAV-V1-042995",
+      "last_global_sample_id": "DTUAV-V1-044978"
+    }
+  ]
+}

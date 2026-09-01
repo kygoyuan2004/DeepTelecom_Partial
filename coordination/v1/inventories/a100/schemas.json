@@ -1,0 +1,899 @@
+{
+  "schema_document_version": "deeptelecom-schemas-v1",
+  "semantic_hash": {
+    "algorithm": "deeptelecom-array-semantic-sha256-v1",
+    "definition": "For every key sorted lexicographically, SHA256-update uint64be length plus bytes for UTF-8 key, dtype.str ASCII, compact-JSON shape, and C-contiguous array payload, in that order.",
+    "array_order": "keys sorted lexicographically; array values hashed in C logical order",
+    "byte_order": "dtype.str and array values are preserved; all three frozen inventories were produced on little-endian hosts",
+    "included_keys": "all NPZ keys",
+    "excluded_keys": [],
+    "compatibility": "byte-compatible with both frozen RTX4090 and RTX3090x4 inventory algorithms"
+  },
+  "schemas": {
+    "dtuav-etoile-32key-v1": {
+      "tensor_schema_id": "dtuav-etoile-32key-v1",
+      "key_count": 32,
+      "sample_count": 9497,
+      "candidate_count": 9497,
+      "classes": {
+        "level_v0": 2373,
+        "pitch30_v10": 2377,
+        "pitch45_v10": 2368,
+        "single_blade_v0": 2379
+      },
+      "schema_signatures": {
+        "5924e2bb99dd792e121ac67681c0de5dcbc82883e984854c2317705878c4b95d": 9497
+      },
+      "keys": {
+        "S_complex": {
+          "semantic": true,
+          "dtypes": {
+            "<c8": 9497
+          },
+          "shapes": {
+            "[512,167]": 9497
+          },
+          "fortran_order_in_source": {
+            "true": 9497
+          }
+        },
+        "S_dB": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[512,167]": 9497
+          },
+          "fortran_order_in_source": {
+            "true": 9497
+          }
+        },
+        "blade_phase_offsets": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[1,1]": 2379,
+            "[4,2]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "body_positions": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048,3]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "body_velocities": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048,3]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "csi_one_way": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 9497
+          },
+          "shapes": {
+            "[2048,1]": 2379,
+            "[2048,25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "etoile_control_points_m": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[4,3]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "etoile_path_distance_m": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "f_axis": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[512]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "labels_json": {
+          "semantic": true,
+          "dtypes": {
+            "<U20": 2379,
+            "<U680": 7118
+          },
+          "shapes": {
+            "[]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "metadata_json": {
+          "semantic": true,
+          "dtypes": {
+            "<U2851": 1,
+            "<U2858": 1,
+            "<U2861": 1,
+            "<U2862": 1,
+            "<U2865": 1,
+            "<U2866": 1,
+            "<U2870": 4,
+            "<U2871": 2,
+            "<U2872": 5,
+            "<U2873": 9,
+            "<U2874": 13,
+            "<U2875": 12,
+            "<U2876": 19,
+            "<U2877": 30,
+            "<U2878": 40,
+            "<U2879": 37,
+            "<U2880": 62,
+            "<U2881": 92,
+            "<U2882": 116,
+            "<U2883": 150,
+            "<U2884": 150,
+            "<U2885": 185,
+            "<U2886": 210,
+            "<U2887": 224,
+            "<U2888": 207,
+            "<U2889": 189,
+            "<U2890": 150,
+            "<U2891": 120,
+            "<U2892": 97,
+            "<U2893": 79,
+            "<U2894": 72,
+            "<U2895": 41,
+            "<U2896": 19,
+            "<U2897": 13,
+            "<U2898": 10,
+            "<U2899": 4,
+            "<U2900": 3,
+            "<U2901": 1,
+            "<U2902": 2,
+            "<U2922": 1,
+            "<U2924": 2,
+            "<U2925": 3,
+            "<U2926": 1,
+            "<U2927": 1,
+            "<U2928": 5,
+            "<U2929": 11,
+            "<U2930": 14,
+            "<U2931": 25,
+            "<U2932": 21,
+            "<U2933": 35,
+            "<U2934": 58,
+            "<U2935": 84,
+            "<U2936": 117,
+            "<U2937": 141,
+            "<U2938": 170,
+            "<U2939": 180,
+            "<U2940": 205,
+            "<U2941": 231,
+            "<U2942": 220,
+            "<U2943": 215,
+            "<U2944": 190,
+            "<U2945": 147,
+            "<U2946": 127,
+            "<U2947": 78,
+            "<U2948": 49,
+            "<U2949": 25,
+            "<U2950": 10,
+            "<U2951": 5,
+            "<U2952": 4,
+            "<U2953": 1,
+            "<U2954": 1,
+            "<U2955": 1,
+            "<U2956": 1,
+            "<U2962": 1,
+            "<U2963": 1,
+            "<U2966": 1,
+            "<U2967": 1,
+            "<U2968": 2,
+            "<U2969": 4,
+            "<U2970": 7,
+            "<U2971": 2,
+            "<U2972": 22,
+            "<U2973": 26,
+            "<U2974": 27,
+            "<U2975": 26,
+            "<U2976": 69,
+            "<U2977": 75,
+            "<U2978": 111,
+            "<U2979": 124,
+            "<U2980": 164,
+            "<U2981": 174,
+            "<U2982": 227,
+            "<U2983": 254,
+            "<U2984": 295,
+            "<U2985": 278,
+            "<U2986": 287,
+            "<U2987": 268,
+            "<U2988": 244,
+            "<U2989": 206,
+            "<U2990": 165,
+            "<U2991": 134,
+            "<U2992": 103,
+            "<U2993": 89,
+            "<U2994": 78,
+            "<U2995": 44,
+            "<U2996": 55,
+            "<U2997": 57,
+            "<U2998": 78,
+            "<U2999": 87,
+            "<U3000": 115,
+            "<U3001": 116,
+            "<U3002": 123,
+            "<U3003": 121,
+            "<U3004": 117,
+            "<U3005": 84,
+            "<U3006": 80,
+            "<U3007": 71,
+            "<U3008": 44,
+            "<U3009": 38,
+            "<U3010": 18,
+            "<U3011": 14,
+            "<U3012": 7,
+            "<U3013": 5,
+            "<U3014": 4,
+            "<U3015": 2
+          },
+          "shapes": {
+            "[]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "monostatic_freq_theory": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048,1]": 2379,
+            "[2048,25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "path_counts": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 9497
+          },
+          "shapes": {
+            "[2048,1]": 2379,
+            "[2048,25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "positions": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048,1,3]": 2379,
+            "[2048,25,3]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "radii": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[1]": 2379,
+            "[25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "return_per_scatterer": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 9497
+          },
+          "shapes": {
+            "[2048,1]": 2379,
+            "[2048,25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "rotor_centers": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048,1,3]": 2379,
+            "[2048,4,3]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "rotor_ids": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 9497
+          },
+          "shapes": {
+            "[1]": 2379,
+            "[25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "rt_csi_one_way_solved": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 9497
+          },
+          "shapes": {
+            "[2048,1]": 2379,
+            "[2048,25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "rt_path_counts_solved": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 9497
+          },
+          "shapes": {
+            "[2048,1]": 2379,
+            "[2048,25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "rt_solved_indices": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 9497
+          },
+          "shapes": {
+            "[2048]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "scatterer_type_codes": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 9497
+          },
+          "shapes": {
+            "[1]": 2379,
+            "[25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "scene_source": {
+          "semantic": true,
+          "dtypes": {
+            "<U66": 9497
+          },
+          "shapes": {
+            "[]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "signal_clean": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 9497
+          },
+          "shapes": {
+            "[2048]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "signal_noisy": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 9497
+          },
+          "shapes": {
+            "[2048]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "t_axis": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[167]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "uav_ids": {
+          "semantic": true,
+          "dtypes": {
+            "<U7": 9497
+          },
+          "shapes": {
+            "[1]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "uav_positions_m": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048,1,3]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "uav_speeds_m_s": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048,1]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "uav_velocities_m_s": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048,1,3]": 9497
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "velocities": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[2048,1,3]": 2379,
+            "[2048,25,3]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        },
+        "weights": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 9497
+          },
+          "shapes": {
+            "[1]": 2379,
+            "[25]": 7118
+          },
+          "fortran_order_in_source": {
+            "false": 9497
+          }
+        }
+      }
+    },
+    "dtuav-floor-wall-24key-v1": {
+      "tensor_schema_id": "dtuav-floor-wall-24key-v1",
+      "key_count": 24,
+      "sample_count": 40,
+      "candidate_count": 40,
+      "classes": {
+        "level_v0": 10,
+        "pitch30_v10": 10,
+        "pitch45_v10": 10,
+        "single_blade_v0": 10
+      },
+      "schema_signatures": {
+        "3a080607f0cd5a43b80670c7bea8ad239c8caf2e162a75018043730bcb846837": 40
+      },
+      "keys": {
+        "S_complex": {
+          "semantic": true,
+          "dtypes": {
+            "<c8": 40
+          },
+          "shapes": {
+            "[512,167]": 40
+          },
+          "fortran_order_in_source": {
+            "true": 40
+          }
+        },
+        "S_dB": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[512,167]": 40
+          },
+          "fortran_order_in_source": {
+            "true": 40
+          }
+        },
+        "blade_phase_offsets": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[1,1]": 10,
+            "[4,2]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "csi_one_way": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 40
+          },
+          "shapes": {
+            "[2048,1]": 10,
+            "[2048,25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "f_axis": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[512]": 40
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "labels_json": {
+          "semantic": true,
+          "dtypes": {
+            "<U20": 10,
+            "<U680": 30
+          },
+          "shapes": {
+            "[]": 40
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "metadata_json": {
+          "semantic": true,
+          "dtypes": {
+            "<U2306": 1,
+            "<U2311": 1,
+            "<U2313": 1,
+            "<U2314": 1,
+            "<U2315": 1,
+            "<U2316": 1,
+            "<U2317": 3,
+            "<U2318": 4,
+            "<U2319": 2,
+            "<U2320": 1,
+            "<U2322": 3,
+            "<U2323": 1,
+            "<U2361": 1,
+            "<U2367": 1,
+            "<U2368": 1,
+            "<U2370": 1,
+            "<U2371": 1,
+            "<U2372": 2,
+            "<U2374": 3,
+            "<U2380": 1,
+            "<U2383": 1,
+            "<U2385": 3,
+            "<U2386": 1,
+            "<U2387": 2,
+            "<U2389": 1,
+            "<U2392": 1
+          },
+          "shapes": {
+            "[]": 40
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "monostatic_freq_theory": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[2048,1]": 10,
+            "[2048,25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "path_counts": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 40
+          },
+          "shapes": {
+            "[2048,1]": 10,
+            "[2048,25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "positions": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[2048,1,3]": 10,
+            "[2048,25,3]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "radii": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[1]": 10,
+            "[25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "return_per_scatterer": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 40
+          },
+          "shapes": {
+            "[2048,1]": 10,
+            "[2048,25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "rotor_centers": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[2048,1,3]": 10,
+            "[2048,4,3]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "rotor_ids": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 40
+          },
+          "shapes": {
+            "[1]": 10,
+            "[25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "rt_csi_one_way_solved": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 40
+          },
+          "shapes": {
+            "[2048,1]": 10,
+            "[2048,25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "rt_path_counts_solved": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 40
+          },
+          "shapes": {
+            "[2048,1]": 10,
+            "[2048,25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "rt_solved_indices": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 40
+          },
+          "shapes": {
+            "[2048]": 40
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "scatterer_type_codes": {
+          "semantic": true,
+          "dtypes": {
+            "<i4": 40
+          },
+          "shapes": {
+            "[1]": 10,
+            "[25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "scene_source": {
+          "semantic": true,
+          "dtypes": {
+            "<U26": 40
+          },
+          "shapes": {
+            "[]": 40
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "signal_clean": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 40
+          },
+          "shapes": {
+            "[2048]": 40
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "signal_noisy": {
+          "semantic": true,
+          "dtypes": {
+            "<c16": 40
+          },
+          "shapes": {
+            "[2048]": 40
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "t_axis": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[167]": 40
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "velocities": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[2048,1,3]": 10,
+            "[2048,25,3]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        },
+        "weights": {
+          "semantic": true,
+          "dtypes": {
+            "<f4": 40
+          },
+          "shapes": {
+            "[1]": 10,
+            "[25]": 30
+          },
+          "fortran_order_in_source": {
+            "false": 40
+          }
+        }
+      }
+    }
+  }
+}

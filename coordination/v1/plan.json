@@ -1,0 +1,108 @@
+{
+  "plan_version": "deeptelecom-global-plan-v1",
+  "plan_id": "dtuav-v1-plan-25e97f486b6be3542a0facb773ea7b2248b9538dc16d60a3d9e9c232fdacccf2",
+  "status": "ALLOCATION_VERIFIED",
+  "rules_version": "deeptelecom-global-dedup-v1",
+  "sort_version": "deeptelecom-global-id-sort-v1",
+  "shard_version": "deeptelecom-server-owned-greedy-tar-v1",
+  "semantic_hash_algorithm": "deeptelecom-array-semantic-sha256-v1",
+  "plan_id_material": {
+    "inventory_manifest_sha256": {
+      "a100": "2bdde9d45fde4644c9bdaa0a0c2a1827199ac64ace4f63b192b2ba7757f49ef2",
+      "rtx4090": "878b3c731be2cb47bf37120d3b1383bbb7a863139a45794990615b8cc22d335e",
+      "rtx3090x4": "ef5111b25fbd3002a6a6b56fee9e836aabd2239a8681c564349c9865f926f243"
+    },
+    "inventory_package_digest_sha256": {
+      "a100": "425a25859582caf6344b25edb7d3542f69761d38fe8dbced3d9c302ab17fdbcb",
+      "rtx4090": "fc974b4a51097f80e7ef62a428c566f0d30a3c6fcb4cc4a39447428187dc2a71",
+      "rtx3090x4": "ad7b51a89792344beb1187a49821f4e10c0f93c85e8f34cb13965475edbc05f8"
+    },
+    "rules_version": "deeptelecom-global-dedup-v1",
+    "sort_version": "deeptelecom-global-id-sort-v1",
+    "shard_version": "deeptelecom-server-owned-greedy-tar-v1",
+    "semantic_hash_algorithm": "deeptelecom-array-semantic-sha256-v1",
+    "sample_schema_sha256": "8b44372f9c9f204e367c10561a8a76bd236215eb4a9758ff1dc15afbf4747236",
+    "builder_sha256": "5302169738dea2171a6297e9cffb8110083bea6749967bc1b391fa6826f0f176",
+    "allocation_payload_sha256": {
+      "a100": "3c7d68f63af36c49f5104a4d5c3cf29098810ce14790e7f6a16f88f9b500f1eb",
+      "rtx4090": "7e143018d8d667a81aadd6829d5bbb8089b393ee0e5cdfc03c5001fe40fda80c",
+      "rtx3090x4": "d3ce59599b5745f8d48f7cbbb742cbab09401356fdbb2921707897dc84ac106d"
+    },
+    "dedup_decision_sha256": "5a3906b862e950e3c467869369a382c687f9a3cc0aa631ba0a7a5d7173acda32",
+    "candidate_count": 44988,
+    "accepted_count": 44988
+  },
+  "inventory_manifest_sha256": {
+    "a100": "2bdde9d45fde4644c9bdaa0a0c2a1827199ac64ace4f63b192b2ba7757f49ef2",
+    "rtx4090": "878b3c731be2cb47bf37120d3b1383bbb7a863139a45794990615b8cc22d335e",
+    "rtx3090x4": "ef5111b25fbd3002a6a6b56fee9e836aabd2239a8681c564349c9865f926f243"
+  },
+  "inventory_package_digest_sha256": {
+    "a100": "425a25859582caf6344b25edb7d3542f69761d38fe8dbced3d9c302ab17fdbcb",
+    "rtx4090": "fc974b4a51097f80e7ef62a428c566f0d30a3c6fcb4cc4a39447428187dc2a71",
+    "rtx3090x4": "ad7b51a89792344beb1187a49821f4e10c0f93c85e8f34cb13965475edbc05f8"
+  },
+  "inventory_package_sha256": {
+    "a100": {
+      "inventory_summary.json": "eebab463cf4ed68f95291c74e4a2c143a82da7b51b11664574fe91c5938b7037",
+      "samples_manifest.jsonl": "a07178d84924355719dbbb74dd8020d44b8709512eac3dfea77bf241872f633e",
+      "samples_manifest.jsonl.gz": "2bdde9d45fde4644c9bdaa0a0c2a1827199ac64ace4f63b192b2ba7757f49ef2",
+      "schemas.json": "b8dca72010dbb5cf31137d59742953fd9597cf1f415704d829c2a80735140012",
+      "problems.jsonl": "c22c76bd2b89ffe0c4fec5a63952e8c26a9a7109f3cb8729fce9fa2f8198daf5",
+      "REPORT.md": "f3461641fcbae779a51bfc30663b8a89c4ebf399055f83f006760cae9ba03147",
+      "SOURCE_ATTESTATION.json": "130de99e9b2fca51a3852b55c5a85a37d74c997b26df1681d235a4a2ab3db09a"
+    },
+    "rtx4090": {
+      "SOURCE_ATTESTATION.json": "68fe6c0b96827119610c654109156c9e2806eb2384809b107773f33db55ce571",
+      "inventory_summary.json": "1a9e825973008b67dfd769adb4aeae34016c4ffcbf612db0dac9f46d642dfd8a",
+      "samples_manifest.jsonl.gz": "878b3c731be2cb47bf37120d3b1383bbb7a863139a45794990615b8cc22d335e",
+      "schemas.json": "5f15bfd4b37ad1f68e5a6f4362c2411393bbeb4bfec1d0988969c6a6718122d4",
+      "problems.jsonl": "7f657fe1451f03790861f624ca4d0f6ceaf2d13ab3cd94874a02bef58380dbf9",
+      "REPORT.md": "d9180dc3347b080d23c23cdd7e9d3a511282e5699ede7ae59addb618419a901a"
+    },
+    "rtx3090x4": {
+      "SOURCE_ATTESTATION.json": "a041e3c780b6aef16847fdeba57c97bbbfaddc11fd3bd50b8b0e370cbdb733cc",
+      "inventory_summary.json": "6ef098f8f2a478d8664db2d01445be8d285dcba7059d81bc12b97666a458f77a",
+      "samples_manifest.jsonl.gz": "ef5111b25fbd3002a6a6b56fee9e836aabd2239a8681c564349c9865f926f243",
+      "schemas.json": "3970bc8be550e60112ea5d8951e602ea81e54f9b926da60b85c157d6ddffe4c6",
+      "problems.jsonl": "6fb9fc09f235a34e8aa8776b3addcf944dc6491d9c804fa890b572b35a52ea85",
+      "REPORT.md": "324a23aebebb294855bb65a30b812784953acf9e619eba1b8ce6c013559b0345"
+    }
+  },
+  "input_branch_commits": {
+    "rtx4090": "20e4070004293484ab44c99172fcd877c51bae94",
+    "rtx3090x4": "8fa64397b470a9ff9dddbf5dc377c0239b718c81"
+  },
+  "observed_baselines": {
+    "github_main": "3fed67c30e954a5381ad446f81afa22ea8cda1d1",
+    "huggingface_main": "d694646ba0f0df92d19a4d2ce0d76d3aeff91870"
+  },
+  "sample_schema_sha256": "8b44372f9c9f204e367c10561a8a76bd236215eb4a9758ff1dc15afbf4747236",
+  "builder_sha256": "5302169738dea2171a6297e9cffb8110083bea6749967bc1b391fa6826f0f176",
+  "allocation_payload_sha256": {
+    "a100": "3c7d68f63af36c49f5104a4d5c3cf29098810ce14790e7f6a16f88f9b500f1eb",
+    "rtx4090": "7e143018d8d667a81aadd6829d5bbb8089b393ee0e5cdfc03c5001fe40fda80c",
+    "rtx3090x4": "d3ce59599b5745f8d48f7cbbb742cbab09401356fdbb2921707897dc84ac106d"
+  },
+  "allocation_file_sha256": {
+    "a100": "d6497a0a55dac103973caf29ba175f969fd233fd52e3f4553b4805a70a86095b",
+    "rtx4090": "b6debb1969dadbf7e804a9994529ab3ba6c0d05e5be3b2530cbafd89afca43de",
+    "rtx3090x4": "3dc5238b4ac8237f79d90988ac71f06b2c79e3d5d0c744fb4e4be29c45c0fbef"
+  },
+  "dedup_decision_sha256": "5a3906b862e950e3c467869369a382c687f9a3cc0aa631ba0a7a5d7173acda32",
+  "candidate_count": 44988,
+  "accepted_unique_count": 44988,
+  "first_global_sample_id": "DTUAV-V1-000001",
+  "last_global_sample_id": "DTUAV-V1-044988",
+  "global_ids_contiguous": true,
+  "target_shard_bytes": 1073741824,
+  "shard_count": 140,
+  "upload_order": [
+    "a100",
+    "rtx4090",
+    "rtx3090x4",
+    "a100-finalize"
+  ],
+  "remote_collision_policy": "missing=upload; same_sha256=skip; different_sha256=stop",
+  "source_payload_policy": "NPZ and PNG source bytes remain unchanged; generated JSON sidecars contain sanitized relative provenance only."
+}
