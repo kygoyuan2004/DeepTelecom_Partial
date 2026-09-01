@@ -1,0 +1,2649 @@
+{
+  "schema_count": 4,
+  "schemas": {
+    "etoile_v2_32key_multirotor_m80_6f925b62": {
+      "schema_id": "etoile_v2_32key_multirotor_m80_6f925b62",
+      "signature_sha256": "6f925b620eb08c22125f6081afaaf59fbb352e2e5d27b59a43a8f2568f21917b",
+      "npz_key_count": 32,
+      "npz_arrays": [
+        {
+          "key": "S_complex",
+          "dtype": "<c8",
+          "shape": [
+            512,
+            167
+          ]
+        },
+        {
+          "key": "S_dB",
+          "dtype": "<f4",
+          "shape": [
+            512,
+            167
+          ]
+        },
+        {
+          "key": "blade_phase_offsets",
+          "dtype": "<f4",
+          "shape": [
+            4,
+            2
+          ]
+        },
+        {
+          "key": "body_positions",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            3
+          ]
+        },
+        {
+          "key": "body_velocities",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            3
+          ]
+        },
+        {
+          "key": "csi_one_way",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "etoile_control_points_m",
+          "dtype": "<f4",
+          "shape": [
+            4,
+            3
+          ]
+        },
+        {
+          "key": "etoile_path_distance_m",
+          "dtype": "<f4",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "f_axis",
+          "dtype": "<f4",
+          "shape": [
+            512
+          ]
+        },
+        {
+          "key": "labels_json",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "metadata_json",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "monostatic_freq_theory",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "path_counts",
+          "dtype": "<i4",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "positions",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            25,
+            3
+          ]
+        },
+        {
+          "key": "radii",
+          "dtype": "<f4",
+          "shape": [
+            25
+          ]
+        },
+        {
+          "key": "return_per_scatterer",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "rotor_centers",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            4,
+            3
+          ]
+        },
+        {
+          "key": "rotor_ids",
+          "dtype": "<i4",
+          "shape": [
+            25
+          ]
+        },
+        {
+          "key": "rt_csi_one_way_solved",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "rt_path_counts_solved",
+          "dtype": "<i4",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "rt_solved_indices",
+          "dtype": "<i4",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "scatterer_type_codes",
+          "dtype": "<i4",
+          "shape": [
+            25
+          ]
+        },
+        {
+          "key": "scene_source",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "signal_clean",
+          "dtype": "<c16",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "signal_noisy",
+          "dtype": "<c16",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "t_axis",
+          "dtype": "<f4",
+          "shape": [
+            167
+          ]
+        },
+        {
+          "key": "uav_ids",
+          "dtype": "unicode",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "uav_positions_m",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "uav_speeds_m_s",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "uav_velocities_m_s",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "velocities",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            25,
+            3
+          ]
+        },
+        {
+          "key": "weights",
+          "dtype": "<f4",
+          "shape": [
+            25
+          ]
+        }
+      ],
+      "observed_exact_dtypes": {
+        "signal_clean": [
+          "<c16"
+        ],
+        "signal_noisy": [
+          "<c16"
+        ],
+        "csi_one_way": [
+          "<c16"
+        ],
+        "return_per_scatterer": [
+          "<c16"
+        ],
+        "S_complex": [
+          "<c8"
+        ],
+        "S_dB": [
+          "<f4"
+        ],
+        "f_axis": [
+          "<f4"
+        ],
+        "t_axis": [
+          "<f4"
+        ],
+        "positions": [
+          "<f4"
+        ],
+        "velocities": [
+          "<f4"
+        ],
+        "rotor_centers": [
+          "<f4"
+        ],
+        "monostatic_freq_theory": [
+          "<f4"
+        ],
+        "weights": [
+          "<f4"
+        ],
+        "radii": [
+          "<f4"
+        ],
+        "scatterer_type_codes": [
+          "<i4"
+        ],
+        "rotor_ids": [
+          "<i4"
+        ],
+        "blade_phase_offsets": [
+          "<f4"
+        ],
+        "body_positions": [
+          "<f4"
+        ],
+        "body_velocities": [
+          "<f4"
+        ],
+        "uav_positions_m": [
+          "<f4"
+        ],
+        "uav_velocities_m_s": [
+          "<f4"
+        ],
+        "uav_speeds_m_s": [
+          "<f4"
+        ],
+        "uav_ids": [
+          "<U7"
+        ],
+        "etoile_control_points_m": [
+          "<f4"
+        ],
+        "etoile_path_distance_m": [
+          "<f4"
+        ],
+        "path_counts": [
+          "<i4"
+        ],
+        "rt_solved_indices": [
+          "<i4"
+        ],
+        "rt_csi_one_way_solved": [
+          "<c16"
+        ],
+        "rt_path_counts_solved": [
+          "<i4"
+        ],
+        "metadata_json": [
+          "<U2875",
+          "<U2877",
+          "<U2878",
+          "<U2879",
+          "<U2880",
+          "<U2881",
+          "<U2882",
+          "<U2883",
+          "<U2884",
+          "<U2885",
+          "<U2886",
+          "<U2887",
+          "<U2888",
+          "<U2889",
+          "<U2890",
+          "<U2891",
+          "<U2892",
+          "<U2893",
+          "<U2894",
+          "<U2895",
+          "<U2896",
+          "<U2897",
+          "<U2898",
+          "<U2899",
+          "<U2901",
+          "<U2968",
+          "<U2970",
+          "<U2971",
+          "<U2972",
+          "<U2975",
+          "<U2976",
+          "<U2977",
+          "<U2978",
+          "<U2979",
+          "<U2980",
+          "<U2981",
+          "<U2982",
+          "<U2983",
+          "<U2984",
+          "<U2985",
+          "<U2986",
+          "<U2987",
+          "<U2988",
+          "<U2989",
+          "<U2990",
+          "<U2991",
+          "<U2992",
+          "<U2993",
+          "<U2994",
+          "<U2995",
+          "<U2996",
+          "<U2997",
+          "<U2998",
+          "<U2999",
+          "<U3000",
+          "<U3001",
+          "<U3002",
+          "<U3003",
+          "<U3004",
+          "<U3005",
+          "<U3006",
+          "<U3007",
+          "<U3008",
+          "<U3009",
+          "<U3010",
+          "<U3011",
+          "<U3012",
+          "<U3013",
+          "<U3015"
+        ],
+        "labels_json": [
+          "<U680"
+        ],
+        "scene_source": [
+          "<U69"
+        ]
+      },
+      "png_format": "PNG",
+      "png_dimensions": [
+        512,
+        512
+      ],
+      "png_mode": "RGB",
+      "manifest_fields": [
+        "blade_radius_m",
+        "body_acceleration_x",
+        "body_acceleration_y",
+        "body_acceleration_z",
+        "body_speed_m_s",
+        "body_trajectory_model",
+        "body_velocity_x",
+        "body_velocity_y",
+        "body_velocity_z",
+        "bs_position_x",
+        "bs_position_y",
+        "bs_position_z",
+        "carrier_frequency_hz",
+        "class_id",
+        "created_time",
+        "degree",
+        "degree_rad",
+        "doppler_body_theory_hz",
+        "doppler_support_max_theory_hz",
+        "doppler_support_min_theory_hz",
+        "etoile_trajectory_control_points_json",
+        "etoile_trajectory_path_length_m",
+        "etoile_trajectory_speed_m_s",
+        "etoile_trajectory_speed_mode",
+        "etoile_trajectory_start_distance_m",
+        "etoile_trajectory_start_fraction",
+        "image_path",
+        "initial_body_position_x",
+        "initial_body_position_y",
+        "initial_body_position_z",
+        "initial_rotor_phase_rad",
+        "micro_doppler_max_theory_hz",
+        "noise_snr_db",
+        "num_blades_per_rotor",
+        "num_rotors",
+        "num_scatterers",
+        "num_snapshots",
+        "num_uavs",
+        "omega_h_rad_s",
+        "omega_rad_s",
+        "omega_theta_over_omega_h",
+        "omega_theta_rad_s",
+        "points_per_blade",
+        "random_seed",
+        "rotor_frequency_hz",
+        "rotor_period_s",
+        "rt_cir_sampling_frequency_hz",
+        "rt_diffraction",
+        "rt_diffuse_reflection",
+        "rt_elapsed_s",
+        "rt_los",
+        "rt_max_depth",
+        "rt_max_valid_paths_per_solved_snapshot",
+        "rt_min_valid_paths_per_solved_snapshot",
+        "rt_refraction",
+        "rt_snapshot_stride",
+        "rt_snapshots_solved",
+        "rt_solver",
+        "rt_specular_reflection",
+        "rt_total_valid_paths",
+        "sample_elapsed_s",
+        "sample_id",
+        "sampling_rate_hz",
+        "scene_channel_model",
+        "scene_merge_shapes",
+        "scene_name",
+        "scene_source",
+        "snapshot_duration_s",
+        "stft_frequency_resolution_hz",
+        "stft_nfft",
+        "stft_overlap",
+        "stft_peak_observed_hz",
+        "stft_support_max_observed_hz",
+        "stft_support_min_observed_hz",
+        "stft_window_duration_s",
+        "stft_window_size",
+        "tensor_path",
+        "window_check_pass",
+        "window_ratio_Twin_over_Trot",
+        "window_strict_metric"
+      ],
+      "scene_names": [
+        "etoile"
+      ],
+      "main_parameters": {
+        "num_snapshots": 2048,
+        "sampling_rate_hz": 20000.0,
+        "carrier_frequency_hz": 28000000000.0
+      },
+      "sample_count": 496,
+      "class_distribution": {
+        "level_v0": 167,
+        "pitch30_v10": 165,
+        "pitch45_v10": 164
+      },
+      "batch_distribution": {
+        "1000-1999": 120,
+        "20000-20299": 36,
+        "20300-20599": 36,
+        "20600-20899": 36,
+        "20900-21199": 36,
+        "21200-21499": 36,
+        "21500-21799": 36,
+        "21800-22099": 36,
+        "22100-22399": 36,
+        "22400-22699": 36,
+        "22700-22999": 36,
+        "4000-4999": 16
+      },
+      "parameter_examples": [
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01024",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01049",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01074",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01099",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01124",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01149",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01174",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01199",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01224",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01249",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01274",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01299",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01324",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01349",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01374",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01399",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01424",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01449",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01474",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01499",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01524",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01549",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01574",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01599",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        }
+      ]
+    },
+    "etoile_v2_32key_multirotor_m84_e7cec8a3": {
+      "schema_id": "etoile_v2_32key_multirotor_m84_e7cec8a3",
+      "signature_sha256": "e7cec8a3f36f409a6aeb4ff94330d5d3149c4a69ab3c30259eba9acd892a2eee",
+      "npz_key_count": 32,
+      "npz_arrays": [
+        {
+          "key": "S_complex",
+          "dtype": "<c8",
+          "shape": [
+            512,
+            167
+          ]
+        },
+        {
+          "key": "S_dB",
+          "dtype": "<f4",
+          "shape": [
+            512,
+            167
+          ]
+        },
+        {
+          "key": "blade_phase_offsets",
+          "dtype": "<f4",
+          "shape": [
+            4,
+            2
+          ]
+        },
+        {
+          "key": "body_positions",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            3
+          ]
+        },
+        {
+          "key": "body_velocities",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            3
+          ]
+        },
+        {
+          "key": "csi_one_way",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "etoile_control_points_m",
+          "dtype": "<f4",
+          "shape": [
+            4,
+            3
+          ]
+        },
+        {
+          "key": "etoile_path_distance_m",
+          "dtype": "<f4",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "f_axis",
+          "dtype": "<f4",
+          "shape": [
+            512
+          ]
+        },
+        {
+          "key": "labels_json",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "metadata_json",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "monostatic_freq_theory",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "path_counts",
+          "dtype": "<i4",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "positions",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            25,
+            3
+          ]
+        },
+        {
+          "key": "radii",
+          "dtype": "<f4",
+          "shape": [
+            25
+          ]
+        },
+        {
+          "key": "return_per_scatterer",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "rotor_centers",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            4,
+            3
+          ]
+        },
+        {
+          "key": "rotor_ids",
+          "dtype": "<i4",
+          "shape": [
+            25
+          ]
+        },
+        {
+          "key": "rt_csi_one_way_solved",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "rt_path_counts_solved",
+          "dtype": "<i4",
+          "shape": [
+            2048,
+            25
+          ]
+        },
+        {
+          "key": "rt_solved_indices",
+          "dtype": "<i4",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "scatterer_type_codes",
+          "dtype": "<i4",
+          "shape": [
+            25
+          ]
+        },
+        {
+          "key": "scene_source",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "signal_clean",
+          "dtype": "<c16",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "signal_noisy",
+          "dtype": "<c16",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "t_axis",
+          "dtype": "<f4",
+          "shape": [
+            167
+          ]
+        },
+        {
+          "key": "uav_ids",
+          "dtype": "unicode",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "uav_positions_m",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "uav_speeds_m_s",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "uav_velocities_m_s",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "velocities",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            25,
+            3
+          ]
+        },
+        {
+          "key": "weights",
+          "dtype": "<f4",
+          "shape": [
+            25
+          ]
+        }
+      ],
+      "observed_exact_dtypes": {
+        "signal_clean": [
+          "<c16"
+        ],
+        "signal_noisy": [
+          "<c16"
+        ],
+        "csi_one_way": [
+          "<c16"
+        ],
+        "return_per_scatterer": [
+          "<c16"
+        ],
+        "S_complex": [
+          "<c8"
+        ],
+        "S_dB": [
+          "<f4"
+        ],
+        "f_axis": [
+          "<f4"
+        ],
+        "t_axis": [
+          "<f4"
+        ],
+        "positions": [
+          "<f4"
+        ],
+        "velocities": [
+          "<f4"
+        ],
+        "rotor_centers": [
+          "<f4"
+        ],
+        "monostatic_freq_theory": [
+          "<f4"
+        ],
+        "weights": [
+          "<f4"
+        ],
+        "radii": [
+          "<f4"
+        ],
+        "scatterer_type_codes": [
+          "<i4"
+        ],
+        "rotor_ids": [
+          "<i4"
+        ],
+        "blade_phase_offsets": [
+          "<f4"
+        ],
+        "body_positions": [
+          "<f4"
+        ],
+        "body_velocities": [
+          "<f4"
+        ],
+        "uav_positions_m": [
+          "<f4"
+        ],
+        "uav_velocities_m_s": [
+          "<f4"
+        ],
+        "uav_speeds_m_s": [
+          "<f4"
+        ],
+        "uav_ids": [
+          "<U7"
+        ],
+        "etoile_control_points_m": [
+          "<f4"
+        ],
+        "etoile_path_distance_m": [
+          "<f4"
+        ],
+        "path_counts": [
+          "<i4"
+        ],
+        "rt_solved_indices": [
+          "<i4"
+        ],
+        "rt_csi_one_way_solved": [
+          "<c16"
+        ],
+        "rt_path_counts_solved": [
+          "<i4"
+        ],
+        "metadata_json": [
+          "<U2868",
+          "<U2870",
+          "<U2872",
+          "<U2873",
+          "<U2874",
+          "<U2875",
+          "<U2876",
+          "<U2877",
+          "<U2878",
+          "<U2879",
+          "<U2880",
+          "<U2881",
+          "<U2882",
+          "<U2883",
+          "<U2884",
+          "<U2885",
+          "<U2886",
+          "<U2887",
+          "<U2888",
+          "<U2889",
+          "<U2890",
+          "<U2891",
+          "<U2892",
+          "<U2893",
+          "<U2894",
+          "<U2895",
+          "<U2896",
+          "<U2897",
+          "<U2898",
+          "<U2899",
+          "<U2900",
+          "<U2901",
+          "<U2902",
+          "<U2903",
+          "<U2904",
+          "<U2965",
+          "<U2969",
+          "<U2970",
+          "<U2971",
+          "<U2972",
+          "<U2973",
+          "<U2974",
+          "<U2975",
+          "<U2976",
+          "<U2977",
+          "<U2978",
+          "<U2979",
+          "<U2980",
+          "<U2981",
+          "<U2982",
+          "<U2983",
+          "<U2984",
+          "<U2985",
+          "<U2986",
+          "<U2987",
+          "<U2988",
+          "<U2989",
+          "<U2990",
+          "<U2991",
+          "<U2992",
+          "<U2993",
+          "<U2994",
+          "<U2995",
+          "<U2996",
+          "<U2997",
+          "<U2998",
+          "<U2999",
+          "<U3000",
+          "<U3001",
+          "<U3002",
+          "<U3003",
+          "<U3004",
+          "<U3005",
+          "<U3006",
+          "<U3007",
+          "<U3008",
+          "<U3009",
+          "<U3010",
+          "<U3011",
+          "<U3012",
+          "<U3013",
+          "<U3014",
+          "<U3015",
+          "<U3016",
+          "<U3017",
+          "<U3018",
+          "<U3019"
+        ],
+        "labels_json": [
+          "<U680"
+        ],
+        "scene_source": [
+          "<U69"
+        ]
+      },
+      "png_format": "PNG",
+      "png_dimensions": [
+        512,
+        512
+      ],
+      "png_mode": "RGB",
+      "manifest_fields": [
+        "blade_radius_m",
+        "body_acceleration_x",
+        "body_acceleration_y",
+        "body_acceleration_z",
+        "body_speed_m_s",
+        "body_trajectory_model",
+        "body_velocity_x",
+        "body_velocity_y",
+        "body_velocity_z",
+        "bs_position_x",
+        "bs_position_y",
+        "bs_position_z",
+        "carrier_frequency_hz",
+        "class_id",
+        "created_time",
+        "degree",
+        "degree_rad",
+        "doppler_body_theory_hz",
+        "doppler_support_max_theory_hz",
+        "doppler_support_min_theory_hz",
+        "etoile_trajectory_control_points_json",
+        "etoile_trajectory_path_length_m",
+        "etoile_trajectory_speed_m_s",
+        "etoile_trajectory_speed_mode",
+        "etoile_trajectory_start_distance_m",
+        "etoile_trajectory_start_fraction",
+        "image_path",
+        "initial_body_position_x",
+        "initial_body_position_y",
+        "initial_body_position_z",
+        "initial_rotor_phase_rad",
+        "micro_doppler_max_theory_hz",
+        "noise_snr_db",
+        "num_blades_per_rotor",
+        "num_rotors",
+        "num_scatterers",
+        "num_snapshots",
+        "num_uavs",
+        "omega_h_rad_s",
+        "omega_rad_s",
+        "omega_theta_over_omega_h",
+        "omega_theta_rad_s",
+        "points_per_blade",
+        "random_seed",
+        "rotor_frequency_hz",
+        "rotor_period_s",
+        "rt_cir_sampling_frequency_hz",
+        "rt_diffraction",
+        "rt_diffuse_reflection",
+        "rt_elapsed_s",
+        "rt_los",
+        "rt_max_depth",
+        "rt_max_valid_paths_per_solved_snapshot",
+        "rt_min_valid_paths_per_solved_snapshot",
+        "rt_refraction",
+        "rt_snapshot_stride",
+        "rt_snapshots_solved",
+        "rt_solver",
+        "rt_specular_reflection",
+        "rt_total_valid_paths",
+        "sample_elapsed_s",
+        "sample_id",
+        "sampling_rate_hz",
+        "scene_channel_model",
+        "scene_load_error",
+        "scene_loaded",
+        "scene_merge_shapes",
+        "scene_name",
+        "scene_source",
+        "scene_tx_name",
+        "scene_xml_path",
+        "snapshot_duration_s",
+        "stft_frequency_resolution_hz",
+        "stft_nfft",
+        "stft_overlap",
+        "stft_peak_observed_hz",
+        "stft_support_max_observed_hz",
+        "stft_support_min_observed_hz",
+        "stft_window_duration_s",
+        "stft_window_size",
+        "tensor_path",
+        "window_check_pass",
+        "window_ratio_Twin_over_Trot",
+        "window_strict_metric"
+      ],
+      "scene_names": [
+        "etoile"
+      ],
+      "main_parameters": {
+        "num_snapshots": "2048",
+        "sampling_rate_hz": "20000.0",
+        "carrier_frequency_hz": "28000000000.0"
+      },
+      "sample_count": 11844,
+      "class_distribution": {
+        "level_v0": 3948,
+        "pitch30_v10": 3948,
+        "pitch45_v10": 3948
+      },
+      "batch_distribution": {
+        "1000-1999": 2880,
+        "20000-20299": 864,
+        "20300-20599": 864,
+        "20600-20899": 864,
+        "20900-21199": 864,
+        "21200-21499": 864,
+        "21500-21799": 864,
+        "21800-22099": 864,
+        "22100-22399": 864,
+        "22400-22699": 864,
+        "22700-22999": 864,
+        "4000-4999": 324
+      },
+      "parameter_examples": [
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01000",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01001",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01002",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01003",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01004",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01005",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01006",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01007",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01008",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01009",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01010",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01011",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01012",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01013",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01014",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01015",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01016",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01017",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01018",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01019",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01020",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01021",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01022",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__level_v0__01023",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        }
+      ]
+    },
+    "etoile_v2_32key_single_blade_m80_0eea5e66": {
+      "schema_id": "etoile_v2_32key_single_blade_m80_0eea5e66",
+      "signature_sha256": "0eea5e668330832e3eb5da35131a82527ae12b467f3ed29a407954e05e243ced",
+      "npz_key_count": 32,
+      "npz_arrays": [
+        {
+          "key": "S_complex",
+          "dtype": "<c8",
+          "shape": [
+            512,
+            167
+          ]
+        },
+        {
+          "key": "S_dB",
+          "dtype": "<f4",
+          "shape": [
+            512,
+            167
+          ]
+        },
+        {
+          "key": "blade_phase_offsets",
+          "dtype": "<f4",
+          "shape": [
+            1,
+            1
+          ]
+        },
+        {
+          "key": "body_positions",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            3
+          ]
+        },
+        {
+          "key": "body_velocities",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            3
+          ]
+        },
+        {
+          "key": "csi_one_way",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "etoile_control_points_m",
+          "dtype": "<f4",
+          "shape": [
+            4,
+            3
+          ]
+        },
+        {
+          "key": "etoile_path_distance_m",
+          "dtype": "<f4",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "f_axis",
+          "dtype": "<f4",
+          "shape": [
+            512
+          ]
+        },
+        {
+          "key": "labels_json",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "metadata_json",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "monostatic_freq_theory",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "path_counts",
+          "dtype": "<i4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "positions",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "radii",
+          "dtype": "<f4",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "return_per_scatterer",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "rotor_centers",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "rotor_ids",
+          "dtype": "<i4",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "rt_csi_one_way_solved",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "rt_path_counts_solved",
+          "dtype": "<i4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "rt_solved_indices",
+          "dtype": "<i4",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "scatterer_type_codes",
+          "dtype": "<i4",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "scene_source",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "signal_clean",
+          "dtype": "<c16",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "signal_noisy",
+          "dtype": "<c16",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "t_axis",
+          "dtype": "<f4",
+          "shape": [
+            167
+          ]
+        },
+        {
+          "key": "uav_ids",
+          "dtype": "unicode",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "uav_positions_m",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "uav_speeds_m_s",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "uav_velocities_m_s",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "velocities",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "weights",
+          "dtype": "<f4",
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "observed_exact_dtypes": {
+        "signal_clean": [
+          "<c16"
+        ],
+        "signal_noisy": [
+          "<c16"
+        ],
+        "csi_one_way": [
+          "<c16"
+        ],
+        "return_per_scatterer": [
+          "<c16"
+        ],
+        "S_complex": [
+          "<c8"
+        ],
+        "S_dB": [
+          "<f4"
+        ],
+        "f_axis": [
+          "<f4"
+        ],
+        "t_axis": [
+          "<f4"
+        ],
+        "positions": [
+          "<f4"
+        ],
+        "velocities": [
+          "<f4"
+        ],
+        "rotor_centers": [
+          "<f4"
+        ],
+        "monostatic_freq_theory": [
+          "<f4"
+        ],
+        "weights": [
+          "<f4"
+        ],
+        "radii": [
+          "<f4"
+        ],
+        "scatterer_type_codes": [
+          "<i4"
+        ],
+        "rotor_ids": [
+          "<i4"
+        ],
+        "blade_phase_offsets": [
+          "<f4"
+        ],
+        "body_positions": [
+          "<f4"
+        ],
+        "body_velocities": [
+          "<f4"
+        ],
+        "uav_positions_m": [
+          "<f4"
+        ],
+        "uav_velocities_m_s": [
+          "<f4"
+        ],
+        "uav_speeds_m_s": [
+          "<f4"
+        ],
+        "uav_ids": [
+          "<U7"
+        ],
+        "etoile_control_points_m": [
+          "<f4"
+        ],
+        "etoile_path_distance_m": [
+          "<f4"
+        ],
+        "path_counts": [
+          "<i4"
+        ],
+        "rt_solved_indices": [
+          "<i4"
+        ],
+        "rt_csi_one_way_solved": [
+          "<c16"
+        ],
+        "rt_path_counts_solved": [
+          "<i4"
+        ],
+        "metadata_json": [
+          "<U2928",
+          "<U2935",
+          "<U2936",
+          "<U2937",
+          "<U2938",
+          "<U2939",
+          "<U2940",
+          "<U2941",
+          "<U2942",
+          "<U2943",
+          "<U2944",
+          "<U2945",
+          "<U2946",
+          "<U2947",
+          "<U2948",
+          "<U2949",
+          "<U2950",
+          "<U2951",
+          "<U2953",
+          "<U2954",
+          "<U2955",
+          "<U2956"
+        ],
+        "labels_json": [
+          "<U20"
+        ],
+        "scene_source": [
+          "<U69"
+        ]
+      },
+      "png_format": "PNG",
+      "png_dimensions": [
+        512,
+        512
+      ],
+      "png_mode": "RGB",
+      "manifest_fields": [
+        "blade_radius_m",
+        "body_acceleration_x",
+        "body_acceleration_y",
+        "body_acceleration_z",
+        "body_speed_m_s",
+        "body_trajectory_model",
+        "body_velocity_x",
+        "body_velocity_y",
+        "body_velocity_z",
+        "bs_position_x",
+        "bs_position_y",
+        "bs_position_z",
+        "carrier_frequency_hz",
+        "class_id",
+        "created_time",
+        "degree",
+        "degree_rad",
+        "doppler_body_theory_hz",
+        "doppler_support_max_theory_hz",
+        "doppler_support_min_theory_hz",
+        "etoile_trajectory_control_points_json",
+        "etoile_trajectory_path_length_m",
+        "etoile_trajectory_speed_m_s",
+        "etoile_trajectory_speed_mode",
+        "etoile_trajectory_start_distance_m",
+        "etoile_trajectory_start_fraction",
+        "image_path",
+        "initial_body_position_x",
+        "initial_body_position_y",
+        "initial_body_position_z",
+        "initial_rotor_phase_rad",
+        "micro_doppler_max_theory_hz",
+        "noise_snr_db",
+        "num_blades_per_rotor",
+        "num_rotors",
+        "num_scatterers",
+        "num_snapshots",
+        "num_uavs",
+        "omega_h_rad_s",
+        "omega_rad_s",
+        "omega_theta_over_omega_h",
+        "omega_theta_rad_s",
+        "points_per_blade",
+        "random_seed",
+        "rotor_frequency_hz",
+        "rotor_period_s",
+        "rt_cir_sampling_frequency_hz",
+        "rt_diffraction",
+        "rt_diffuse_reflection",
+        "rt_elapsed_s",
+        "rt_los",
+        "rt_max_depth",
+        "rt_max_valid_paths_per_solved_snapshot",
+        "rt_min_valid_paths_per_solved_snapshot",
+        "rt_refraction",
+        "rt_snapshot_stride",
+        "rt_snapshots_solved",
+        "rt_solver",
+        "rt_specular_reflection",
+        "rt_total_valid_paths",
+        "sample_elapsed_s",
+        "sample_id",
+        "sampling_rate_hz",
+        "scene_channel_model",
+        "scene_merge_shapes",
+        "scene_name",
+        "scene_source",
+        "snapshot_duration_s",
+        "stft_frequency_resolution_hz",
+        "stft_nfft",
+        "stft_overlap",
+        "stft_peak_observed_hz",
+        "stft_support_max_observed_hz",
+        "stft_support_min_observed_hz",
+        "stft_window_duration_s",
+        "stft_window_size",
+        "tensor_path",
+        "window_check_pass",
+        "window_ratio_Twin_over_Trot",
+        "window_strict_metric"
+      ],
+      "scene_names": [
+        "etoile"
+      ],
+      "main_parameters": {
+        "num_snapshots": 2048,
+        "sampling_rate_hz": 20000.0,
+        "carrier_frequency_hz": 28000000000.0
+      },
+      "sample_count": 174,
+      "class_distribution": {
+        "single_blade_v0": 174
+      },
+      "batch_distribution": {
+        "1000-1999": 40,
+        "2000-2999": 8,
+        "20000-20299": 12,
+        "20300-20599": 12,
+        "20600-20899": 12,
+        "20900-21199": 12,
+        "21200-21499": 12,
+        "21500-21799": 12,
+        "21800-22099": 12,
+        "22100-22399": 12,
+        "22400-22699": 12,
+        "22700-22999": 12,
+        "4000-4999": 6
+      },
+      "parameter_examples": [
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01024",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01049",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01074",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01099",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01124",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01149",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01174",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01199",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01224",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01249",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01274",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01299",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01324",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01349",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01374",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01399",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01424",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01449",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01474",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01499",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01524",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01549",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01574",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01599",
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "carrier_frequency_hz": 28000000000.0
+        }
+      ]
+    },
+    "etoile_v2_32key_single_blade_m84_2aeb945c": {
+      "schema_id": "etoile_v2_32key_single_blade_m84_2aeb945c",
+      "signature_sha256": "2aeb945c3f597bf58f16a6822c776e3fb177531c74597d9624fe440faf8dd964",
+      "npz_key_count": 32,
+      "npz_arrays": [
+        {
+          "key": "S_complex",
+          "dtype": "<c8",
+          "shape": [
+            512,
+            167
+          ]
+        },
+        {
+          "key": "S_dB",
+          "dtype": "<f4",
+          "shape": [
+            512,
+            167
+          ]
+        },
+        {
+          "key": "blade_phase_offsets",
+          "dtype": "<f4",
+          "shape": [
+            1,
+            1
+          ]
+        },
+        {
+          "key": "body_positions",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            3
+          ]
+        },
+        {
+          "key": "body_velocities",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            3
+          ]
+        },
+        {
+          "key": "csi_one_way",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "etoile_control_points_m",
+          "dtype": "<f4",
+          "shape": [
+            4,
+            3
+          ]
+        },
+        {
+          "key": "etoile_path_distance_m",
+          "dtype": "<f4",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "f_axis",
+          "dtype": "<f4",
+          "shape": [
+            512
+          ]
+        },
+        {
+          "key": "labels_json",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "metadata_json",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "monostatic_freq_theory",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "path_counts",
+          "dtype": "<i4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "positions",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "radii",
+          "dtype": "<f4",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "return_per_scatterer",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "rotor_centers",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "rotor_ids",
+          "dtype": "<i4",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "rt_csi_one_way_solved",
+          "dtype": "<c16",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "rt_path_counts_solved",
+          "dtype": "<i4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "rt_solved_indices",
+          "dtype": "<i4",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "scatterer_type_codes",
+          "dtype": "<i4",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "scene_source",
+          "dtype": "unicode",
+          "shape": []
+        },
+        {
+          "key": "signal_clean",
+          "dtype": "<c16",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "signal_noisy",
+          "dtype": "<c16",
+          "shape": [
+            2048
+          ]
+        },
+        {
+          "key": "t_axis",
+          "dtype": "<f4",
+          "shape": [
+            167
+          ]
+        },
+        {
+          "key": "uav_ids",
+          "dtype": "unicode",
+          "shape": [
+            1
+          ]
+        },
+        {
+          "key": "uav_positions_m",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "uav_speeds_m_s",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1
+          ]
+        },
+        {
+          "key": "uav_velocities_m_s",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "velocities",
+          "dtype": "<f4",
+          "shape": [
+            2048,
+            1,
+            3
+          ]
+        },
+        {
+          "key": "weights",
+          "dtype": "<f4",
+          "shape": [
+            1
+          ]
+        }
+      ],
+      "observed_exact_dtypes": {
+        "signal_clean": [
+          "<c16"
+        ],
+        "signal_noisy": [
+          "<c16"
+        ],
+        "csi_one_way": [
+          "<c16"
+        ],
+        "return_per_scatterer": [
+          "<c16"
+        ],
+        "S_complex": [
+          "<c8"
+        ],
+        "S_dB": [
+          "<f4"
+        ],
+        "f_axis": [
+          "<f4"
+        ],
+        "t_axis": [
+          "<f4"
+        ],
+        "positions": [
+          "<f4"
+        ],
+        "velocities": [
+          "<f4"
+        ],
+        "rotor_centers": [
+          "<f4"
+        ],
+        "monostatic_freq_theory": [
+          "<f4"
+        ],
+        "weights": [
+          "<f4"
+        ],
+        "radii": [
+          "<f4"
+        ],
+        "scatterer_type_codes": [
+          "<i4"
+        ],
+        "rotor_ids": [
+          "<i4"
+        ],
+        "blade_phase_offsets": [
+          "<f4"
+        ],
+        "body_positions": [
+          "<f4"
+        ],
+        "body_velocities": [
+          "<f4"
+        ],
+        "uav_positions_m": [
+          "<f4"
+        ],
+        "uav_velocities_m_s": [
+          "<f4"
+        ],
+        "uav_speeds_m_s": [
+          "<f4"
+        ],
+        "uav_ids": [
+          "<U7"
+        ],
+        "etoile_control_points_m": [
+          "<f4"
+        ],
+        "etoile_path_distance_m": [
+          "<f4"
+        ],
+        "path_counts": [
+          "<i4"
+        ],
+        "rt_solved_indices": [
+          "<i4"
+        ],
+        "rt_csi_one_way_solved": [
+          "<c16"
+        ],
+        "rt_path_counts_solved": [
+          "<i4"
+        ],
+        "metadata_json": [
+          "<U2926",
+          "<U2928",
+          "<U2929",
+          "<U2930",
+          "<U2931",
+          "<U2932",
+          "<U2933",
+          "<U2934",
+          "<U2935",
+          "<U2936",
+          "<U2937",
+          "<U2938",
+          "<U2939",
+          "<U2940",
+          "<U2941",
+          "<U2942",
+          "<U2943",
+          "<U2944",
+          "<U2945",
+          "<U2946",
+          "<U2947",
+          "<U2948",
+          "<U2949",
+          "<U2950",
+          "<U2951",
+          "<U2952",
+          "<U2953",
+          "<U2954",
+          "<U2955",
+          "<U2956",
+          "<U2957",
+          "<U2958"
+        ],
+        "labels_json": [
+          "<U20"
+        ],
+        "scene_source": [
+          "<U69"
+        ]
+      },
+      "png_format": "PNG",
+      "png_dimensions": [
+        512,
+        512
+      ],
+      "png_mode": "RGB",
+      "manifest_fields": [
+        "blade_radius_m",
+        "body_acceleration_x",
+        "body_acceleration_y",
+        "body_acceleration_z",
+        "body_speed_m_s",
+        "body_trajectory_model",
+        "body_velocity_x",
+        "body_velocity_y",
+        "body_velocity_z",
+        "bs_position_x",
+        "bs_position_y",
+        "bs_position_z",
+        "carrier_frequency_hz",
+        "class_id",
+        "created_time",
+        "degree",
+        "degree_rad",
+        "doppler_body_theory_hz",
+        "doppler_support_max_theory_hz",
+        "doppler_support_min_theory_hz",
+        "etoile_trajectory_control_points_json",
+        "etoile_trajectory_path_length_m",
+        "etoile_trajectory_speed_m_s",
+        "etoile_trajectory_speed_mode",
+        "etoile_trajectory_start_distance_m",
+        "etoile_trajectory_start_fraction",
+        "image_path",
+        "initial_body_position_x",
+        "initial_body_position_y",
+        "initial_body_position_z",
+        "initial_rotor_phase_rad",
+        "micro_doppler_max_theory_hz",
+        "noise_snr_db",
+        "num_blades_per_rotor",
+        "num_rotors",
+        "num_scatterers",
+        "num_snapshots",
+        "num_uavs",
+        "omega_h_rad_s",
+        "omega_rad_s",
+        "omega_theta_over_omega_h",
+        "omega_theta_rad_s",
+        "points_per_blade",
+        "random_seed",
+        "rotor_frequency_hz",
+        "rotor_period_s",
+        "rt_cir_sampling_frequency_hz",
+        "rt_diffraction",
+        "rt_diffuse_reflection",
+        "rt_elapsed_s",
+        "rt_los",
+        "rt_max_depth",
+        "rt_max_valid_paths_per_solved_snapshot",
+        "rt_min_valid_paths_per_solved_snapshot",
+        "rt_refraction",
+        "rt_snapshot_stride",
+        "rt_snapshots_solved",
+        "rt_solver",
+        "rt_specular_reflection",
+        "rt_total_valid_paths",
+        "sample_elapsed_s",
+        "sample_id",
+        "sampling_rate_hz",
+        "scene_channel_model",
+        "scene_load_error",
+        "scene_loaded",
+        "scene_merge_shapes",
+        "scene_name",
+        "scene_source",
+        "scene_tx_name",
+        "scene_xml_path",
+        "snapshot_duration_s",
+        "stft_frequency_resolution_hz",
+        "stft_nfft",
+        "stft_overlap",
+        "stft_peak_observed_hz",
+        "stft_support_max_observed_hz",
+        "stft_support_min_observed_hz",
+        "stft_window_duration_s",
+        "stft_window_size",
+        "tensor_path",
+        "window_check_pass",
+        "window_ratio_Twin_over_Trot",
+        "window_strict_metric"
+      ],
+      "scene_names": [
+        "etoile"
+      ],
+      "main_parameters": {
+        "num_snapshots": "2048",
+        "sampling_rate_hz": "20000.0",
+        "carrier_frequency_hz": "28000000000.0"
+      },
+      "sample_count": 3950,
+      "class_distribution": {
+        "single_blade_v0": 3950
+      },
+      "batch_distribution": {
+        "1000-1999": 960,
+        "2000-2999": 2,
+        "20000-20299": 288,
+        "20300-20599": 288,
+        "20600-20899": 288,
+        "20900-21199": 288,
+        "21200-21499": 288,
+        "21500-21799": 288,
+        "21800-22099": 288,
+        "22100-22399": 288,
+        "22400-22699": 288,
+        "22700-22999": 288,
+        "4000-4999": 108
+      },
+      "parameter_examples": [
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01000",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01001",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01002",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01003",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01004",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01005",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01006",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01007",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01008",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01009",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01010",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01011",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01012",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01013",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01014",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01015",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01016",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01017",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01018",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01019",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01020",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01021",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01022",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        },
+        {
+          "sample_uid": "rtx3090x4__1000-1999__single_blade_v0__01023",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "carrier_frequency_hz": "28000000000.0"
+        }
+      ]
+    }
+  }
+}

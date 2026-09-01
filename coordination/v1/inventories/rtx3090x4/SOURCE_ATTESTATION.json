@@ -1,0 +1,40 @@
+{
+  "attestation_schema_version": "1.0.0",
+  "created_at_utc": "2026-09-01T14:35:04Z",
+  "freeze_time_utc": "2026-09-01T13:19:06Z",
+  "frozen_statistics": {
+    "classes": {
+      "level_v0": 4115,
+      "pitch30_v10": 4113,
+      "pitch45_v10": 4112,
+      "single_blade_v0": 4124
+    },
+    "collision_candidate": 10,
+    "duplicate_local": 21240,
+    "excluded_nonformal": 1,
+    "formal_data_bytes": 54456731925,
+    "frozen_candidate_total": 16464,
+    "incomplete": 1073,
+    "invalid": 0,
+    "valid_candidate": 16454
+  },
+  "manifest_bytes_preserved": true,
+  "original_audit_checksums": {
+    "REPORT.md": "3f845955295797bf14486589ab1af11d62ab5de6d0658984d653d6afac7e4c85",
+    "inventory_summary.json": "7ef52ee8551c832db067f9b94f241d1f97778384c1c900ee66bfb8498d458529",
+    "problems.jsonl": "6fb9fc09f235a34e8aa8776b3addcf944dc6491d9c804fa890b572b35a52ea85",
+    "samples_manifest.jsonl.gz": "ef5111b25fbd3002a6a6b56fee9e836aabd2239a8681c564349c9865f926f243",
+    "schemas.json": "3970bc8be550e60112ea5d8951e602ea81e54f9b926da60b85c157d6ddffe4c6"
+  },
+  "original_source_manifest_sha256": "ef5111b25fbd3002a6a6b56fee9e836aabd2239a8681c564349c9865f926f243",
+  "sanitization": {
+    "absolute_paths_replaced_by_source_root_id": true,
+    "cli_install_paths_removed": true,
+    "login_username_removed": true,
+    "process_commands_removed": true,
+    "secrets_included": false
+  },
+  "sanitized_manifest_sha256": "ef5111b25fbd3002a6a6b56fee9e836aabd2239a8681c564349c9865f926f243",
+  "server_id": "rtx3090x4",
+  "source_manifest_filename": "samples_manifest.jsonl.gz"
+}
