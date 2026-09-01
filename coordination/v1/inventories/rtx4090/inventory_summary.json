@@ -1,0 +1,488 @@
+{
+  "audit_completed_time_utc": "2026-09-01T13:18:00.905109Z",
+  "baseline_difference": {
+    "batches": {
+      "0000-0999": 0,
+      "10000-19999": 49,
+      "2000-2999": 0
+    },
+    "classes": {
+      "level_v0": 11,
+      "pitch30_v10": 14,
+      "pitch45_v10": 24,
+      "single_blade_v0": 0
+    },
+    "total": 49
+  },
+  "baseline_matches": false,
+  "candidate_roots": [
+    {
+      "class_distribution_npz": {
+        "level_v0": 4500,
+        "pitch30_v10": 4500,
+        "pitch45_v10": 4500,
+        "single_blade_v0": 4500
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 13499,
+      "index_min": 0,
+      "manifest_line_count": 18000,
+      "manifest_parse_errors": [],
+      "npz_count": 18000,
+      "png_count": 18000,
+      "possible_copy_of": null,
+      "recent_mtime_utc": "2026-08-30T21:31:13.978348Z",
+      "source_root_id": "merged_main",
+      "total_bytes": 59676807181,
+      "type": "merged dataset"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 3750,
+        "pitch30_v10": 3735,
+        "pitch45_v10": 3728,
+        "single_blade_v0": 3750
+      },
+      "completion_status": "mixed_rounds:14_complete_of_15",
+      "exists": true,
+      "index_max": 13749,
+      "index_min": 10000,
+      "manifest_line_count": 14963,
+      "manifest_parse_errors": [],
+      "npz_count": 14963,
+      "png_count": 14963,
+      "possible_copy_of": "merged_main",
+      "recent_mtime_utc": "2026-09-01T13:08:16.258509Z",
+      "source_root_id": "namespace_shards",
+      "total_bytes": 49576169235,
+      "type": "retained shards, including active round"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 1000,
+        "pitch30_v10": 1000,
+        "pitch45_v10": 1000,
+        "single_blade_v0": 1000
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 999,
+      "index_min": 0,
+      "manifest_line_count": 4000,
+      "manifest_parse_errors": [],
+      "npz_count": 4000,
+      "png_count": 12000,
+      "possible_copy_of": "merged_main",
+      "recent_mtime_utc": "2026-08-02T07:45:34.419465Z",
+      "source_root_id": "etoile_merged_legacy_copy",
+      "total_bytes": 13983574222,
+      "type": "completed merged copy"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 30,
+        "pitch30_v10": 30,
+        "pitch45_v10": 30,
+        "single_blade_v0": 30
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 29,
+      "index_min": 0,
+      "manifest_line_count": 120,
+      "manifest_parse_errors": [],
+      "npz_count": 120,
+      "png_count": 120,
+      "possible_copy_of": "merged_main",
+      "recent_mtime_utc": "2026-07-08T18:39:47.654088Z",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "total_bytes": 396404283,
+      "type": "superseded intermediate 28-key shards"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 40,
+        "pitch30_v10": 40,
+        "pitch45_v10": 40,
+        "single_blade_v0": 90
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 99,
+      "index_min": 10,
+      "manifest_line_count": 210,
+      "manifest_parse_errors": [],
+      "npz_count": 210,
+      "png_count": 210,
+      "possible_copy_of": null,
+      "recent_mtime_utc": "2026-07-08T09:59:51.390240Z",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "total_bytes": 607059157,
+      "type": "superseded intermediate 24-key shards"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 40,
+        "pitch30_v10": 40,
+        "pitch45_v10": 40,
+        "single_blade_v0": 90
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 99,
+      "index_min": 10,
+      "manifest_line_count": 210,
+      "manifest_parse_errors": [],
+      "npz_count": 210,
+      "png_count": 210,
+      "possible_copy_of": "etoile_baseline_shards_0010_0099_trial",
+      "recent_mtime_utc": "2026-07-01T18:30:06.150316Z",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "total_bytes": 607059157,
+      "type": "copy of superseded 24-key shards"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 1,
+        "pitch30_v10": 1,
+        "pitch45_v10": 1,
+        "single_blade_v0": 21
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 2020,
+      "index_min": 2000,
+      "manifest_line_count": 24,
+      "manifest_parse_errors": [],
+      "npz_count": 24,
+      "png_count": 28,
+      "possible_copy_of": null,
+      "recent_mtime_utc": "2026-08-06T03:18:20.097697Z",
+      "source_root_id": "etoile_extra_2000_2999",
+      "total_bytes": 39768489,
+      "type": "registered collision-hold shards"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 10,
+        "pitch30_v10": 10,
+        "pitch45_v10": 10,
+        "single_blade_v0": 10
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 9,
+      "index_min": 0,
+      "manifest_line_count": 40,
+      "manifest_parse_errors": [],
+      "npz_count": 40,
+      "png_count": 64,
+      "possible_copy_of": null,
+      "recent_mtime_utc": "2026-07-02T07:49:56.778279Z",
+      "source_root_id": "floor_wall_early_rt",
+      "total_bytes": 135143905,
+      "type": "early floor_wall RT dataset"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 10,
+        "pitch30_v10": 10,
+        "pitch45_v10": 10,
+        "single_blade_v0": 10
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 9,
+      "index_min": 0,
+      "manifest_line_count": 40,
+      "manifest_parse_errors": [],
+      "npz_count": 40,
+      "png_count": 64,
+      "possible_copy_of": "floor_wall_early_rt",
+      "recent_mtime_utc": "2026-07-08T09:59:51.452241Z",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "total_bytes": 135143905,
+      "type": "copy of early floor_wall RT dataset"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 1000,
+        "pitch30_v10": 1000,
+        "pitch45_v10": 1000,
+        "single_blade_v0": 1000
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 999,
+      "index_min": 0,
+      "manifest_line_count": 3000,
+      "manifest_parse_errors": [],
+      "npz_count": 4000,
+      "png_count": 3000,
+      "possible_copy_of": null,
+      "recent_mtime_utc": "2026-06-30T04:34:00.788362Z",
+      "source_root_id": "geometric_los_dataset",
+      "total_bytes": 9804536572,
+      "type": "non-RT geometric LOS dataset"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 142,
+        "pitch30_v10": 111,
+        "pitch45_v10": 106,
+        "single_blade_v0": 141
+      },
+      "completion_status": "files_without_standard_manifest",
+      "exists": true,
+      "index_max": 141,
+      "index_min": 0,
+      "manifest_line_count": 0,
+      "manifest_parse_errors": [],
+      "npz_count": 500,
+      "png_count": 500,
+      "possible_copy_of": "etoile_merged_legacy_copy",
+      "recent_mtime_utc": "2026-07-27T07:27:08.120709Z",
+      "source_root_id": "dataset_500_derivative",
+      "total_bytes": 414854041,
+      "type": "derived 500-sample subset"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 0,
+        "pitch30_v10": 488,
+        "pitch45_v10": 0,
+        "single_blade_v0": 0
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 0,
+      "index_min": 0,
+      "manifest_line_count": 488,
+      "manifest_parse_errors": [],
+      "npz_count": 488,
+      "png_count": 488,
+      "possible_copy_of": null,
+      "recent_mtime_utc": "2026-07-08T09:59:51.048234Z",
+      "source_root_id": "server_performance_eval_trial",
+      "total_bytes": 305095595,
+      "type": "performance benchmark"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 0,
+        "pitch30_v10": 488,
+        "pitch45_v10": 0,
+        "single_blade_v0": 0
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 0,
+      "index_min": 0,
+      "manifest_line_count": 488,
+      "manifest_parse_errors": [],
+      "npz_count": 488,
+      "png_count": 488,
+      "possible_copy_of": "server_performance_eval_trial",
+      "recent_mtime_utc": "2026-07-02T07:08:18.858754Z",
+      "source_root_id": "server_performance_eval_original",
+      "total_bytes": 305095595,
+      "type": "performance benchmark copy"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 1,
+        "pitch30_v10": 0,
+        "pitch45_v10": 0,
+        "single_blade_v0": 0
+      },
+      "completion_status": "registered_without_global_complete_marker",
+      "exists": true,
+      "index_max": 0,
+      "index_min": 0,
+      "manifest_line_count": 5,
+      "manifest_parse_errors": [],
+      "npz_count": 10,
+      "png_count": 35,
+      "possible_copy_of": null,
+      "recent_mtime_utc": "2026-07-13T08:14:14.282169Z",
+      "source_root_id": "monostatic_single_station_experiments",
+      "total_bytes": 36754255,
+      "type": "single-station and demo experiments"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 0,
+        "pitch30_v10": 0,
+        "pitch45_v10": 0,
+        "single_blade_v0": 0
+      },
+      "completion_status": "non_sample_or_empty",
+      "exists": true,
+      "index_max": null,
+      "index_min": null,
+      "manifest_line_count": 0,
+      "manifest_parse_errors": [],
+      "npz_count": 0,
+      "png_count": 2,
+      "possible_copy_of": null,
+      "recent_mtime_utc": "2026-08-07T15:09:33.620361Z",
+      "source_root_id": "calibration_uav_etoile",
+      "total_bytes": 509854,
+      "type": "calibration output, not samples"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 142,
+        "pitch30_v10": 111,
+        "pitch45_v10": 106,
+        "single_blade_v0": 141
+      },
+      "completion_status": "static_archive_readable",
+      "exists": true,
+      "index_max": 141,
+      "index_min": 0,
+      "manifest_line_count": 0,
+      "manifest_parse_errors": [],
+      "npz_count": 500,
+      "png_count": 500,
+      "possible_copy_of": "dataset_500_derivative",
+      "recent_mtime_utc": "2026-07-27T07:27:38.873310Z",
+      "source_root_id": "archive_dataset_500_zip",
+      "total_bytes": 415059061,
+      "type": "archive"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 30,
+        "pitch30_v10": 30,
+        "pitch45_v10": 30,
+        "single_blade_v0": 30
+      },
+      "completion_status": "static_archive_readable",
+      "exists": true,
+      "index_max": 29,
+      "index_min": 0,
+      "manifest_line_count": 0,
+      "manifest_parse_errors": [],
+      "npz_count": 120,
+      "png_count": 360,
+      "possible_copy_of": "dataset_500_derivative",
+      "recent_mtime_utc": "2026-07-10T04:17:48.558210Z",
+      "source_root_id": "archive_etoile_500_export_zip",
+      "total_bytes": 415827284,
+      "type": "archive/export"
+    },
+    {
+      "class_distribution_npz": {
+        "level_v0": 0,
+        "pitch30_v10": 0,
+        "pitch45_v10": 0,
+        "single_blade_v0": 0
+      },
+      "completion_status": "static_archive_readable",
+      "exists": true,
+      "index_max": null,
+      "index_min": null,
+      "manifest_line_count": 0,
+      "manifest_parse_errors": [],
+      "npz_count": 4,
+      "png_count": 124,
+      "possible_copy_of": null,
+      "recent_mtime_utc": "2026-07-08T10:03:33Z",
+      "source_root_id": "archive_etoile_scene_bundle_zip",
+      "total_bytes": 23045655,
+      "type": "scene archive, not samples"
+    }
+  ],
+  "cross_id_semantic_duplicate_group_count": 0,
+  "disk_space_bytes": {
+    "data_filesystem": {
+      "free": 3664830283776,
+      "total": 3840754577408,
+      "used": 175924293632
+    },
+    "workspace_filesystem": {
+      "free": 267267866624,
+      "total": 437728182272,
+      "used": 170460315648
+    }
+  },
+  "excluded_nonformal_records": 5108,
+  "formal_canonical": {
+    "batch_distribution": {
+      "0000-0999": 4000,
+      "10000-19999": 14963,
+      "2000-2999": 24
+    },
+    "class_distribution": {
+      "level_v0": 4751,
+      "pitch30_v10": 4736,
+      "pitch45_v10": 4729,
+      "single_blade_v0": 4771
+    },
+    "collision_candidate": 64,
+    "image_plus_tensor_bytes": 62795079502,
+    "recommended_canonical_source_root_ids": [
+      "merged_main",
+      "namespace_shards",
+      "etoile_extra_2000_2999"
+    ],
+    "total": 18987,
+    "valid_candidate": 18923
+  },
+  "formal_physical_record_status": {
+    "collision_candidate": 64,
+    "duplicate_local": 18000,
+    "incomplete": 4,
+    "valid_candidate": 18923
+  },
+  "freeze_time_utc": "2026-09-01T13:10:37.037719Z",
+  "generation": {
+    "matching_process_count": 3,
+    "service_state": "inactive",
+    "still_running": true
+  },
+  "known_baseline": {
+    "batches": {
+      "0000-0999": 4000,
+      "10000-19999": 14914,
+      "2000-2999": 24
+    },
+    "classes": {
+      "level_v0": 4740,
+      "pitch30_v10": 4722,
+      "pitch45_v10": 4705,
+      "single_blade_v0": 4771
+    },
+    "total": 18938
+  },
+  "local_rules_and_manifests_verified": true,
+  "problem_record_count": 68,
+  "scope": "read-only pre-release inventory; no upload, remote modification, generator control, source rename/move/delete, or archive creation",
+  "server_id": "rtx4090",
+  "server_role_evidence": {
+    "formal_main_source_root_id": "merged_main",
+    "server_id": "rtx4090"
+  },
+  "upload_environment_read_only": {
+    "hf_logged_in": true,
+    "target_dataset_check_error": null,
+    "target_dataset_readable": true,
+    "tool_versions": {
+      "Pillow": "12.2.0",
+      "hf_cli": "1.29.0",
+      "hf_xet": "1.6.0",
+      "huggingface_cli": "not installed",
+      "huggingface_hub": "1.29.0",
+      "numpy": "2.4.4",
+      "python": "3.11.15"
+    }
+  },
+  "webdataset_estimate": {
+    "estimated_additional_temporary_bytes": 63868821326,
+    "estimated_shard_count": 59,
+    "method": "formal image+tensor bytes plus one 1-GiB in-progress shard; conservative output-space estimate",
+    "target_shard_size_bytes": 1073741824
+  }
+}

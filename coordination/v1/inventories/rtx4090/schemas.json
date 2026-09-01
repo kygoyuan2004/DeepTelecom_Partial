@@ -1,0 +1,2892 @@
+{
+  "excluded_schema_examples": [
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/level_v0/level_v0_0000.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/level_v0/level_v0_0001.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/level_v0/level_v0_0002.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/pitch30_v10/pitch30_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/pitch30_v10/pitch30_v10_0001.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/pitch30_v10/pitch30_v10_0002.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/pitch45_v10/pitch45_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/pitch45_v10/pitch45_v10_0001.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/pitch45_v10/pitch45_v10_0002.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "b75d322e738076085e1ce816d268f737dfd9f77700a7e852cd635bd5af5edc7c",
+      "schema_id": "legacy_floor_wall_v1_24key_p1_mb75d322e",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/single_blade_v0/single_blade_v0_0000.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "b75d322e738076085e1ce816d268f737dfd9f77700a7e852cd635bd5af5edc7c",
+      "schema_id": "legacy_floor_wall_v1_24key_p1_mb75d322e",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/single_blade_v0/single_blade_v0_0001.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "b75d322e738076085e1ce816d268f737dfd9f77700a7e852cd635bd5af5edc7c",
+      "schema_id": "legacy_floor_wall_v1_24key_p1_mb75d322e",
+      "source_root_id": "floor_wall_early_rt",
+      "tensor_relpath": "tensors/single_blade_v0/single_blade_v0_0002.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/level_v0/level_v0_0000.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/level_v0/level_v0_0001.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/level_v0/level_v0_0002.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/pitch30_v10/pitch30_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/pitch30_v10/pitch30_v10_0001.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/pitch30_v10/pitch30_v10_0002.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/pitch45_v10/pitch45_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/pitch45_v10/pitch45_v10_0001.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "22798beb478cbb2295b24de6060a287be6902d399714ef382d29f7f23e0adcf8",
+      "schema_id": "legacy_floor_wall_v1_24key_p25_m22798beb",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/pitch45_v10/pitch45_v10_0002.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "b75d322e738076085e1ce816d268f737dfd9f77700a7e852cd635bd5af5edc7c",
+      "schema_id": "legacy_floor_wall_v1_24key_p1_mb75d322e",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/single_blade_v0/single_blade_v0_0000.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "b75d322e738076085e1ce816d268f737dfd9f77700a7e852cd635bd5af5edc7c",
+      "schema_id": "legacy_floor_wall_v1_24key_p1_mb75d322e",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/single_blade_v0/single_blade_v0_0001.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "b75d322e738076085e1ce816d268f737dfd9f77700a7e852cd635bd5af5edc7c",
+      "schema_id": "legacy_floor_wall_v1_24key_p1_mb75d322e",
+      "source_root_id": "floor_wall_early_trial_copy",
+      "tensor_relpath": "tensors/single_blade_v0/single_blade_v0_0002.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "6d689bdb45ddaa5dd8faae103f1a2ca88dc1e4fb52a3701d8fb5b784d76ecd86",
+      "schema_id": "unknown_schema_6d689bdb45dd_m6d689bdb",
+      "source_root_id": "geometric_los_dataset",
+      "tensor_relpath": "tensors/level_v0/level_v0_0000.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "6d689bdb45ddaa5dd8faae103f1a2ca88dc1e4fb52a3701d8fb5b784d76ecd86",
+      "schema_id": "unknown_schema_6d689bdb45dd_m6d689bdb",
+      "source_root_id": "geometric_los_dataset",
+      "tensor_relpath": "tensors/level_v0/level_v0_0001.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "6d689bdb45ddaa5dd8faae103f1a2ca88dc1e4fb52a3701d8fb5b784d76ecd86",
+      "schema_id": "unknown_schema_6d689bdb45dd_m6d689bdb",
+      "source_root_id": "geometric_los_dataset",
+      "tensor_relpath": "tensors/level_v0/level_v0_0002.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "6d689bdb45ddaa5dd8faae103f1a2ca88dc1e4fb52a3701d8fb5b784d76ecd86",
+      "schema_id": "unknown_schema_6d689bdb45dd_m6d689bdb",
+      "source_root_id": "geometric_los_dataset",
+      "tensor_relpath": "tensors/pitch30_v10/pitch30_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "6d689bdb45ddaa5dd8faae103f1a2ca88dc1e4fb52a3701d8fb5b784d76ecd86",
+      "schema_id": "unknown_schema_6d689bdb45dd_m6d689bdb",
+      "source_root_id": "geometric_los_dataset",
+      "tensor_relpath": "tensors/pitch30_v10/pitch30_v10_0001.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "6d689bdb45ddaa5dd8faae103f1a2ca88dc1e4fb52a3701d8fb5b784d76ecd86",
+      "schema_id": "unknown_schema_6d689bdb45dd_m6d689bdb",
+      "source_root_id": "geometric_los_dataset",
+      "tensor_relpath": "tensors/pitch30_v10/pitch30_v10_0002.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "6d689bdb45ddaa5dd8faae103f1a2ca88dc1e4fb52a3701d8fb5b784d76ecd86",
+      "schema_id": "unknown_schema_6d689bdb45dd_m6d689bdb",
+      "source_root_id": "geometric_los_dataset",
+      "tensor_relpath": "tensors/pitch45_v10/pitch45_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "6d689bdb45ddaa5dd8faae103f1a2ca88dc1e4fb52a3701d8fb5b784d76ecd86",
+      "schema_id": "unknown_schema_6d689bdb45dd_m6d689bdb",
+      "source_root_id": "geometric_los_dataset",
+      "tensor_relpath": "tensors/pitch45_v10/pitch45_v10_0001.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "6d689bdb45ddaa5dd8faae103f1a2ca88dc1e4fb52a3701d8fb5b784d76ecd86",
+      "schema_id": "unknown_schema_6d689bdb45dd_m6d689bdb",
+      "source_root_id": "geometric_los_dataset",
+      "tensor_relpath": "tensors/pitch45_v10/pitch45_v10_0002.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "6a36602c42576adbbd45da678f74c7d3a31a8ac38384131a0c18297d3cc24b41",
+      "schema_id": "unknown_schema_6a36602c4257_m6a36602c",
+      "source_root_id": "server_performance_eval_trial",
+      "tensor_relpath": "runs/quick_4090_20260701_1441/concurrency_01/worker_00_dataset/tensors/pitch30_v10/pitch30_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "6a36602c42576adbbd45da678f74c7d3a31a8ac38384131a0c18297d3cc24b41",
+      "schema_id": "unknown_schema_6a36602c4257_m6a36602c",
+      "source_root_id": "server_performance_eval_trial",
+      "tensor_relpath": "runs/quick_4090_20260701_1441/concurrency_02/worker_00_dataset/tensors/pitch30_v10/pitch30_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "6a36602c42576adbbd45da678f74c7d3a31a8ac38384131a0c18297d3cc24b41",
+      "schema_id": "unknown_schema_6a36602c4257_m6a36602c",
+      "source_root_id": "server_performance_eval_trial",
+      "tensor_relpath": "runs/quick_4090_20260701_1441/concurrency_02/worker_01_dataset/tensors/pitch30_v10/pitch30_v10_0000.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "9e18d035d6c12a4afd3325b8ee5eb454a67dd79ad59f66d91f48081d14f4d6c0",
+      "schema_id": "etoile_legacy_28key_p25_m9e18d035",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "level_v0_0000_0029/tensors/level_v0/level_v0_0000.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "9e18d035d6c12a4afd3325b8ee5eb454a67dd79ad59f66d91f48081d14f4d6c0",
+      "schema_id": "etoile_legacy_28key_p25_m9e18d035",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "level_v0_0000_0029/tensors/level_v0/level_v0_0001.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "9e18d035d6c12a4afd3325b8ee5eb454a67dd79ad59f66d91f48081d14f4d6c0",
+      "schema_id": "etoile_legacy_28key_p25_m9e18d035",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "level_v0_0000_0029/tensors/level_v0/level_v0_0002.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "9e18d035d6c12a4afd3325b8ee5eb454a67dd79ad59f66d91f48081d14f4d6c0",
+      "schema_id": "etoile_legacy_28key_p25_m9e18d035",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "pitch30_v10_0000_0029/tensors/pitch30_v10/pitch30_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "9e18d035d6c12a4afd3325b8ee5eb454a67dd79ad59f66d91f48081d14f4d6c0",
+      "schema_id": "etoile_legacy_28key_p25_m9e18d035",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "pitch30_v10_0000_0029/tensors/pitch30_v10/pitch30_v10_0001.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "9e18d035d6c12a4afd3325b8ee5eb454a67dd79ad59f66d91f48081d14f4d6c0",
+      "schema_id": "etoile_legacy_28key_p25_m9e18d035",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "pitch30_v10_0000_0029/tensors/pitch30_v10/pitch30_v10_0002.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "9e18d035d6c12a4afd3325b8ee5eb454a67dd79ad59f66d91f48081d14f4d6c0",
+      "schema_id": "etoile_legacy_28key_p25_m9e18d035",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "pitch45_v10_0000_0029/tensors/pitch45_v10/pitch45_v10_0000.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "9e18d035d6c12a4afd3325b8ee5eb454a67dd79ad59f66d91f48081d14f4d6c0",
+      "schema_id": "etoile_legacy_28key_p25_m9e18d035",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "pitch45_v10_0000_0029/tensors/pitch45_v10/pitch45_v10_0001.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "9e18d035d6c12a4afd3325b8ee5eb454a67dd79ad59f66d91f48081d14f4d6c0",
+      "schema_id": "etoile_legacy_28key_p25_m9e18d035",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "pitch45_v10_0000_0029/tensors/pitch45_v10/pitch45_v10_0002.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "ebea518de878b6f822a20d28aff08ca5bda3732232d22d0c1352b7f8f6fc0d15",
+      "schema_id": "etoile_legacy_28key_p1_mebea518d",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "single_blade_v0_0000_0029/tensors/single_blade_v0/single_blade_v0_0000.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "ebea518de878b6f822a20d28aff08ca5bda3732232d22d0c1352b7f8f6fc0d15",
+      "schema_id": "etoile_legacy_28key_p1_mebea518d",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "single_blade_v0_0000_0029/tensors/single_blade_v0/single_blade_v0_0001.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "ebea518de878b6f822a20d28aff08ca5bda3732232d22d0c1352b7f8f6fc0d15",
+      "schema_id": "etoile_legacy_28key_p1_mebea518d",
+      "source_root_id": "etoile_baseline_shards_0000_0029",
+      "tensor_relpath": "single_blade_v0_0000_0029/tensors/single_blade_v0/single_blade_v0_0002.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "level_v0_0010_0049/tensors/level_v0/level_v0_0010.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "level_v0_0010_0049/tensors/level_v0/level_v0_0011.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "level_v0_0010_0049/tensors/level_v0/level_v0_0012.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "pitch30_v10_0010_0049/tensors/pitch30_v10/pitch30_v10_0010.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "pitch30_v10_0010_0049/tensors/pitch30_v10/pitch30_v10_0011.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "pitch30_v10_0010_0049/tensors/pitch30_v10/pitch30_v10_0012.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "pitch45_v10_0010_0049/tensors/pitch45_v10/pitch45_v10_0010.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "pitch45_v10_0010_0049/tensors/pitch45_v10/pitch45_v10_0011.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "pitch45_v10_0010_0049/tensors/pitch45_v10/pitch45_v10_0012.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "585e7c8870e1ee039a217b8079f16dffcac79edb670824272b0d0cd457d1f65c",
+      "schema_id": "etoile_legacy_24key_p1_m585e7c88",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "single_blade_v0_0010_0099/tensors/single_blade_v0/single_blade_v0_0010.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "585e7c8870e1ee039a217b8079f16dffcac79edb670824272b0d0cd457d1f65c",
+      "schema_id": "etoile_legacy_24key_p1_m585e7c88",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "single_blade_v0_0010_0099/tensors/single_blade_v0/single_blade_v0_0011.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "585e7c8870e1ee039a217b8079f16dffcac79edb670824272b0d0cd457d1f65c",
+      "schema_id": "etoile_legacy_24key_p1_m585e7c88",
+      "source_root_id": "etoile_baseline_shards_0010_0099_trial",
+      "tensor_relpath": "single_blade_v0_0010_0099/tensors/single_blade_v0/single_blade_v0_0012.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "level_v0_0010_0049/tensors/level_v0/level_v0_0010.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "level_v0_0010_0049/tensors/level_v0/level_v0_0011.npz"
+    },
+    {
+      "class_id": "level_v0",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "level_v0_0010_0049/tensors/level_v0/level_v0_0012.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "pitch30_v10_0010_0049/tensors/pitch30_v10/pitch30_v10_0010.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "pitch30_v10_0010_0049/tensors/pitch30_v10/pitch30_v10_0011.npz"
+    },
+    {
+      "class_id": "pitch30_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "pitch30_v10_0010_0049/tensors/pitch30_v10/pitch30_v10_0012.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "pitch45_v10_0010_0049/tensors/pitch45_v10/pitch45_v10_0010.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "pitch45_v10_0010_0049/tensors/pitch45_v10/pitch45_v10_0011.npz"
+    },
+    {
+      "class_id": "pitch45_v10",
+      "errors": [],
+      "schema_hash": "db5336127d64bce6ea4e06471a7a05ecacfd908b6fd0b7c9acc7575b5f9d04d4",
+      "schema_id": "etoile_legacy_24key_p25_mdb533612",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "pitch45_v10_0010_0049/tensors/pitch45_v10/pitch45_v10_0012.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "585e7c8870e1ee039a217b8079f16dffcac79edb670824272b0d0cd457d1f65c",
+      "schema_id": "etoile_legacy_24key_p1_m585e7c88",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "single_blade_v0_0010_0099/tensors/single_blade_v0/single_blade_v0_0010.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "585e7c8870e1ee039a217b8079f16dffcac79edb670824272b0d0cd457d1f65c",
+      "schema_id": "etoile_legacy_24key_p1_m585e7c88",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "single_blade_v0_0010_0099/tensors/single_blade_v0/single_blade_v0_0011.npz"
+    },
+    {
+      "class_id": "single_blade_v0",
+      "errors": [],
+      "schema_hash": "585e7c8870e1ee039a217b8079f16dffcac79edb670824272b0d0cd457d1f65c",
+      "schema_id": "etoile_legacy_24key_p1_m585e7c88",
+      "source_root_id": "etoile_baseline_shards_0010_0099_original",
+      "tensor_relpath": "single_blade_v0_0010_0099/tensors/single_blade_v0/single_blade_v0_0012.npz"
+    }
+  ],
+  "formal_schemas": [
+    {
+      "arrays": {
+        "S_complex": {
+          "normalized_dtype": "<c8",
+          "observed_exact_dtypes": [
+            "<c8"
+          ],
+          "shapes": [
+            [
+              512,
+              167
+            ]
+          ]
+        },
+        "S_dB": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              512,
+              167
+            ]
+          ]
+        },
+        "blade_phase_offsets": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "body_positions": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              3
+            ]
+          ]
+        },
+        "body_velocities": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              3
+            ]
+          ]
+        },
+        "csi_one_way": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "etoile_control_points_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        "etoile_path_distance_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "f_axis": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              512
+            ]
+          ]
+        },
+        "labels_json": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U680"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "metadata_json": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U2835",
+            "<U2837",
+            "<U2841",
+            "<U2839",
+            "<U2840",
+            "<U2846",
+            "<U2847",
+            "<U2851",
+            "<U2843",
+            "<U2834",
+            "<U2842",
+            "<U2838",
+            "<U2845",
+            "<U2833",
+            "<U2844",
+            "<U2822",
+            "<U2849",
+            "<U2848",
+            "<U2836",
+            "<U2832",
+            "<U2830",
+            "<U2850",
+            "<U2852",
+            "<U2829",
+            "<U2857",
+            "<U2854",
+            "<U2945",
+            "<U2940",
+            "<U2951",
+            "<U2942",
+            "<U2944",
+            "<U2961",
+            "<U2943",
+            "<U2947",
+            "<U2932",
+            "<U2939",
+            "<U2950",
+            "<U2937",
+            "<U2941",
+            "<U2938",
+            "<U2958",
+            "<U2936",
+            "<U2949",
+            "<U2953",
+            "<U2929",
+            "<U2946",
+            "<U2954",
+            "<U2959",
+            "<U2955",
+            "<U2952"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "monostatic_freq_theory": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "path_counts": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "positions": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25,
+              3
+            ]
+          ]
+        },
+        "radii": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              25
+            ]
+          ]
+        },
+        "return_per_scatterer": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "rotor_centers": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              4,
+              3
+            ]
+          ]
+        },
+        "rotor_ids": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              25
+            ]
+          ]
+        },
+        "rt_csi_one_way_solved": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "rt_path_counts_solved": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "rt_solved_indices": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "scatterer_type_codes": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              25
+            ]
+          ]
+        },
+        "scene_source": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U22"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "signal_clean": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "signal_noisy": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "t_axis": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              167
+            ]
+          ]
+        },
+        "uav_ids": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U7"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "uav_positions_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "uav_speeds_m_s": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "uav_velocities_m_s": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "velocities": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25,
+              3
+            ]
+          ]
+        },
+        "weights": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              25
+            ]
+          ]
+        }
+      },
+      "batches": {
+        "0000-0999": 412,
+        "10000-19999": 883,
+        "2000-2999": 3
+      },
+      "classes": {
+        "level_v0": 435,
+        "pitch30_v10": 434,
+        "pitch45_v10": 429
+      },
+      "example_sample_uids": [
+        "rtx4090__0000-0999__level_v0__00000",
+        "rtx4090__0000-0999__level_v0__00001",
+        "rtx4090__0000-0999__level_v0__00002",
+        "rtx4090__0000-0999__level_v0__00003",
+        "rtx4090__0000-0999__level_v0__00004",
+        "rtx4090__0000-0999__level_v0__00005",
+        "rtx4090__0000-0999__level_v0__00006",
+        "rtx4090__0000-0999__level_v0__00007",
+        "rtx4090__0000-0999__level_v0__00008",
+        "rtx4090__0000-0999__level_v0__00009",
+        "rtx4090__0000-0999__level_v0__00010",
+        "rtx4090__0000-0999__level_v0__00011"
+      ],
+      "formal_canonical_sample_count": 665,
+      "formal_physical_record_count": 1298,
+      "main_parameter_examples": [
+        {
+          "carrier_frequency_hz": 28000000000.0,
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "stft_nfft": 512,
+          "stft_overlap": 36,
+          "stft_window_size": 48
+        }
+      ],
+      "manifest_fields": [
+        "blade_radius_m",
+        "body_acceleration_x",
+        "body_acceleration_y",
+        "body_acceleration_z",
+        "body_speed_m_s",
+        "body_trajectory_model",
+        "body_velocity_x",
+        "body_velocity_y",
+        "body_velocity_z",
+        "bs_position_x",
+        "bs_position_y",
+        "bs_position_z",
+        "carrier_frequency_hz",
+        "class_id",
+        "created_time",
+        "degree",
+        "degree_rad",
+        "doppler_body_theory_hz",
+        "doppler_support_max_theory_hz",
+        "doppler_support_min_theory_hz",
+        "etoile_trajectory_control_points_json",
+        "etoile_trajectory_path_length_m",
+        "etoile_trajectory_speed_m_s",
+        "etoile_trajectory_speed_mode",
+        "etoile_trajectory_start_distance_m",
+        "etoile_trajectory_start_fraction",
+        "image_path",
+        "initial_body_position_x",
+        "initial_body_position_y",
+        "initial_body_position_z",
+        "initial_rotor_phase_rad",
+        "micro_doppler_max_theory_hz",
+        "noise_snr_db",
+        "num_blades_per_rotor",
+        "num_rotors",
+        "num_scatterers",
+        "num_snapshots",
+        "num_uavs",
+        "omega_h_rad_s",
+        "omega_rad_s",
+        "omega_theta_over_omega_h",
+        "omega_theta_rad_s",
+        "points_per_blade",
+        "random_seed",
+        "rotor_frequency_hz",
+        "rotor_period_s",
+        "rt_cir_sampling_frequency_hz",
+        "rt_diffraction",
+        "rt_diffuse_reflection",
+        "rt_elapsed_s",
+        "rt_los",
+        "rt_max_depth",
+        "rt_max_valid_paths_per_solved_snapshot",
+        "rt_min_valid_paths_per_solved_snapshot",
+        "rt_refraction",
+        "rt_snapshot_stride",
+        "rt_snapshots_solved",
+        "rt_solver",
+        "rt_specular_reflection",
+        "rt_total_valid_paths",
+        "sample_elapsed_s",
+        "sample_id",
+        "sampling_rate_hz",
+        "scene_channel_model",
+        "scene_merge_shapes",
+        "scene_name",
+        "scene_source",
+        "snapshot_duration_s",
+        "stft_frequency_resolution_hz",
+        "stft_nfft",
+        "stft_overlap",
+        "stft_peak_observed_hz",
+        "stft_support_max_observed_hz",
+        "stft_support_min_observed_hz",
+        "stft_window_duration_s",
+        "stft_window_size",
+        "tensor_path",
+        "window_check_pass",
+        "window_ratio_Twin_over_Trot",
+        "window_strict_metric"
+      ],
+      "npz_keys": [
+        "S_complex",
+        "S_dB",
+        "blade_phase_offsets",
+        "body_positions",
+        "body_velocities",
+        "csi_one_way",
+        "etoile_control_points_m",
+        "etoile_path_distance_m",
+        "f_axis",
+        "labels_json",
+        "metadata_json",
+        "monostatic_freq_theory",
+        "path_counts",
+        "positions",
+        "radii",
+        "return_per_scatterer",
+        "rotor_centers",
+        "rotor_ids",
+        "rt_csi_one_way_solved",
+        "rt_path_counts_solved",
+        "rt_solved_indices",
+        "scatterer_type_codes",
+        "scene_source",
+        "signal_clean",
+        "signal_noisy",
+        "t_axis",
+        "uav_ids",
+        "uav_positions_m",
+        "uav_speeds_m_s",
+        "uav_velocities_m_s",
+        "velocities",
+        "weights"
+      ],
+      "png": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ]
+      },
+      "scene_names": [
+        "etoile"
+      ],
+      "schema_id": "etoile_v2_32key_p25_m2655b530",
+      "schema_signature_sha256": "2655b53078e4efdba4e7fb42450504d0d5d4e3592bd16e652bb465d0f0c0e859"
+    },
+    {
+      "arrays": {
+        "S_complex": {
+          "normalized_dtype": "<c8",
+          "observed_exact_dtypes": [
+            "<c8"
+          ],
+          "shapes": [
+            [
+              512,
+              167
+            ]
+          ]
+        },
+        "S_dB": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              512,
+              167
+            ]
+          ]
+        },
+        "blade_phase_offsets": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "body_positions": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              3
+            ]
+          ]
+        },
+        "body_velocities": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              3
+            ]
+          ]
+        },
+        "csi_one_way": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "etoile_control_points_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        "etoile_path_distance_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "f_axis": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              512
+            ]
+          ]
+        },
+        "labels_json": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U680"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "metadata_json": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U2838",
+            "<U2841",
+            "<U2842",
+            "<U2849",
+            "<U2839",
+            "<U2844",
+            "<U2846",
+            "<U2840",
+            "<U2843",
+            "<U2833",
+            "<U2848",
+            "<U2847",
+            "<U2835",
+            "<U2837",
+            "<U2850",
+            "<U2845",
+            "<U2831",
+            "<U2836",
+            "<U2851",
+            "<U2834",
+            "<U2830",
+            "<U2828",
+            "<U2853",
+            "<U2832",
+            "<U2825",
+            "<U2826",
+            "<U2852",
+            "<U2829",
+            "<U2827",
+            "<U2824",
+            "<U2854",
+            "<U2855",
+            "<U2856",
+            "<U2814",
+            "<U2822",
+            "<U2961",
+            "<U2941",
+            "<U2946",
+            "<U2959",
+            "<U2932",
+            "<U2954",
+            "<U2936",
+            "<U2938",
+            "<U2957",
+            "<U2943",
+            "<U2939",
+            "<U2937",
+            "<U2942",
+            "<U2934",
+            "<U2958"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "monostatic_freq_theory": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "path_counts": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "positions": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25,
+              3
+            ]
+          ]
+        },
+        "radii": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              25
+            ]
+          ]
+        },
+        "return_per_scatterer": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "rotor_centers": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              4,
+              3
+            ]
+          ]
+        },
+        "rotor_ids": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              25
+            ]
+          ]
+        },
+        "rt_csi_one_way_solved": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "rt_path_counts_solved": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25
+            ]
+          ]
+        },
+        "rt_solved_indices": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "scatterer_type_codes": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              25
+            ]
+          ]
+        },
+        "scene_source": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U22"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "signal_clean": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "signal_noisy": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "t_axis": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              167
+            ]
+          ]
+        },
+        "uav_ids": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U7"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "uav_positions_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "uav_speeds_m_s": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "uav_velocities_m_s": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "velocities": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              25,
+              3
+            ]
+          ]
+        },
+        "weights": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              25
+            ]
+          ]
+        }
+      },
+      "batches": {
+        "0000-0999": 5588,
+        "10000-19999": 20830
+      },
+      "classes": {
+        "level_v0": 8816,
+        "pitch30_v10": 8802,
+        "pitch45_v10": 8800
+      },
+      "example_sample_uids": [
+        "rtx4090__0000-0999__level_v0__00030",
+        "rtx4090__0000-0999__level_v0__00031",
+        "rtx4090__0000-0999__level_v0__00032",
+        "rtx4090__0000-0999__level_v0__00033",
+        "rtx4090__0000-0999__level_v0__00034",
+        "rtx4090__0000-0999__level_v0__00035",
+        "rtx4090__0000-0999__level_v0__00036",
+        "rtx4090__0000-0999__level_v0__00037",
+        "rtx4090__0000-0999__level_v0__00038",
+        "rtx4090__0000-0999__level_v0__00039",
+        "rtx4090__0000-0999__level_v0__00040",
+        "rtx4090__0000-0999__level_v0__00041"
+      ],
+      "formal_canonical_sample_count": 13551,
+      "formal_physical_record_count": 26418,
+      "main_parameter_examples": [
+        {
+          "carrier_frequency_hz": "28000000000.0",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "stft_nfft": "512",
+          "stft_overlap": "36",
+          "stft_window_size": "48"
+        }
+      ],
+      "manifest_fields": [
+        "blade_radius_m",
+        "body_acceleration_x",
+        "body_acceleration_y",
+        "body_acceleration_z",
+        "body_speed_m_s",
+        "body_trajectory_model",
+        "body_velocity_x",
+        "body_velocity_y",
+        "body_velocity_z",
+        "bs_position_x",
+        "bs_position_y",
+        "bs_position_z",
+        "carrier_frequency_hz",
+        "class_id",
+        "created_time",
+        "degree",
+        "degree_rad",
+        "doppler_body_theory_hz",
+        "doppler_support_max_theory_hz",
+        "doppler_support_min_theory_hz",
+        "etoile_trajectory_control_points_json",
+        "etoile_trajectory_path_length_m",
+        "etoile_trajectory_speed_m_s",
+        "etoile_trajectory_speed_mode",
+        "etoile_trajectory_start_distance_m",
+        "etoile_trajectory_start_fraction",
+        "image_path",
+        "initial_body_position_x",
+        "initial_body_position_y",
+        "initial_body_position_z",
+        "initial_rotor_phase_rad",
+        "micro_doppler_max_theory_hz",
+        "noise_snr_db",
+        "num_blades_per_rotor",
+        "num_rotors",
+        "num_scatterers",
+        "num_snapshots",
+        "num_uavs",
+        "omega_h_rad_s",
+        "omega_rad_s",
+        "omega_theta_over_omega_h",
+        "omega_theta_rad_s",
+        "points_per_blade",
+        "random_seed",
+        "rotor_frequency_hz",
+        "rotor_period_s",
+        "rt_cir_sampling_frequency_hz",
+        "rt_diffraction",
+        "rt_diffuse_reflection",
+        "rt_elapsed_s",
+        "rt_los",
+        "rt_max_depth",
+        "rt_max_valid_paths_per_solved_snapshot",
+        "rt_min_valid_paths_per_solved_snapshot",
+        "rt_refraction",
+        "rt_snapshot_stride",
+        "rt_snapshots_solved",
+        "rt_solver",
+        "rt_specular_reflection",
+        "rt_total_valid_paths",
+        "sample_elapsed_s",
+        "sample_id",
+        "sampling_rate_hz",
+        "scene_channel_model",
+        "scene_load_error",
+        "scene_loaded",
+        "scene_merge_shapes",
+        "scene_name",
+        "scene_source",
+        "scene_tx_name",
+        "scene_xml_path",
+        "snapshot_duration_s",
+        "stft_frequency_resolution_hz",
+        "stft_nfft",
+        "stft_overlap",
+        "stft_peak_observed_hz",
+        "stft_support_max_observed_hz",
+        "stft_support_min_observed_hz",
+        "stft_window_duration_s",
+        "stft_window_size",
+        "tensor_path",
+        "window_check_pass",
+        "window_ratio_Twin_over_Trot",
+        "window_strict_metric"
+      ],
+      "npz_keys": [
+        "S_complex",
+        "S_dB",
+        "blade_phase_offsets",
+        "body_positions",
+        "body_velocities",
+        "csi_one_way",
+        "etoile_control_points_m",
+        "etoile_path_distance_m",
+        "f_axis",
+        "labels_json",
+        "metadata_json",
+        "monostatic_freq_theory",
+        "path_counts",
+        "positions",
+        "radii",
+        "return_per_scatterer",
+        "rotor_centers",
+        "rotor_ids",
+        "rt_csi_one_way_solved",
+        "rt_path_counts_solved",
+        "rt_solved_indices",
+        "scatterer_type_codes",
+        "scene_source",
+        "signal_clean",
+        "signal_noisy",
+        "t_axis",
+        "uav_ids",
+        "uav_positions_m",
+        "uav_speeds_m_s",
+        "uav_velocities_m_s",
+        "velocities",
+        "weights"
+      ],
+      "png": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ]
+      },
+      "scene_names": [
+        "etoile"
+      ],
+      "schema_id": "etoile_v2_32key_p25_m8fab0ad5",
+      "schema_signature_sha256": "8fab0ad5dd918161af03951932f05a33433b1b0eade6ee65406bd0980eac0770"
+    },
+    {
+      "arrays": {
+        "S_complex": {
+          "normalized_dtype": "<c8",
+          "observed_exact_dtypes": [
+            "<c8"
+          ],
+          "shapes": [
+            [
+              512,
+              167
+            ]
+          ]
+        },
+        "S_dB": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              512,
+              167
+            ]
+          ]
+        },
+        "blade_phase_offsets": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "body_positions": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              3
+            ]
+          ]
+        },
+        "body_velocities": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              3
+            ]
+          ]
+        },
+        "csi_one_way": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "etoile_control_points_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        "etoile_path_distance_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "f_axis": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              512
+            ]
+          ]
+        },
+        "labels_json": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U20"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "metadata_json": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U2895",
+            "<U2896",
+            "<U2887",
+            "<U2898",
+            "<U2897",
+            "<U2900",
+            "<U2901",
+            "<U2891",
+            "<U2894",
+            "<U2892",
+            "<U2890",
+            "<U2893",
+            "<U2899",
+            "<U2889",
+            "<U2885",
+            "<U2888",
+            "<U2902",
+            "<U2903",
+            "<U2908",
+            "<U2904",
+            "<U2905",
+            "<U2881",
+            "<U2906"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "monostatic_freq_theory": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "path_counts": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "positions": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "radii": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "return_per_scatterer": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "rotor_centers": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "rotor_ids": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "rt_csi_one_way_solved": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "rt_path_counts_solved": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "rt_solved_indices": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "scatterer_type_codes": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "scene_source": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U22"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "signal_clean": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "signal_noisy": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "t_axis": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              167
+            ]
+          ]
+        },
+        "uav_ids": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U7"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "uav_positions_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "uav_speeds_m_s": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "uav_velocities_m_s": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "velocities": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "weights": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        }
+      },
+      "batches": {
+        "0000-0999": 140,
+        "10000-19999": 290
+      },
+      "classes": {
+        "single_blade_v0": 430
+      },
+      "example_sample_uids": [
+        "rtx4090__0000-0999__single_blade_v0__00000",
+        "rtx4090__0000-0999__single_blade_v0__00001",
+        "rtx4090__0000-0999__single_blade_v0__00002",
+        "rtx4090__0000-0999__single_blade_v0__00003",
+        "rtx4090__0000-0999__single_blade_v0__00004",
+        "rtx4090__0000-0999__single_blade_v0__00005",
+        "rtx4090__0000-0999__single_blade_v0__00006",
+        "rtx4090__0000-0999__single_blade_v0__00007",
+        "rtx4090__0000-0999__single_blade_v0__00008",
+        "rtx4090__0000-0999__single_blade_v0__00009",
+        "rtx4090__0000-0999__single_blade_v0__00010",
+        "rtx4090__0000-0999__single_blade_v0__00011"
+      ],
+      "formal_canonical_sample_count": 220,
+      "formal_physical_record_count": 430,
+      "main_parameter_examples": [
+        {
+          "carrier_frequency_hz": 28000000000.0,
+          "num_snapshots": 2048,
+          "sampling_rate_hz": 20000.0,
+          "stft_nfft": 512,
+          "stft_overlap": 36,
+          "stft_window_size": 48
+        }
+      ],
+      "manifest_fields": [
+        "blade_radius_m",
+        "body_acceleration_x",
+        "body_acceleration_y",
+        "body_acceleration_z",
+        "body_speed_m_s",
+        "body_trajectory_model",
+        "body_velocity_x",
+        "body_velocity_y",
+        "body_velocity_z",
+        "bs_position_x",
+        "bs_position_y",
+        "bs_position_z",
+        "carrier_frequency_hz",
+        "class_id",
+        "created_time",
+        "degree",
+        "degree_rad",
+        "doppler_body_theory_hz",
+        "doppler_support_max_theory_hz",
+        "doppler_support_min_theory_hz",
+        "etoile_trajectory_control_points_json",
+        "etoile_trajectory_path_length_m",
+        "etoile_trajectory_speed_m_s",
+        "etoile_trajectory_speed_mode",
+        "etoile_trajectory_start_distance_m",
+        "etoile_trajectory_start_fraction",
+        "image_path",
+        "initial_body_position_x",
+        "initial_body_position_y",
+        "initial_body_position_z",
+        "initial_rotor_phase_rad",
+        "micro_doppler_max_theory_hz",
+        "noise_snr_db",
+        "num_blades_per_rotor",
+        "num_rotors",
+        "num_scatterers",
+        "num_snapshots",
+        "num_uavs",
+        "omega_h_rad_s",
+        "omega_rad_s",
+        "omega_theta_over_omega_h",
+        "omega_theta_rad_s",
+        "points_per_blade",
+        "random_seed",
+        "rotor_frequency_hz",
+        "rotor_period_s",
+        "rt_cir_sampling_frequency_hz",
+        "rt_diffraction",
+        "rt_diffuse_reflection",
+        "rt_elapsed_s",
+        "rt_los",
+        "rt_max_depth",
+        "rt_max_valid_paths_per_solved_snapshot",
+        "rt_min_valid_paths_per_solved_snapshot",
+        "rt_refraction",
+        "rt_snapshot_stride",
+        "rt_snapshots_solved",
+        "rt_solver",
+        "rt_specular_reflection",
+        "rt_total_valid_paths",
+        "sample_elapsed_s",
+        "sample_id",
+        "sampling_rate_hz",
+        "scene_channel_model",
+        "scene_merge_shapes",
+        "scene_name",
+        "scene_source",
+        "snapshot_duration_s",
+        "stft_frequency_resolution_hz",
+        "stft_nfft",
+        "stft_overlap",
+        "stft_peak_observed_hz",
+        "stft_support_max_observed_hz",
+        "stft_support_min_observed_hz",
+        "stft_window_duration_s",
+        "stft_window_size",
+        "tensor_path",
+        "window_check_pass",
+        "window_ratio_Twin_over_Trot",
+        "window_strict_metric"
+      ],
+      "npz_keys": [
+        "S_complex",
+        "S_dB",
+        "blade_phase_offsets",
+        "body_positions",
+        "body_velocities",
+        "csi_one_way",
+        "etoile_control_points_m",
+        "etoile_path_distance_m",
+        "f_axis",
+        "labels_json",
+        "metadata_json",
+        "monostatic_freq_theory",
+        "path_counts",
+        "positions",
+        "radii",
+        "return_per_scatterer",
+        "rotor_centers",
+        "rotor_ids",
+        "rt_csi_one_way_solved",
+        "rt_path_counts_solved",
+        "rt_solved_indices",
+        "scatterer_type_codes",
+        "scene_source",
+        "signal_clean",
+        "signal_noisy",
+        "t_axis",
+        "uav_ids",
+        "uav_positions_m",
+        "uav_speeds_m_s",
+        "uav_velocities_m_s",
+        "velocities",
+        "weights"
+      ],
+      "png": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ]
+      },
+      "scene_names": [
+        "etoile"
+      ],
+      "schema_id": "etoile_v2_32key_p1_m5a4157ed",
+      "schema_signature_sha256": "5a4157ed9efdd4e6a728131c351280b268ec4579e3eb89123510a6df65ed11be"
+    },
+    {
+      "arrays": {
+        "S_complex": {
+          "normalized_dtype": "<c8",
+          "observed_exact_dtypes": [
+            "<c8"
+          ],
+          "shapes": [
+            [
+              512,
+              167
+            ]
+          ]
+        },
+        "S_dB": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              512,
+              167
+            ]
+          ]
+        },
+        "blade_phase_offsets": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "body_positions": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              3
+            ]
+          ]
+        },
+        "body_velocities": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              3
+            ]
+          ]
+        },
+        "csi_one_way": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "etoile_control_points_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        "etoile_path_distance_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "f_axis": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              512
+            ]
+          ]
+        },
+        "labels_json": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U20"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "metadata_json": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U2899",
+            "<U2897",
+            "<U2892",
+            "<U2895",
+            "<U2898",
+            "<U2893",
+            "<U2901",
+            "<U2894",
+            "<U2902",
+            "<U2889",
+            "<U2891",
+            "<U2896",
+            "<U2890",
+            "<U2884",
+            "<U2888",
+            "<U2900",
+            "<U2903",
+            "<U2887",
+            "<U2907",
+            "<U2886",
+            "<U2885",
+            "<U2904",
+            "<U2905",
+            "<U2880",
+            "<U2881",
+            "<U2882",
+            "<U2883",
+            "<U2870",
+            "<U2877",
+            "<U2906",
+            "<U2908",
+            "<U2910",
+            "<U2912",
+            "<U2909"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "monostatic_freq_theory": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "path_counts": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "positions": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "radii": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "return_per_scatterer": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "rotor_centers": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "rotor_ids": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "rt_csi_one_way_solved": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "rt_path_counts_solved": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "rt_solved_indices": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "scatterer_type_codes": {
+          "normalized_dtype": "<i4",
+          "observed_exact_dtypes": [
+            "<i4"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "scene_source": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U22"
+          ],
+          "shapes": [
+            []
+          ]
+        },
+        "signal_clean": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "signal_noisy": {
+          "normalized_dtype": "<c16",
+          "observed_exact_dtypes": [
+            "<c16"
+          ],
+          "shapes": [
+            [
+              2048
+            ]
+          ]
+        },
+        "t_axis": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              167
+            ]
+          ]
+        },
+        "uav_ids": {
+          "normalized_dtype": "unicode",
+          "observed_exact_dtypes": [
+            "<U7"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        },
+        "uav_positions_m": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "uav_speeds_m_s": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1
+            ]
+          ]
+        },
+        "uav_velocities_m_s": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "velocities": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              2048,
+              1,
+              3
+            ]
+          ]
+        },
+        "weights": {
+          "normalized_dtype": "<f4",
+          "observed_exact_dtypes": [
+            "<f4"
+          ],
+          "shapes": [
+            [
+              1
+            ]
+          ]
+        }
+      },
+      "batches": {
+        "0000-0999": 1860,
+        "10000-19999": 6960,
+        "2000-2999": 21
+      },
+      "classes": {
+        "single_blade_v0": 8841
+      },
+      "example_sample_uids": [
+        "rtx4090__0000-0999__single_blade_v0__00030",
+        "rtx4090__0000-0999__single_blade_v0__00031",
+        "rtx4090__0000-0999__single_blade_v0__00032",
+        "rtx4090__0000-0999__single_blade_v0__00033",
+        "rtx4090__0000-0999__single_blade_v0__00034",
+        "rtx4090__0000-0999__single_blade_v0__00035",
+        "rtx4090__0000-0999__single_blade_v0__00036",
+        "rtx4090__0000-0999__single_blade_v0__00037",
+        "rtx4090__0000-0999__single_blade_v0__00038",
+        "rtx4090__0000-0999__single_blade_v0__00039",
+        "rtx4090__0000-0999__single_blade_v0__00040",
+        "rtx4090__0000-0999__single_blade_v0__00041"
+      ],
+      "formal_canonical_sample_count": 4551,
+      "formal_physical_record_count": 8841,
+      "main_parameter_examples": [
+        {
+          "carrier_frequency_hz": "28000000000.0",
+          "num_snapshots": "2048",
+          "sampling_rate_hz": "20000.0",
+          "stft_nfft": "512",
+          "stft_overlap": "36",
+          "stft_window_size": "48"
+        }
+      ],
+      "manifest_fields": [
+        "blade_radius_m",
+        "body_acceleration_x",
+        "body_acceleration_y",
+        "body_acceleration_z",
+        "body_speed_m_s",
+        "body_trajectory_model",
+        "body_velocity_x",
+        "body_velocity_y",
+        "body_velocity_z",
+        "bs_position_x",
+        "bs_position_y",
+        "bs_position_z",
+        "carrier_frequency_hz",
+        "class_id",
+        "created_time",
+        "degree",
+        "degree_rad",
+        "doppler_body_theory_hz",
+        "doppler_support_max_theory_hz",
+        "doppler_support_min_theory_hz",
+        "etoile_trajectory_control_points_json",
+        "etoile_trajectory_path_length_m",
+        "etoile_trajectory_speed_m_s",
+        "etoile_trajectory_speed_mode",
+        "etoile_trajectory_start_distance_m",
+        "etoile_trajectory_start_fraction",
+        "image_path",
+        "initial_body_position_x",
+        "initial_body_position_y",
+        "initial_body_position_z",
+        "initial_rotor_phase_rad",
+        "micro_doppler_max_theory_hz",
+        "noise_snr_db",
+        "num_blades_per_rotor",
+        "num_rotors",
+        "num_scatterers",
+        "num_snapshots",
+        "num_uavs",
+        "omega_h_rad_s",
+        "omega_rad_s",
+        "omega_theta_over_omega_h",
+        "omega_theta_rad_s",
+        "points_per_blade",
+        "random_seed",
+        "rotor_frequency_hz",
+        "rotor_period_s",
+        "rt_cir_sampling_frequency_hz",
+        "rt_diffraction",
+        "rt_diffuse_reflection",
+        "rt_elapsed_s",
+        "rt_los",
+        "rt_max_depth",
+        "rt_max_valid_paths_per_solved_snapshot",
+        "rt_min_valid_paths_per_solved_snapshot",
+        "rt_refraction",
+        "rt_snapshot_stride",
+        "rt_snapshots_solved",
+        "rt_solver",
+        "rt_specular_reflection",
+        "rt_total_valid_paths",
+        "sample_elapsed_s",
+        "sample_id",
+        "sampling_rate_hz",
+        "scene_channel_model",
+        "scene_load_error",
+        "scene_loaded",
+        "scene_merge_shapes",
+        "scene_name",
+        "scene_source",
+        "scene_tx_name",
+        "scene_xml_path",
+        "snapshot_duration_s",
+        "stft_frequency_resolution_hz",
+        "stft_nfft",
+        "stft_overlap",
+        "stft_peak_observed_hz",
+        "stft_support_max_observed_hz",
+        "stft_support_min_observed_hz",
+        "stft_window_duration_s",
+        "stft_window_size",
+        "tensor_path",
+        "window_check_pass",
+        "window_ratio_Twin_over_Trot",
+        "window_strict_metric"
+      ],
+      "npz_keys": [
+        "S_complex",
+        "S_dB",
+        "blade_phase_offsets",
+        "body_positions",
+        "body_velocities",
+        "csi_one_way",
+        "etoile_control_points_m",
+        "etoile_path_distance_m",
+        "f_axis",
+        "labels_json",
+        "metadata_json",
+        "monostatic_freq_theory",
+        "path_counts",
+        "positions",
+        "radii",
+        "return_per_scatterer",
+        "rotor_centers",
+        "rotor_ids",
+        "rt_csi_one_way_solved",
+        "rt_path_counts_solved",
+        "rt_solved_indices",
+        "scatterer_type_codes",
+        "scene_source",
+        "signal_clean",
+        "signal_noisy",
+        "t_axis",
+        "uav_ids",
+        "uav_positions_m",
+        "uav_speeds_m_s",
+        "uav_velocities_m_s",
+        "velocities",
+        "weights"
+      ],
+      "png": {
+        "format": "PNG",
+        "mode": "RGB",
+        "size": [
+          512,
+          512
+        ]
+      },
+      "scene_names": [
+        "etoile"
+      ],
+      "schema_id": "etoile_v2_32key_p1_mce9e0917",
+      "schema_signature_sha256": "ce9e0917507e8dfa53f672483b2c222810a328af6d409152e338a83292f5f617"
+    }
+  ],
+  "freeze_time_utc": "2026-09-01T13:10:37.037719Z",
+  "sampling_note": "All formal candidates were decoded and schema-inspected. Excluded roots were sampled up to 3 files per available class/root; batches with fewer than 3 available files contribute all available files.",
+  "semantic_sha256_algorithm": "For keys sorted lexicographically: SHA256(length64be(key_utf8), key_utf8, length64be(dtype.str), dtype.str ASCII, length64be(compact JSON shape), compact JSON shape, length64be(C-contiguous nbytes), C-contiguous bytes)."
+}

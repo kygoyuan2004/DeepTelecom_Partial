@@ -1,0 +1,36 @@
+{
+  "SERVER_ID": "rtx4090",
+  "created_at_utc": "2026-09-01T14:36:04.505762Z",
+  "freeze_time_utc": "2026-09-01T13:10:37.037719Z",
+  "frozen_statistics": {
+    "class_counts": {
+      "level_v0": 4751,
+      "pitch30_v10": 4736,
+      "pitch45_v10": 4729,
+      "single_blade_v0": 4771
+    },
+    "collision_candidate": 64,
+    "duplicate_local": 18000,
+    "formal_data_bytes": 62795079502,
+    "frozen_candidate_total": 18987,
+    "incomplete": 4,
+    "invalid": 0,
+    "valid_candidate": 18923
+  },
+  "original_manifest_sha256": "878b3c731be2cb47bf37120d3b1383bbb7a863139a45794990615b8cc22d335e",
+  "original_six_file_sha256": {
+    "REPORT.md": "a42156c15dde864fda3973a657b49c5cb237ec0d0557a86549fb2df1c2e92b9b",
+    "SHA256SUMS": "49eba8de2560832a94dfde79091cbe9206666fd545abb16d3ad9b939ca02fa73",
+    "inventory_summary.json": "dbd4b345af20bdfb9cc3094dd169a4dc83373d4325e10c0a97245ee5dc4dd832",
+    "problems.jsonl": "7f657fe1451f03790861f624ca4d0f6ceaf2d13ab3cd94874a02bef58380dbf9",
+    "samples_manifest.jsonl.gz": "878b3c731be2cb47bf37120d3b1383bbb7a863139a45794990615b8cc22d335e",
+    "schemas.json": "5f15bfd4b37ad1f68e5a6f4362c2411393bbeb4bfec1d0988969c6a6718122d4"
+  },
+  "sanitization": {
+    "inventory_summary": "Removed private absolute paths, local rule paths, and authenticated account name; canonical paths replaced by source_root_id.",
+    "manifest_bytes_changed": false,
+    "manifest_note": "Frozen manifest already used source_root_id and relative paths only; bytes preserved unchanged.",
+    "report": "Regenerated from verified statistics using source_root_id only."
+  },
+  "sanitized_coordination_manifest_sha256": "878b3c731be2cb47bf37120d3b1383bbb7a863139a45794990615b8cc22d335e"
+}
