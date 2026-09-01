@@ -27,7 +27,7 @@
     "schemas.json": "5f15bfd4b37ad1f68e5a6f4362c2411393bbeb4bfec1d0988969c6a6718122d4"
   },
   "sanitization": {
-    "inventory_summary": "Removed private absolute paths, local rule paths, and authenticated account name; canonical paths replaced by source_root_id.",
+    "inventory_summary": "Removed private absolute paths, local rule paths, authenticated account name/status, filesystem capacity, and process/service details; canonical paths replaced by source_root_id.",
     "manifest_bytes_changed": false,
     "manifest_note": "Frozen manifest already used source_root_id and relative paths only; bytes preserved unchanged.",
     "report": "Regenerated from verified statistics using source_root_id only."

@@ -396,18 +396,6 @@
     }
   ],
   "cross_id_semantic_duplicate_group_count": 0,
-  "disk_space_bytes": {
-    "data_filesystem": {
-      "free": 3664830283776,
-      "total": 3840754577408,
-      "used": 175924293632
-    },
-    "workspace_filesystem": {
-      "free": 267267866624,
-      "total": 437728182272,
-      "used": 170460315648
-    }
-  },
   "excluded_nonformal_records": 5108,
   "formal_canonical": {
     "batch_distribution": {
@@ -438,11 +426,7 @@
     "valid_candidate": 18923
   },
   "freeze_time_utc": "2026-09-01T13:10:37.037719Z",
-  "generation": {
-    "matching_process_count": 3,
-    "service_state": "inactive",
-    "still_running": true
-  },
+  "generation_active_at_freeze": true,
   "known_baseline": {
     "batches": {
       "0000-0999": 4000,
@@ -466,8 +450,6 @@
     "server_id": "rtx4090"
   },
   "upload_environment_read_only": {
-    "hf_logged_in": true,
-    "target_dataset_check_error": null,
     "target_dataset_readable": true,
     "tool_versions": {
       "Pillow": "12.2.0",
