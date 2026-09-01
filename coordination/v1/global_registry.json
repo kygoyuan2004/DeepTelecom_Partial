@@ -27,7 +27,13 @@
   "local_duplicate_excluded_count": 39240,
   "original_id_conflict_group_count": 70,
   "held_conflict_count": 0,
-  "invalid_manifest_record_count": 6187,
+  "invalid_manifest_record_count": 1,
+  "excluded_manifest_record_count": 6187,
+  "excluded_status_counts": {
+    "excluded_nonformal": 5109,
+    "incomplete": 1077,
+    "invalid": 1
+  },
   "shard_count": 140,
   "shard_count_by_owner": {
     "a100": 30,
