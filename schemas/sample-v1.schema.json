@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kygoyuan2004.github.io/DeepTelecom_Partial/schemas/sample-v1.schema.json",
+  "title": "DeepTelecom UAV Dataset v1 sample sidecar",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "sidecar_version",
+    "dataset_id",
+    "dataset_version",
+    "plan_id",
+    "global_sample_id",
+    "class_id",
+    "tensor_schema_id",
+    "semantic_hash_algorithm",
+    "semantic_sha256",
+    "target_shard",
+    "members",
+    "files",
+    "provenance"
+  ],
+  "properties": {
+    "sidecar_version": {
+      "const": "deeptelecom.sample-sidecar.v1"
+    },
+    "dataset_id": {
+      "const": "KYGOYUAN/DeepTelecom_Partial"
+    },
+    "dataset_version": {
+      "const": "v1.0.0"
+    },
+    "plan_id": {
+      "type": "string",
+      "pattern": "^dtuav-v1-plan-[0-9a-f]{64}$"
+    },
+    "global_sample_id": {
+      "type": "string",
+      "pattern": "^DTUAV-V1-[0-9]{6}$"
+    },
+    "class_id": {
+      "enum": [
+        "level_v0",
+        "pitch30_v10",
+        "pitch45_v10",
+        "single_blade_v0"
+      ]
+    },
+    "tensor_schema_id": {
+      "enum": [
+        "dtuav-etoile-32key-v1",
+        "dtuav-floor-wall-24key-v1"
+      ]
+    },
+    "semantic_hash_algorithm": {
+      "const": "deeptelecom-array-semantic-sha256-v1"
+    },
+    "semantic_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "target_shard": {
+      "type": "string",
+      "pattern": "^data/v1/shards/shard-[0-9]{5}\\.tar$"
+    },
+    "members": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["npz", "png", "json"],
+      "properties": {
+        "npz": {
+          "type": "string",
+          "pattern": "^DTUAV-V1-[0-9]{6}\\.npz$"
+        },
+        "png": {
+          "type": "string",
+          "pattern": "^DTUAV-V1-[0-9]{6}\\.png$"
+        },
+        "json": {
+          "type": "string",
+          "pattern": "^DTUAV-V1-[0-9]{6}\\.json$"
+        }
+      }
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["npz", "png"],
+      "properties": {
+        "npz": {
+          "$ref": "#/$defs/payloadFile"
+        },
+        "png": {
+          "$ref": "#/$defs/payloadFile"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_server",
+        "source_root_id",
+        "source_uid",
+        "original_sample_id",
+        "original_index",
+        "batch_id",
+        "source_schema_id"
+      ],
+      "properties": {
+        "source_server": {
+          "enum": ["a100", "rtx4090", "rtx3090x4"]
+        },
+        "source_root_id": {
+          "$ref": "#/$defs/safeText"
+        },
+        "source_uid": {
+          "$ref": "#/$defs/safeText"
+        },
+        "original_sample_id": {
+          "type": "string",
+          "pattern": "^(level_v0|pitch30_v10|pitch45_v10|single_blade_v0)_[0-9]+$"
+        },
+        "original_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "batch_id": {
+          "type": ["string", "null"],
+          "maxLength": 128
+        },
+        "source_schema_id": {
+          "$ref": "#/$defs/safeText"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "safeText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "not": {
+        "pattern": "(^/|(^|/)\\.\\.(/|$)|[\\u0000\\r\\n])"
+      }
+    },
+    "payloadFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bytes", "sha256"],
+      "properties": {
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    }
+  }
+}

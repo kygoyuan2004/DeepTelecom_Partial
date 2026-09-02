@@ -1,0 +1,40 @@
+{
+  "dataset": "KYGOYUAN/DeepTelecom_Partial",
+  "release": "v1.0.0",
+  "revision": "de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3",
+  "sample_id_range": {
+    "first": "DTUAV-V1-000001",
+    "last": "DTUAV-V1-044988"
+  },
+  "sample_count": 44988,
+  "shard_count": 140,
+  "tar_member_count": 134964,
+  "payload_bytes": 148989562880,
+  "classes": {
+    "level_v0": 11249,
+    "pitch30_v10": 11236,
+    "pitch45_v10": 11219,
+    "single_blade_v0": 11284
+  },
+  "sample_members": [
+    "npz",
+    "png",
+    "json"
+  ],
+  "schemas": [
+    {
+      "name": "current-32-key",
+      "sample_count": 44948
+    },
+    {
+      "name": "legacy-24-key",
+      "sample_count": 40
+    }
+  ],
+  "predefined_split": false,
+  "checksum_manifest": "checksums/v1/SHA256SUMS",
+  "links": {
+    "hugging_face": "https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3",
+    "github": "https://github.com/kygoyuan2004/DeepTelecom_Partial"
+  }
+}

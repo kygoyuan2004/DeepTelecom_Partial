@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DeepTelecom UAV Dataset v1: 44,988 unified wireless propagation samples in 140 WebDataset shards.">
+    <meta name="theme-color" content="#07111f">
+    <title>DeepTelecom UAV Dataset</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="./" aria-label="DeepTelecom home">
+          <span class="brand-mark" aria-hidden="true">DT</span>
+          <span>DeepTelecom</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="#dataset">Dataset</a>
+          <a href="#contract">Sample contract</a>
+          <a href="#quickstart">Quick use</a>
+          <a href="#integrity">Integrity</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> UAV Dataset · v1.0.0</p>
+          <h1>Wireless propagation data, ready to stream.</h1>
+          <p class="lede">
+            DeepTelecom packages synchronized simulation tensors, visual previews, and metadata into one
+            versioned WebDataset release for reproducible UAV-channel research.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3" rel="noreferrer">Browse &amp; download pinned dataset <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="https://github.com/kygoyuan2004/DeepTelecom_Partial" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="release-line" aria-label="Pinned release revision">
+            <span>Immutable revision</span>
+            <code>de7fc35c…23b3</code>
+          </div>
+        </div>
+        <div class="signal-card" aria-hidden="true">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="signal-grid"></div>
+          <div class="drone">
+            <span class="arm arm-a"></span>
+            <span class="arm arm-b"></span>
+            <span class="body"></span>
+          </div>
+          <div class="wave wave-one"></div>
+          <div class="wave wave-two"></div>
+          <div class="wave wave-three"></div>
+          <p>DTUAV-V1</p>
+        </div>
+      </section>
+
+      <section class="stats-band" aria-label="Dataset summary">
+        <div class="shell stats-grid">
+          <article>
+            <strong data-stat="samples">44,988</strong>
+            <span>valid samples</span>
+          </article>
+          <article>
+            <strong data-stat="shards">140</strong>
+            <span>WebDataset TARs</span>
+          </article>
+          <article>
+            <strong data-stat="members">134,964</strong>
+            <span>TAR members</span>
+          </article>
+          <article>
+            <strong data-stat="size">138.76 GiB</strong>
+            <span>published payload</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell" id="dataset">
+        <div class="section-heading">
+          <p class="kicker">Dataset at a glance</p>
+          <h2>One collection, four UAV conditions.</h2>
+          <p>The public layout is organized by release and shard. It has no machine-specific directories and no predefined train, validation, or test split.</p>
+        </div>
+
+        <div class="two-column">
+          <article class="panel class-panel">
+            <div class="panel-heading">
+              <h3>Class distribution</h3>
+              <span>44,988 total</span>
+            </div>
+            <div class="class-list" id="class-list">
+              <div class="class-row">
+                <div><span>level_v0</span><strong>11,249</strong></div>
+                <div class="bar"><i style="width:99.7%"></i></div>
+              </div>
+              <div class="class-row">
+                <div><span>pitch30_v10</span><strong>11,236</strong></div>
+                <div class="bar"><i style="width:99.6%"></i></div>
+              </div>
+              <div class="class-row">
+                <div><span>pitch45_v10</span><strong>11,219</strong></div>
+                <div class="bar"><i style="width:99.4%"></i></div>
+              </div>
+              <div class="class-row">
+                <div><span>single_blade_v0</span><strong>11,284</strong></div>
+                <div class="bar"><i style="width:100%"></i></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel layout-panel">
+            <div class="panel-heading">
+              <h3>Release layout</h3>
+              <span>No predefined split</span>
+            </div>
+            <pre class="tree" aria-label="Dataset directory tree"><span>data/v1/shards/</span>
+├── shard-00000.tar
+├── shard-00001.tar
+├── …
+└── shard-00139.tar
+
+manifests/v1/all_samples.jsonl.gz
+schemas/v1/sample.schema.json
+checksums/v1/SHA256SUMS</pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="contract">
+        <div class="shell">
+          <div class="section-heading compact">
+            <p class="kicker">Sample contract</p>
+            <h2>Three synchronized members per sample.</h2>
+          </div>
+          <div class="contract-grid">
+            <article class="file-card">
+              <div class="file-icon">NPZ</div>
+              <h3>Simulation tensor</h3>
+              <p>Numerical channel and scene arrays used for training and analysis.</p>
+              <code>DTUAV-V1-000001.npz</code>
+            </article>
+            <article class="file-card">
+              <div class="file-icon">PNG</div>
+              <h3>Visual preview</h3>
+              <p>A matched image for rapid inspection, indexing, and quality review.</p>
+              <code>DTUAV-V1-000001.png</code>
+            </article>
+            <article class="file-card">
+              <div class="file-icon">JSON</div>
+              <h3>Sample metadata</h3>
+              <p>Public ID, class, file checksums, schema identifier, and provenance.</p>
+              <code>DTUAV-V1-000001.json</code>
+            </article>
+          </div>
+
+          <div class="schema-row">
+            <div>
+              <span class="schema-badge">Current</span>
+              <strong>32-key schema</strong>
+              <small>44,948 samples</small>
+            </div>
+            <div>
+              <span class="schema-badge muted">Legacy-compatible</span>
+              <strong>24-key schema</strong>
+              <small>40 samples</small>
+            </div>
+            <a class="text-link" href="./schemas/sample-v1.schema.json">Inspect JSON Schema <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="quickstart">
+        <div class="section-heading">
+          <p class="kicker">Quick use</p>
+          <h2>Download once or stream shards on demand.</h2>
+          <p>Every example below pins the immutable release commit so later repository updates cannot change your experiment.</p>
+        </div>
+
+        <div class="code-stack">
+          <article class="code-card">
+            <div class="code-title">
+              <span>Download with Python</span>
+              <button type="button" class="copy-button" data-copy="download-code">Copy</button>
+            </div>
+            <pre><code id="download-code">from huggingface_hub import snapshot_download
+
+root = snapshot_download(
+    repo_id="KYGOYUAN/DeepTelecom_Partial",
+    repo_type="dataset",
+    revision="de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3",
+)</code></pre>
+          </article>
+
+          <article class="code-card">
+            <div class="code-title">
+              <span>Stream with WebDataset</span>
+              <button type="button" class="copy-button" data-copy="stream-code">Copy</button>
+            </div>
+            <pre><code id="stream-code">import webdataset as wds
+
+base = "https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/resolve/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3"
+urls = base + "/data/v1/shards/shard-{00000..00139}.tar"
+samples = wds.WebDataset(urls, shardshuffle=True).decode("pil")</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="integrity">
+        <div class="shell integrity-grid">
+          <div>
+            <p class="kicker light">Version &amp; integrity</p>
+            <h2>Reproducible down to every shard.</h2>
+            <p>The release manifest maps every public sample ID to its shard. SHA256 checksums cover all 140 TAR files and published metadata.</p>
+            <a class="button light-button" href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/blob/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3/checksums/v1/SHA256SUMS" rel="noreferrer">Open SHA256SUMS <span aria-hidden="true">↗</span></a>
+            <div class="verify-command">
+              <code id="verify-code">sha256sum --check checksums/v1/SHA256SUMS</code>
+              <button type="button" class="copy-button" data-copy="verify-code">Copy</button>
+            </div>
+          </div>
+          <dl class="release-card">
+            <div><dt>Release</dt><dd>v1.0.0</dd></div>
+            <div><dt>Samples</dt><dd>DTUAV-V1-000001 → 044988</dd></div>
+            <div><dt>Split policy</dt><dd>None — define task-specific splits</dd></div>
+            <div class="commit-row"><dt>HF commit</dt><dd><code>de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3</code></dd></div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-wrap">
+        <div>
+          <strong>DeepTelecom</strong>
+          <p>Versioned UAV wireless-propagation data for reproducible research.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3" rel="noreferrer">Hugging Face</a>
+          <a href="https://github.com/kygoyuan2004/DeepTelecom_Partial" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/kygoyuan2004/DeepTelecom_Partial/blob/main/README.md" rel="noreferrer">README</a>
+          <a href="https://github.com/kygoyuan2004/DeepTelecom_Partial/blob/main/scripts/download_dataset.py" rel="noreferrer">Download tool</a>
+          <a href="./data/stats.json">Machine-readable stats</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "summary_version": "deeptelecom-release-summary-v1",
+  "dataset_id": "KYGOYUAN/DeepTelecom_Partial",
+  "version": "v1.0.0",
+  "final_hf_commit": "de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3",
+  "plan_id": "dtuav-v1-plan-25e97f486b6be3542a0facb773ea7b2248b9538dc16d60a3d9e9c232fdacccf2",
+  "accepted_unique": 44988,
+  "global_id_range": [
+    "DTUAV-V1-000001",
+    "DTUAV-V1-044988"
+  ],
+  "class_counts": {
+    "level_v0": 11249,
+    "pitch30_v10": 11236,
+    "pitch45_v10": 11219,
+    "single_blade_v0": 11284
+  },
+  "tensor_schema_counts": {
+    "dtuav-etoile-32key-v1": 44948,
+    "dtuav-floor-wall-24key-v1": 40
+  },
+  "shard_count": 140,
+  "tar_member_count": 134964,
+  "total_tar_bytes": 148989562880,
+  "no_predefined_split": true,
+  "curation": {
+    "local_physical_duplicates_excluded_before_freeze": 39240,
+    "cross_source_duplicates_removed_from_frozen_candidates": 0,
+    "original_id_conflict_groups": 70,
+    "original_id_conflict_members": 144,
+    "invalid": 1,
+    "incomplete": 1077,
+    "excluded_nonformal": 5109,
+    "held_conflicts": 0
+  },
+  "integrity": {
+    "all_samples_gzip_sha256": "4abd2c95f974f81175fe6d10b5976567ab5b6abb43621f2a1e37db0b2b271206",
+    "sample_schema_sha256": "8b44372f9c9f204e367c10561a8a76bd236215eb4a9758ff1dc15afbf4747236",
+    "hf_checksum_manifest_sha256": "cce2082932988d8c63972570535171e5ba217e45a9ec829a601aef8ad7086f57"
+  }
+}

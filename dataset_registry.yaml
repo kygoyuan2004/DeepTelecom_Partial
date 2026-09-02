@@ -1,0 +1,61 @@
+registry_version: deeptelecom-github-registry-v1
+dataset_id: KYGOYUAN/DeepTelecom_Partial
+dataset_version: v1.0.0
+release_revision: v1.0.0
+final_hf_commit: de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3
+plan_id: dtuav-v1-plan-25e97f486b6be3542a0facb773ea7b2248b9538dc16d60a3d9e9c232fdacccf2
+urls:
+  tag_tree: https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/v1.0.0
+  commit_tree: https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3
+  resolve_base: https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/resolve/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3
+  pages: https://kygoyuan2004.github.io/DeepTelecom_Partial/
+global_ids:
+  first: DTUAV-V1-000001
+  last: DTUAV-V1-044988
+  continuous: true
+counts:
+  frozen_candidates: 44988
+  accepted_unique: 44988
+  tar_members: 134964
+  local_physical_duplicates_excluded_before_freeze: 39240
+  cross_source_duplicates_removed_from_frozen_candidates: 0
+  original_id_conflict_groups: 70
+  original_id_conflict_members: 144
+  invalid: 1
+  incomplete: 1077
+  excluded_nonformal: 5109
+  excluded_manifest_records: 6187
+  held_conflicts: 0
+class_counts:
+  level_v0: 11249
+  pitch30_v10: 11236
+  pitch45_v10: 11219
+  single_blade_v0: 11284
+tensor_schema_counts:
+  dtuav-etoile-32key-v1: 44948
+  dtuav-floor-wall-24key-v1: 40
+payload:
+  format: WebDataset TAR
+  shard_count: 140
+  first_shard: data/v1/shards/shard-00000.tar
+  last_shard: data/v1/shards/shard-00139.tar
+  total_tar_bytes: 148989562880
+  npz_png_payload_bytes: 148827628128
+  members_per_sample: 3
+splits:
+  defined: false
+  names: []
+artifacts:
+  all_samples_gzip:
+    path: manifests/v1/all_samples.jsonl.gz
+    sha256: 4abd2c95f974f81175fe6d10b5976567ab5b6abb43621f2a1e37db0b2b271206
+    rows: 44988
+  sidecar_schema:
+    path: schemas/sample-v1.schema.json
+    sha256: 8b44372f9c9f204e367c10561a8a76bd236215eb4a9758ff1dc15afbf4747236
+  hf_checksums:
+    path: checksums/v1/SHA256SUMS
+    sha256: cce2082932988d8c63972570535171e5ba217e45a9ec829a601aef8ad7086f57
+    entries: 148
+data_license: null
+data_license_note: The Apache-2.0 repository license covers code and documentation and does not assert a separate dataset license grant.
