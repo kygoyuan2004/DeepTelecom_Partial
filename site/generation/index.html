@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DeepTelecom 无人机无线传播数据生成方法：Sionna RT 点散射体模型、安装运行、散射点扩展与自定义轨迹教程。">
+    <link rel="canonical" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/generation/">
+    <link rel="alternate" hreflang="zh-CN" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/generation/">
+    <link rel="alternate" hreflang="en" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/generation/">
+    <meta property="og:title" content="生成方法与开源代码 · DeepTelecom">
+    <meta name="theme-color" content="#07151d">
+    <title>生成方法与开源代码 · DeepTelecom</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a>
+        <nav aria-label="主导航"><a href="../#work">整理工作</a><a href="../#conditions">四类工况</a><a href="../gallery/">样本画廊</a><a href="./" aria-current="page">生成方法</a><a href="../#quickstart">获取数据</a></nav>
+        <a class="language-link" href="../en/generation/" lang="en">EN</a>
+      </div>
+    </header>
+
+    <main id="main" class="subpage-main">
+      <section class="subpage-hero">
+        <div class="shell">
+          <div class="breadcrumbs"><a href="../">DeepTelecom</a><span>/</span><span>生成方法</span></div>
+          <p class="eyebrow"><span class="status-dot"></span> 方法公开 · 配置可扩展</p>
+          <h1>不只发布数据，<span>也解释数据如何产生。</span></h1>
+          <p class="lede">DeepTelecom 使用 Sionna RT 建立场景传播通道，将无人机机体与旋翼离散为运动点散射体，逐快照求解通道并构造单站回波近似，最终输出张量、频谱图和元数据。</p>
+          <div class="page-meta"><span>Python 3.11</span><span>Sionna RT 2.0.1</span><span>配置驱动</span><span>GPU 生成</span><span>Apache-2.0 项目代码</span></div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="shell docs-layout">
+          <aside class="docs-nav" aria-label="本页目录">
+            <strong>本页目录</strong>
+            <a href="#principle">生成原理</a><a href="#opensource">开源范围</a><a href="#install">安装与冒烟测试</a><a href="#scatterers">增加散射点</a><a href="#trajectory">添加轨迹</a><a href="#parameters">参数字典</a><a href="#limits">能力边界</a>
+          </aside>
+
+          <div class="docs-content">
+            <section class="doc-section" id="principle">
+              <p class="kicker">01 · 原理</p>
+              <h2>从场景传播到微多普勒样本</h2>
+              <div class="callout warning"><strong>模型边界</strong><p>这是“基于 Sionna RT 的点散射体单站回波近似”，不是带真实无人机网格与 RCS 的全波电磁仿真，也不是实测数据。明确模型边界，才能正确使用结果。</p></div>
+              <div class="architecture-flow">
+                <div><span>01</span><b>类别与轨迹</b><small>读取倾斜角、机体速度、初始状态与 Bézier 控制点。</small></div>
+                <div><span>02</span><b>运动点散射体</b><small>计算机体点、旋翼中心和叶片径向点的位置与速度。</small></div>
+                <div><span>03</span><b>逐快照 RT</b><small>每个散射点作为 passive receiver probe，求基站到探针的单程 CIR。</small></div>
+                <div><span>04</span><b>回波与 STFT</b><small>复信道平方近似双程回波，加权相干求和并加入 AWGN。</small></div>
+                <div><span>05</span><b>样本输出</b><small>保存 NPZ 数组、512×512 PNG 和结构化 metadata。</small></div>
+              </div>
+              <p>v1 主配置使用 28 GHz 载频、20 kHz 采样率和 2,048 个快照。普通三类用 1 个机体点加 24 个叶片径向点；单叶片基准只保留一个旋转叶尖点。射线求解开启 LoS 与镜面反射，最大深度为 2。</p>
+            </section>
+
+            <section class="doc-section" id="opensource">
+              <p class="kicker">02 · 开源范围</p>
+              <h2>发布清理后的生成器，而不是服务器工程快照</h2>
+              <p>公开仓库中的 <code>generator/</code> 只包含可复用的核心运动学、Sionna RT 求解、STFT、元数据、配置和冒烟测试。数十 GB 输出、运行日志、历史编号清单、设备调度状态与服务器绝对路径不会进入 Git 历史。</p>
+              <pre class="source-tree">generator/
+├── config/etoile.yaml
+├── src/
+│   ├── build_rt_uav_stft_dataset.py
+│   ├── motion_utils.py
+│   ├── stft_utils.py
+│   ├── metadata_utils.py
+│   └── verify_uav_kinematics.py
+├── scripts/
+│   ├── setup_env.sh
+│   ├── preflight.py
+│   └── run_smoke_test.sh
+├── requirements.txt
+├── README.zh-CN.md
+└── README.en.md</pre>
+              <p>Étoile 场景直接引用 Sionna RT 2.0.1 内置的 Apache-2.0 资产，不重复提交 566 个第三方场景文件。公开版元数据使用逻辑场景 ID，不写入本机绝对路径。</p>
+              <div class="opensource-card"><div><strong>查看完整生成器、配置与许可证说明</strong><p>主仓库 Apache-2.0 覆盖我们发布的代码与文档；数据 payload 的授权仍按数据集页面说明处理。</p></div><a class="button" href="https://github.com/kygoyuan2004/DeepTelecom_Partial/tree/main/generator">打开 generator/ <span aria-hidden="true">↗</span></a></div>
+            </section>
+
+            <section class="doc-section" id="install">
+              <p class="kicker">03 · 开始运行</p>
+              <h2>先用 8 个快照完成冒烟测试</h2>
+              <p>推荐 Linux、NVIDIA GPU、可用的 CUDA/OptiX 与 Python 3.11。完整样本需要逐快照射线追踪，成本明显高于普通 NumPy 数据生成；第一次运行先做小型 smoke test。</p>
+              <div class="doc-code"><div class="code-title"><span>安装固定依赖</span><button class="copy-button" type="button" data-copy="install-code">复制</button></div><pre><code id="install-code">git clone https://github.com/kygoyuan2004/DeepTelecom_Partial.git
+cd DeepTelecom_Partial/generator
+./scripts/setup_env.sh
+DEEPTELECOM_PYTHON="$PWD/.conda-env/bin/python" ./scripts/preflight.py</code></pre></div>
+              <div class="doc-code"><div class="code-title"><span>生成 1 个小型测试样本</span><button class="copy-button" type="button" data-copy="smoke-code">复制</button></div><pre><code id="smoke-code">DEEPTELECOM_PYTHON="$PWD/.conda-env/bin/python" \
+  ./scripts/run_smoke_test.sh</code></pre></div>
+              <p>冒烟测试写入被 Git 忽略的本地目录 <code>generator/run/smoke_test</code>，使用 8 个 snapshot 和较大的 RT stride，只验证依赖、场景、求解、输出与运动学合同。它不应混入正式数据集。</p>
+              <h3>生成一个完整类别样本</h3>
+              <div class="doc-code"><div class="code-title"><span>单样本教学命令</span><button class="copy-button" type="button" data-copy="one-code">复制</button></div><pre><code id="one-code">.conda-env/bin/python src/build_rt_uav_stft_dataset.py \
+  --root outputs/demo \
+  --config config/etoile.yaml \
+  --classes pitch30_v10 \
+  --start-index 0 --end-index 0 \
+  --max-new-samples 1 --resume</code></pre></div>
+            </section>
+
+            <section class="doc-section" id="scatterers">
+              <p class="kicker">04 · 扩展散射模型</p>
+              <h2>增加叶片散射点，不需要改 Python</h2>
+              <p>普通三类的散射点总数为：</p>
+              <div class="callout"><strong>总数 = 1 个机体点 + 旋翼数 × 每旋翼叶片数 × 每叶片采样点数</strong><p>默认值为 1 + 4 × 2 × 3 = 25。将每叶片采样点从 3 调到 5 后，总数变为 41。</p></div>
+              <div class="doc-code"><div class="code-title"><span>复制配置后修改</span><button class="copy-button" type="button" data-copy="point-code">复制</button></div><pre><code id="point-code"># config/my_dense_blades.yaml
+num_rotors: 4
+num_blades_per_rotor: 2
+# 总散射点从 25 增加到 41
+points_per_blade: 5</code></pre></div>
+              <ul>
+                <li>这些点沿叶片半径均匀分布；增加点数会提高 probe 数量、RT 计算量和 NPZ 体积。</li>
+                <li><code>single_blade_v0</code> 是固定的单叶尖控制类，不受 <code>points_per_blade</code> 影响。</li>
+                <li>当前生成器只支持四旋翼拓扑；仅修改 <code>num_rotors</code> 会被拒绝。</li>
+                <li>虽然可改变 <code>num_blades_per_rotor</code>，严谨对比前还应同步检查散射权重归一化，避免把叶片数变化和总回波强度变化混在一起。</li>
+              </ul>
+            </section>
+
+            <section class="doc-section" id="trajectory">
+              <p class="kicker">05 · 扩展轨迹</p>
+              <h2>直线或四控制点 Bézier 轨迹</h2>
+              <h3>直线轨迹</h3>
+              <p><code>linear</code> 模式从配置中的初始位置出发，沿仿真 +x 方向运动；速度仍由类别决定，因此 <code>v0</code> 为 0 m/s、<code>v10</code> 为 10 m/s。</p>
+              <div class="doc-code"><div class="code-title"><span>直线模式</span><button class="copy-button" type="button" data-copy="linear-code">复制</button></div><pre><code id="linear-code">body_trajectory_model: linear
+body_position_x: 146.0
+body_position_y: -52.0
+body_position_z: 70.0</code></pre></div>
+              <h3>自定义单段三次 Bézier</h3>
+              <p>用四个三维控制点定义空间曲线。生成器先建立弧长查找表，再按类别速度沿曲线采样，以保持位置与速度方向一致。</p>
+              <div class="doc-code"><div class="code-title"><span>一行 JSON 控制点</span><button class="copy-button" type="button" data-copy="bezier-code">复制</button></div><pre><code id="bezier-code">body_trajectory_model: etoile_bezier
+etoile_trajectory_speed_mode: class_speed
+etoile_control_points_json: "[[146,-52,70],[154,-18,72],[178,14,68],[204,-8,70]]"
+etoile_start_fraction_min: 0.00
+etoile_start_fraction_max: 0.90</code></pre></div>
+              <div class="callout warning"><strong>当前还不支持任意 waypoint/CSV 或多段 Bézier</strong><p>如果研究需要复杂航线，应新增一个与 <code>build_body_path()</code> 返回合同一致的轨迹后端，并为位置连续性、速度连续性和路径长度边界补测试；不要只替换位置而留下不一致的速度。</p></div>
+            </section>
+
+            <section class="doc-section" id="parameters">
+              <p class="kicker">06 · 主配置</p>
+              <h2>v1 的关键生成参数</h2>
+              <table class="parameter-table">
+                <thead><tr><th>配置</th><th>v1 主值</th><th>作用</th></tr></thead>
+                <tbody>
+                  <tr><td><code>carrier_frequency_hz</code></td><td>28e9</td><td>射线追踪与多普勒计算载频</td></tr>
+                  <tr><td><code>sampling_rate_hz</code></td><td>20,000</td><td>回波时间采样率</td></tr>
+                  <tr><td><code>num_snapshots</code></td><td>2,048</td><td>每个样本的 RT/回波时间点</td></tr>
+                  <tr><td><code>rotor_frequency_hz</code></td><td>25 ± 10%</td><td>样本级旋翼转频随机扰动</td></tr>
+                  <tr><td><code>blade_radius_m</code></td><td>0.02 ± 10%</td><td>样本级叶片半径随机扰动</td></tr>
+                  <tr><td><code>noise_snr_min/max_db</code></td><td>20 / 40</td><td>AWGN 信噪比采样范围</td></tr>
+                  <tr><td><code>stft_window_size</code></td><td>48</td><td>Hann 窗长度</td></tr>
+                  <tr><td><code>stft_overlap</code></td><td>36</td><td>75% 重叠</td></tr>
+                  <tr><td><code>stft_nfft</code></td><td>512</td><td>STFT 频率栅格</td></tr>
+                  <tr><td><code>rt_max_depth</code></td><td>2</td><td>PathSolver 最大传播深度</td></tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="doc-section" id="limits">
+              <p class="kicker">07 · 可复现性与边界</p>
+              <h2>哪些可以复现，哪些不能过度承诺</h2>
+              <ul>
+                <li>公开配置、随机种子、代码版本与参数路径可以复现；不同 GPU、驱动和底层浮点实现不保证生成字节级相同的 NPZ。</li>
+                <li>生成器输出是研究用仿真近似，不应直接当作真实飞行器测量 ground truth。</li>
+                <li>改变散射点、叶片或轨迹后，应使用新的实验命名空间和 manifest，不要写入 v1.0.0 的冻结分片。</li>
+                <li>运行产生的绝对目录、日志和调度状态不属于科学样本，应在发布前清理或转为逻辑标识。</li>
+              </ul>
+              <p>这套生成器由浙江大学信息与电子工程学院（ISEE）项目团队整理开源。若你扩展了新的轨迹后端、散射权重模型或场景适配器，欢迎通过 GitHub issue 或 pull request 讨论。</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="shell footer-wrap"><div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a><p>浙江大学信息与电子工程学院团队</p></div><div class="footer-links"><a href="../">项目首页</a><a href="../gallery/">样本画廊</a><a href="https://github.com/kygoyuan2004/DeepTelecom_Partial/tree/main/generator">生成器代码</a><a href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3">数据集</a></div></div></footer>
+  </body>
+</html>

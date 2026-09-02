@@ -1,0 +1,120 @@
+{
+  "release": "v1.0.0",
+  "revision": "de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3",
+  "selection_rule": "first accepted sample per class that was locally reverified against its published TAR",
+  "shared_parameters": {
+    "scene_name": "etoile",
+    "solver": "sionna.rt.PathSolver",
+    "carrier_frequency_hz": 28000000000,
+    "sampling_rate_hz": 20000,
+    "num_snapshots": 2048,
+    "snapshot_duration_s": 0.1024,
+    "stft_window_size": 48,
+    "stft_overlap": 36,
+    "stft_nfft": 512,
+    "rt_max_depth": 2,
+    "rt_los": true,
+    "rt_specular_reflection": true,
+    "body_trajectory_model": "etoile_bezier"
+  },
+  "visual_assets": {
+    "scene_overview": {
+      "path": "assets/images/scenes/etoile-trajectory-overview.png",
+      "sha256": "99a5ab529f70c5b519efe43f0aff122d99043d2069fe628be218ba7f94df8d18",
+      "scene_source": "sionna.rt.scene.etoile",
+      "base_station_position_m": [
+        78.92926025390625,
+        32.04679775238037,
+        28.96865463256836
+      ],
+      "bezier_control_points_m": [
+        [146.0, -52.0, 70.0],
+        [154.0, -18.0, 70.0],
+        [178.0, 14.0, 70.0],
+        [204.0, -8.0, 70.0]
+      ],
+      "bezier_path_length_m": 88.91353621531803,
+      "scope": "full configured flight corridor, not one sample window"
+    },
+    "sample_trajectory_plot": {
+      "path": "assets/images/trajectories/representative-trajectories.png",
+      "sha256": "2f518c53616fba23ce194b21f02803a091b68f7cc5b58c41ce006fbdce82534e",
+      "source_array": "uav_positions_m",
+      "projection": "top view with coordinates relative to each sample start"
+    }
+  },
+  "samples": [
+    {
+      "global_sample_id": "DTUAV-V1-000007",
+      "class_id": "level_v0",
+      "target_shard": "data/v1/shards/shard-00000.tar",
+      "degree": 0,
+      "body_speed_m_s": 0,
+      "num_scatterers": 25,
+      "rotor_frequency_hz": 26.693348807986077,
+      "blade_radius_m": 0.019314439590716274,
+      "trajectory": {
+        "start_m": [147.01486206054688, -47.97946548461914, 70.038818359375],
+        "end_m": [147.01486206054688, -47.97946548461914, 70.038818359375],
+        "path_length_m": 0.0,
+        "observation_window_s": 0.1024
+      },
+      "image_sha256": "75dd8fceaca849bb74c8d0be023f93aa670f2ef97d0b1a203fcc09c76c3108fd",
+      "image_path": "assets/images/samples/DTUAV-V1-000007.png"
+    },
+    {
+      "global_sample_id": "DTUAV-V1-011252",
+      "class_id": "pitch30_v10",
+      "target_shard": "data/v1/shards/shard-00008.tar",
+      "degree": 30,
+      "body_speed_m_s": 10,
+      "num_scatterers": 25,
+      "rotor_frequency_hz": 26.246143486420557,
+      "blade_radius_m": 0.018371081062788532,
+      "trajectory": {
+        "start_m": [147.03024291992188, -47.95453643798828, 70.00678253173828],
+        "end_m": [147.30503845214844, -46.96862030029297, 70.00678253173828],
+        "path_length_m": 1.0235677758737776,
+        "observation_window_s": 0.1024
+      },
+      "image_sha256": "40e782a84ab4c402f3bb59cbe403f661ec2d248c7bc1116062092da6a987c8fe",
+      "image_path": "assets/images/samples/DTUAV-V1-011252.png"
+    },
+    {
+      "global_sample_id": "DTUAV-V1-022488",
+      "class_id": "pitch45_v10",
+      "target_shard": "data/v1/shards/shard-00017.tar",
+      "degree": 45,
+      "body_speed_m_s": 10,
+      "num_scatterers": 25,
+      "rotor_frequency_hz": 25.369371155971386,
+      "blade_radius_m": 0.01912406764691586,
+      "trajectory": {
+        "start_m": [178.87730407714844, -2.19767165184021, 70.01536560058594],
+        "end_m": [179.8439178466797, -1.8614221811294556, 70.01536560058594],
+        "path_length_m": 1.0235088725322936,
+        "observation_window_s": 0.1024
+      },
+      "image_sha256": "5be2ae74cc96329a16afcce0f6e3b17d96cfc510754f422f8275e49da7f087b1",
+      "image_path": "assets/images/samples/DTUAV-V1-022488.png"
+    },
+    {
+      "global_sample_id": "DTUAV-V1-033705",
+      "class_id": "single_blade_v0",
+      "target_shard": "data/v1/shards/shard-00026.tar",
+      "degree": 0,
+      "body_speed_m_s": 0,
+      "num_scatterers": 1,
+      "rotor_frequency_hz": 27.323311691577988,
+      "blade_radius_m": 0.019749677647210234,
+      "trajectory": {
+        "start_m": [170.65646362304688, -6.891237258911133, 70.04986572265625],
+        "end_m": [170.65646362304688, -6.891237258911133, 70.04986572265625],
+        "path_length_m": 0.0,
+        "observation_window_s": 0.1024
+      },
+      "image_sha256": "c9de35751150619056f43183762763cd4ad068ff93eb05f77bc8287b43b16937",
+      "image_path": "assets/images/samples/DTUAV-V1-033705.png"
+    }
+  ]
+}

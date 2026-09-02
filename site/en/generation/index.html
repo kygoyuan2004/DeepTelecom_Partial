@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How DeepTelecom UAV wireless-propagation data is generated: Sionna RT point-scatterer modeling, setup, scatterer-density extensions, and custom trajectories.">
+    <link rel="canonical" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/generation/">
+    <link rel="alternate" hreflang="zh-CN" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/generation/">
+    <link rel="alternate" hreflang="en" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/generation/">
+    <meta property="og:title" content="Generation Method and Open-Source Code · DeepTelecom">
+    <meta name="theme-color" content="#07151d">
+    <title>Generation Method and Open-Source Code · DeepTelecom</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script src="../../assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a>
+        <nav aria-label="Main navigation"><a href="../#work">Curation</a><a href="../#conditions">Conditions</a><a href="../gallery/">Sample gallery</a><a href="./" aria-current="page">Generation</a><a href="../#quickstart">Get the data</a></nav>
+        <a class="language-link" href="../../generation/" lang="zh-CN" aria-label="切换到中文">中文</a>
+      </div>
+    </header>
+
+    <main id="main" class="subpage-main">
+      <section class="subpage-hero">
+        <div class="shell">
+          <div class="breadcrumbs"><a href="../">DeepTelecom</a><span>/</span><span>Generation</span></div>
+          <p class="eyebrow"><span class="status-dot"></span> Open method · Extensible configuration</p>
+          <h1>We publish the data—and <span>explain how it was made.</span></h1>
+          <p class="lede">DeepTelecom uses Sionna RT to model the scene's propagation channel. The UAV body and rotors are discretized as moving point scatterers; the channel is solved snapshot by snapshot and used to construct a monostatic echo approximation, producing tensors, spectrograms, and metadata.</p>
+          <div class="page-meta"><span>Python 3.11</span><span>Sionna RT 2.0.1</span><span>Configuration-driven</span><span>GPU generation</span><span>Apache-2.0 project code</span></div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="shell docs-layout">
+          <aside class="docs-nav" aria-label="On this page">
+            <strong>On this page</strong>
+            <a href="#principle">Generation model</a><a href="#opensource">Open-source scope</a><a href="#install">Setup and smoke test</a><a href="#scatterers">More scatterers</a><a href="#trajectory">Custom trajectories</a><a href="#parameters">Parameter reference</a><a href="#limits">Scope and limitations</a>
+          </aside>
+
+          <div class="docs-content">
+            <section class="doc-section" id="principle">
+              <p class="kicker">01 · Model</p>
+              <h2>From scene propagation to micro-Doppler samples</h2>
+              <div class="callout warning"><strong>Model boundary</strong><p>This is a Sionna RT-based point-scatterer monostatic echo approximation. It is neither a full-wave electromagnetic simulation with a physical UAV mesh and RCS nor measured data. Understanding that boundary is essential for using the results correctly.</p></div>
+              <div class="architecture-flow">
+                <div><span>01</span><b>Class and trajectory</b><small>Read tilt, body speed, initial state, and Bézier control points.</small></div>
+                <div><span>02</span><b>Moving point scatterers</b><small>Compute positions and velocities for the body point, rotor centers, and radial blade points.</small></div>
+                <div><span>03</span><b>Snapshot RT</b><small>Treat each scatterer as a passive receiver probe and solve the one-way CIR from the base station.</small></div>
+                <div><span>04</span><b>Echo and STFT</b><small>Square the complex channel as a two-way echo approximation, coherently combine weighted terms, and add AWGN.</small></div>
+                <div><span>05</span><b>Sample output</b><small>Save NPZ arrays, a 512 × 512 PNG, and structured metadata.</small></div>
+              </div>
+              <p>The primary v1 configuration uses a 28 GHz carrier, a 20 kHz sampling rate, and 2,048 snapshots. The three full-model classes use one body point plus 24 radial blade points, while the isolated-blade baseline keeps one rotating blade-tip point. Ray tracing enables LoS and specular paths with a maximum depth of 2.</p>
+            </section>
+
+            <section class="doc-section" id="opensource">
+              <p class="kicker">02 · Open-source scope</p>
+              <h2>A cleaned, reusable generator—not a snapshot of a server workspace</h2>
+              <p>The public repository's <code>generator/</code> directory contains only reusable motion models, Sionna RT solving, STFT processing, metadata code, configuration, and smoke tests. Tens of gigabytes of outputs, run logs, legacy ID inventories, device scheduling state, and server-specific absolute paths do not belong in Git history.</p>
+              <pre class="source-tree">generator/
+├── config/etoile.yaml
+├── src/
+│   ├── build_rt_uav_stft_dataset.py
+│   ├── motion_utils.py
+│   ├── stft_utils.py
+│   ├── metadata_utils.py
+│   └── verify_uav_kinematics.py
+├── scripts/
+│   ├── setup_env.sh
+│   ├── preflight.py
+│   └── run_smoke_test.sh
+├── requirements.txt
+├── README.zh-CN.md
+└── README.en.md</pre>
+              <p>The Étoile scene references the Apache-2.0 assets bundled with Sionna RT 2.0.1 instead of recommitting 566 third-party scene files. Public metadata uses a logical scene ID rather than machine-specific absolute paths.</p>
+              <div class="opensource-card"><div><strong>Browse the generator, configuration, and licensing notes</strong><p>The repository's Apache-2.0 license covers the code and documentation we publish. The dataset payload remains governed by the terms stated on the dataset page.</p></div><a class="button" href="https://github.com/kygoyuan2004/DeepTelecom_Partial/tree/main/generator">Open generator/ <span aria-hidden="true">↗</span></a></div>
+            </section>
+
+            <section class="doc-section" id="install">
+              <p class="kicker">03 · Run it</p>
+              <h2>Start with an eight-snapshot smoke test</h2>
+              <p>We recommend Linux, an NVIDIA GPU, working CUDA/OptiX support, and Python 3.11. A full sample performs ray tracing snapshot by snapshot and costs substantially more than ordinary NumPy data generation, so begin with the small smoke test.</p>
+              <div class="doc-code"><div class="code-title"><span>Install pinned dependencies</span><button class="copy-button" type="button" data-copy="install-code">Copy</button></div><pre><code id="install-code">git clone https://github.com/kygoyuan2004/DeepTelecom_Partial.git
+cd DeepTelecom_Partial/generator
+./scripts/setup_env.sh
+DEEPTELECOM_PYTHON="$PWD/.conda-env/bin/python" ./scripts/preflight.py</code></pre></div>
+              <div class="doc-code"><div class="code-title"><span>Generate one small test sample</span><button class="copy-button" type="button" data-copy="smoke-code">Copy</button></div><pre><code id="smoke-code">DEEPTELECOM_PYTHON="$PWD/.conda-env/bin/python" \
+  ./scripts/run_smoke_test.sh</code></pre></div>
+              <p>The smoke test writes to the Git-ignored local directory <code>generator/run/smoke_test</code> and uses eight snapshots plus a larger RT stride. It only checks dependencies, scene loading, solving, output, and the kinematics contract; its output must not be mixed into the formal dataset.</p>
+              <h3>Generate one full sample from a class</h3>
+              <div class="doc-code"><div class="code-title"><span>Single-sample tutorial command</span><button class="copy-button" type="button" data-copy="one-code">Copy</button></div><pre><code id="one-code">.conda-env/bin/python src/build_rt_uav_stft_dataset.py \
+  --root outputs/demo \
+  --config config/etoile.yaml \
+  --classes pitch30_v10 \
+  --start-index 0 --end-index 0 \
+  --max-new-samples 1 --resume</code></pre></div>
+            </section>
+
+            <section class="doc-section" id="scatterers">
+              <p class="kicker">04 · Extend the scatterer model</p>
+              <h2>Add blade scatterers without editing Python</h2>
+              <p>For the three full-model conditions, the scatterer count is:</p>
+              <div class="callout"><strong>Total = 1 body point + rotor count × blades per rotor × points per blade</strong><p>The default is 1 + 4 × 2 × 3 = 25. Increasing points per blade from 3 to 5 produces 41 total scatterers.</p></div>
+              <div class="doc-code"><div class="code-title"><span>Copy the configuration and edit it</span><button class="copy-button" type="button" data-copy="point-code">Copy</button></div><pre><code id="point-code"># config/my_dense_blades.yaml
+num_rotors: 4
+num_blades_per_rotor: 2
+# Total scatterers increase from 25 to 41
+points_per_blade: 5</code></pre></div>
+              <ul>
+                <li>Points are spaced uniformly along each blade radius. Adding points increases the number of probes, ray-tracing cost, and NPZ size.</li>
+                <li><code>single_blade_v0</code> is a fixed, single-tip control class and is unaffected by <code>points_per_blade</code>.</li>
+                <li>The current generator supports quadrotor topology only; changing <code>num_rotors</code> by itself is rejected.</li>
+                <li><code>num_blades_per_rotor</code> can change, but rigorous comparisons should also review scatterer-weight normalization so blade-count changes are not confounded with total echo-strength changes.</li>
+              </ul>
+            </section>
+
+            <section class="doc-section" id="trajectory">
+              <p class="kicker">05 · Extend the trajectory</p>
+              <h2>Linear motion or a four-control-point Bézier path</h2>
+              <h3>Linear trajectory</h3>
+              <p>In <code>linear</code> mode, motion starts from the configured initial position and follows the simulation +x direction. Speed still comes from the class: <code>v0</code> means 0 m/s, while <code>v10</code> means 10 m/s.</p>
+              <div class="doc-code"><div class="code-title"><span>Linear mode</span><button class="copy-button" type="button" data-copy="linear-code">Copy</button></div><pre><code id="linear-code">body_trajectory_model: linear
+body_position_x: 146.0
+body_position_y: -52.0
+body_position_z: 70.0</code></pre></div>
+              <h3>Custom single-segment cubic Bézier</h3>
+              <p>Four 3D control points define the spatial curve. The generator first builds an arc-length lookup table and then samples the path at the class speed, keeping position and velocity direction consistent.</p>
+              <div class="doc-code"><div class="code-title"><span>Control points as one-line JSON</span><button class="copy-button" type="button" data-copy="bezier-code">Copy</button></div><pre><code id="bezier-code">body_trajectory_model: etoile_bezier
+etoile_trajectory_speed_mode: class_speed
+etoile_control_points_json: "[[146,-52,70],[154,-18,72],[178,14,68],[204,-8,70]]"
+etoile_start_fraction_min: 0.00
+etoile_start_fraction_max: 0.90</code></pre></div>
+              <div class="callout warning"><strong>Arbitrary waypoint/CSV paths and multi-segment Bézier paths are not supported yet</strong><p>For more complex routes, add a trajectory backend that honors the return contract of <code>build_body_path()</code>, then test position continuity, velocity continuity, and path-length boundaries. Do not replace positions alone while leaving velocities inconsistent.</p></div>
+            </section>
+
+            <section class="doc-section" id="parameters">
+              <p class="kicker">06 · Primary configuration</p>
+              <h2>Key generation parameters for v1</h2>
+              <table class="parameter-table">
+                <thead><tr><th>Setting</th><th>Primary v1 value</th><th>Purpose</th></tr></thead>
+                <tbody>
+                  <tr><td><code>carrier_frequency_hz</code></td><td>28e9</td><td>Carrier used for ray tracing and Doppler calculations</td></tr>
+                  <tr><td><code>sampling_rate_hz</code></td><td>20,000</td><td>Echo time-domain sampling rate</td></tr>
+                  <tr><td><code>num_snapshots</code></td><td>2,048</td><td>RT/echo time points per sample</td></tr>
+                  <tr><td><code>rotor_frequency_hz</code></td><td>25 ± 10%</td><td>Per-sample random perturbation of rotor frequency</td></tr>
+                  <tr><td><code>blade_radius_m</code></td><td>0.02 ± 10%</td><td>Per-sample random perturbation of blade radius</td></tr>
+                  <tr><td><code>noise_snr_min/max_db</code></td><td>20 / 40</td><td>AWGN SNR sampling range</td></tr>
+                  <tr><td><code>stft_window_size</code></td><td>48</td><td>Hann-window length</td></tr>
+                  <tr><td><code>stft_overlap</code></td><td>36</td><td>75% overlap</td></tr>
+                  <tr><td><code>stft_nfft</code></td><td>512</td><td>STFT frequency grid</td></tr>
+                  <tr><td><code>rt_max_depth</code></td><td>2</td><td>Maximum PathSolver propagation depth</td></tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="doc-section" id="limits">
+              <p class="kicker">07 · Reproducibility and limits</p>
+              <h2>What can be reproduced—and what should not be overstated</h2>
+              <ul>
+                <li>Public configuration, random seeds, code version, and parameter paths are reproducible. Different GPUs, drivers, and underlying floating-point implementations are not guaranteed to produce byte-identical NPZ files.</li>
+                <li>The generator output is a research simulation approximation and should not be treated as measured ground truth from a physical aircraft.</li>
+                <li>After changing scatterers, blades, or trajectories, use a new experiment namespace and manifest; never write into the frozen v1.0.0 shards.</li>
+                <li>Absolute run directories, logs, and scheduling state are not scientific sample content. Remove them before release or replace them with logical identifiers.</li>
+              </ul>
+              <p>This generator is curated and released by a project team at the College of Information Science and Electronic Engineering (ISEE), Zhejiang University. If you add a new trajectory backend, scatterer-weighting model, or scene adapter, we welcome discussion through a GitHub issue or pull request.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="shell footer-wrap"><div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a><p>A project team at Zhejiang University ISEE</p></div><div class="footer-links"><a href="../">Project home</a><a href="../gallery/">Sample gallery</a><a href="https://github.com/kygoyuan2004/DeepTelecom_Partial/tree/main/generator">Generator code</a><a href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3">Dataset</a></div></div></footer>
+  </body>
+</html>

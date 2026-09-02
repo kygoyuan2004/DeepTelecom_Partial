@@ -1,0 +1,73 @@
+# Portable default: use the Étoile scene distributed with Sionna RT.
+# Leave scene_xml_path empty to avoid a dependency on private scene assets.
+scene_name: etoile
+scene_xml_path: ""
+scene_merge_shapes: true
+scene_tx_name: deeptelecom_rooftop_bs
+calibrated_materials_json: ""
+carrier_frequency_hz: 28.0e9
+sampling_rate_hz: 20000
+num_snapshots: 2048
+
+rotor_frequency_hz: 25
+blade_radius_m: 0.02
+rotor_arm_length_m: 0.08
+num_uavs: 1
+num_rotors: 4
+num_blades_per_rotor: 2
+points_per_blade: 3
+
+stft_window_size: 48
+stft_overlap: 36
+stft_nfft: 512
+doppler_plot_min_hz: -3200
+doppler_plot_max_hz: 1200
+stft_dynamic_range_db: 55
+
+samples_per_class: 1000
+random_seed: 20260708
+
+bs_position_x: 78.92926025390625
+bs_position_y: 32.04679775238037
+bs_position_z: 28.96865463256836
+body_position_x: 146.0
+body_position_y: -52.0
+body_position_z: 70.0
+
+# Supported values are `etoile_bezier` and `linear`. Arbitrary waypoint
+# trajectories are not implemented in this release.
+body_trajectory_model: etoile_bezier
+etoile_trajectory_speed_mode: class_speed
+etoile_trajectory_nominal_speed_m_s: 18.145619428797083
+etoile_start_fraction_min: 0.00
+etoile_start_fraction_max: 0.98
+etoile_control0_x_m: 146.0
+etoile_control0_y_m: -52.0
+etoile_control0_z_m: 70.0
+etoile_control1_x_m: 154.0
+etoile_control1_y_m: -18.0
+etoile_control1_z_m: 70.0
+etoile_control2_x_m: 178.0
+etoile_control2_y_m: 14.0
+etoile_control2_z_m: 70.0
+etoile_control3_x_m: 204.0
+etoile_control3_y_m: -8.0
+etoile_control3_z_m: 70.0
+
+rotor_frequency_jitter_fraction: 0.10
+blade_radius_jitter_fraction: 0.10
+noise_snr_min_db: 20
+noise_snr_max_db: 40
+position_jitter_m: 0.05
+scatterer_weight_jitter_fraction: 0.20
+
+rt_max_depth: 2
+rt_los: true
+rt_specular_reflection: true
+rt_diffuse_reflection: false
+rt_diffraction: false
+rt_edge_diffraction: false
+rt_refraction: false
+rt_synthetic_array: false
+rt_cir_sampling_frequency_hz: 122.88e6
+rt_snapshot_stride: 1

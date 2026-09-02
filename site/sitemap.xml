@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kygoyuan2004.github.io/DeepTelecom_Partial/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/"/>
+  </url>
+  <url>
+    <loc>https://kygoyuan2004.github.io/DeepTelecom_Partial/gallery/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/gallery/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/gallery/"/>
+  </url>
+  <url>
+    <loc>https://kygoyuan2004.github.io/DeepTelecom_Partial/generation/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/generation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/generation/"/>
+  </url>
+  <url><loc>https://kygoyuan2004.github.io/DeepTelecom_Partial/en/</loc></url>
+  <url><loc>https://kygoyuan2004.github.io/DeepTelecom_Partial/en/gallery/</loc></url>
+  <url><loc>https://kygoyuan2004.github.io/DeepTelecom_Partial/en/generation/</loc></url>
+</urlset>

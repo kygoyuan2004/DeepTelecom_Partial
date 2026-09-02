@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A gallery of real spectrograms from DeepTelecom UAV Dataset v1, with one formal sample and its simulation parameters for each of the four conditions.">
+    <link rel="canonical" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/gallery/">
+    <link rel="alternate" hreflang="zh-CN" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/gallery/">
+    <link rel="alternate" hreflang="en" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/gallery/">
+    <meta property="og:title" content="Verified Sample Gallery · DeepTelecom">
+    <meta property="og:image" content="https://kygoyuan2004.github.io/DeepTelecom_Partial/assets/images/samples/DTUAV-V1-033705.png">
+    <meta name="theme-color" content="#07151d">
+    <title>Real Sample Gallery · DeepTelecom</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script src="../../assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a>
+        <nav aria-label="Main navigation"><a href="../#work">Curation</a><a href="../#conditions">Conditions</a><a href="./" aria-current="page">Sample gallery</a><a href="../generation/">Generation</a><a href="../#quickstart">Get the data</a></nav>
+        <a class="language-link" href="../../gallery/" lang="zh-CN" aria-label="切换到中文">中文</a>
+      </div>
+    </header>
+
+    <main id="main" class="subpage-main">
+      <section class="subpage-hero">
+        <div class="shell">
+          <div class="breadcrumbs"><a href="../">DeepTelecom</a><span>/</span><span>Sample gallery</span></div>
+          <p class="eyebrow"><span class="status-dot"></span> Formal samples from release v1.0.0</p>
+          <h1>See the data—and <span>understand its parameters.</span></h1>
+          <p class="lede">These four images are not conceptual illustrations. They are real PNG members extracted from the final WebDataset TARs. We verified their SHA-256 values against both the original source files and the public manifest.</p>
+          <div class="page-meta"><span>1 representative per condition</span><span>real Étoile scene</span><span>NPZ flight paths</span><span>pinned HF commit</span></div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="shell">
+          <div class="intro-note"><b>i</b><p>Time runs horizontally, Doppler shift vertically, and color indicates relative spectral intensity using the turbo colormap. The PNG is an axis-free preview for quick inspection. For quantitative analysis, read the exact <code>t_axis</code>, <code>f_axis</code>, and <code>S_dB</code> arrays from the paired NPZ.</p></div>
+
+          <div class="gallery-grid">
+            <article class="sample-card">
+              <div class="sample-card-head"><h2>Level hover <small><code>level_v0</code></small></h2><code>DTUAV-V1-000007</code></div>
+              <div class="spectrogram-frame"><span class="axis-y">Doppler shift ↑</span><a href="../../assets/images/samples/DTUAV-V1-000007.png"><img src="../../assets/images/samples/DTUAV-V1-000007.png" alt="Micro-Doppler spectrogram for level-hover sample DTUAV-V1-000007"></a><span class="axis-x">Time →</span></div>
+              <div class="plot-range"><span>0 ms</span><span>approx. 102.4 ms</span></div>
+              <p class="sample-summary">The body does not translate, but all four rotors keep spinning. Together, 25 scatterers produce a periodic spectral structure around the body's Doppler baseline.</p>
+              <dl class="parameter-grid">
+                <div><dt>Tilt</dt><dd>0°</dd></div><div><dt>Body speed</dt><dd>0 m/s</dd></div><div><dt>Scatterers</dt><dd>25</dd></div>
+                <div><dt>Rotor frequency</dt><dd>26.69335 Hz</dd></div><div><dt>Blade radius</dt><dd>19.314 mm</dd></div><div><dt>Scene</dt><dd>Étoile</dd></div>
+              </dl>
+              <div class="sample-origin"><span><code>shard-00000.tar</code></span><span title="75dd8fceaca849bb74c8d0be023f93aa670f2ef97d0b1a203fcc09c76c3108fd">PNG SHA-256 · 75dd8fce…108fd</span></div>
+            </article>
+
+            <article class="sample-card">
+              <div class="sample-card-head"><h2>30° pitched flight <small><code>pitch30_v10</code></small></h2><code>DTUAV-V1-011252</code></div>
+              <div class="spectrogram-frame"><span class="axis-y">Doppler shift ↑</span><a href="../../assets/images/samples/DTUAV-V1-011252.png"><img src="../../assets/images/samples/DTUAV-V1-011252.png" alt="Micro-Doppler spectrogram for 30-degree pitched-flight sample DTUAV-V1-011252"></a><span class="axis-x">Time →</span></div>
+              <div class="plot-range"><span>0 ms</span><span>approx. 102.4 ms</span></div>
+              <p class="sample-summary">The quadrotor model is tilted 30° about the simulation y-axis and translates along a Bézier path at 10 m/s. Body Doppler and rotor micro-Doppler both contribute to the spectrum.</p>
+              <dl class="parameter-grid">
+                <div><dt>Tilt</dt><dd>30°</dd></div><div><dt>Body speed</dt><dd>10 m/s</dd></div><div><dt>Scatterers</dt><dd>25</dd></div>
+                <div><dt>Rotor frequency</dt><dd>26.24614 Hz</dd></div><div><dt>Blade radius</dt><dd>18.371 mm</dd></div><div><dt>Scene</dt><dd>Étoile</dd></div>
+              </dl>
+              <div class="sample-origin"><span><code>shard-00008.tar</code></span><span title="40e782a84ab4c402f3bb59cbe403f661ec2d248c7bc1116062092da6a987c8fe">PNG SHA-256 · 40e782a8…7c8fe</span></div>
+            </article>
+
+            <article class="sample-card">
+              <div class="sample-card-head"><h2>45° pitched flight <small><code>pitch45_v10</code></small></h2><code>DTUAV-V1-022488</code></div>
+              <div class="spectrogram-frame"><span class="axis-y">Doppler shift ↑</span><a href="../../assets/images/samples/DTUAV-V1-022488.png"><img src="../../assets/images/samples/DTUAV-V1-022488.png" alt="Micro-Doppler spectrogram for 45-degree pitched-flight sample DTUAV-V1-022488"></a><span class="axis-x">Time →</span></div>
+              <div class="plot-range"><span>0 ms</span><span>approx. 102.4 ms</span></div>
+              <p class="sample-summary">At the same 10 m/s translation speed, the model's tilt increases to 45°. This sample supports comparisons of propagation and spectral changes under a larger attitude variation.</p>
+              <dl class="parameter-grid">
+                <div><dt>Tilt</dt><dd>45°</dd></div><div><dt>Body speed</dt><dd>10 m/s</dd></div><div><dt>Scatterers</dt><dd>25</dd></div>
+                <div><dt>Rotor frequency</dt><dd>25.36937 Hz</dd></div><div><dt>Blade radius</dt><dd>19.124 mm</dd></div><div><dt>Scene</dt><dd>Étoile</dd></div>
+              </dl>
+              <div class="sample-origin"><span><code>shard-00017.tar</code></span><span title="5be2ae74cc96329a16afcce0f6e3b17d96cfc510754f422f8275e49da7f087b1">PNG SHA-256 · 5be2ae74…087b1</span></div>
+            </article>
+
+            <article class="sample-card">
+              <div class="sample-card-head"><h2>Isolated blade baseline <small><code>single_blade_v0</code></small></h2><code>DTUAV-V1-033705</code></div>
+              <div class="spectrogram-frame"><span class="axis-y">Doppler shift ↑</span><a href="../../assets/images/samples/DTUAV-V1-033705.png"><img src="../../assets/images/samples/DTUAV-V1-033705.png" alt="Micro-Doppler spectrogram for isolated-blade baseline sample DTUAV-V1-033705"></a><span class="axis-x">Time →</span></div>
+              <div class="plot-range"><span>0 ms</span><span>approx. 102.4 ms</span></div>
+              <p class="sample-summary">Only one rotating blade-tip scatterer remains, and its center does not translate, producing a clear periodic micro-Doppler trace. This is a control sample—not a single-rotor UAV.</p>
+              <dl class="parameter-grid">
+                <div><dt>Tilt</dt><dd>0°</dd></div><div><dt>Center speed</dt><dd>0 m/s</dd></div><div><dt>Scatterers</dt><dd>1</dd></div>
+                <div><dt>Rotor frequency</dt><dd>27.32331 Hz</dd></div><div><dt>Blade radius</dt><dd>19.750 mm</dd></div><div><dt>Scene</dt><dd>Étoile</dd></div>
+              </dl>
+              <div class="sample-origin"><span><code>shard-00026.tar</code></span><span title="c9de35751150619056f43183762763cd4ad068ff93eb05f77bc8287b43b16937">PNG SHA-256 · c9de3575…16937</span></div>
+            </article>
+          </div>
+
+          <section class="trajectory-evidence" id="trajectories" aria-labelledby="trajectory-title">
+            <div class="trajectory-heading">
+              <div><p class="kicker">Scene and flight paths</p><h2 id="trajectory-title">Where did the spectrum come from—and where was the UAV?</h2></div>
+              <p>The first view is rendered directly from the generator's built-in Sionna RT Étoile scene and shows the base station plus the complete configured flight corridor. The second reads only <code>uav_positions_m</code> from the four paired NPZ files, showing the actual body path within each 0.1024 s observation window.</p>
+            </div>
+
+            <figure class="evidence-figure scene-evidence">
+              <a href="../../assets/images/scenes/etoile-trajectory-overview.png"><img src="../../assets/images/scenes/etoile-trajectory-overview.png" alt="Base station and cubic Bézier UAV flight corridor in the Étoile ray-tracing city scene" loading="lazy"></a>
+              <figcaption><strong>Étoile scene overview</strong><span>orange: base station · green: start · cyan: complete 88.914 m Bézier corridor · yellow: end</span><small>This scene view shows the full configured corridor, not one sample's 0.1024 s segment.</small></figcaption>
+            </figure>
+
+            <figure class="evidence-figure">
+              <a href="../../assets/images/trajectories/representative-trajectories.png"><img src="../../assets/images/trajectories/representative-trajectories.png" alt="Top-view UAV body trajectories drawn from the uav_positions_m arrays of four verified NPZ samples" loading="lazy"></a>
+              <figcaption><strong>NPZ trajectory evidence for four samples</strong><span>top view · equal-axis coordinates per panel · positions relative to sample start</span><small>The body center stays fixed in the hover and isolated-blade controls, while rotors or the blade tip continue moving.</small></figcaption>
+            </figure>
+
+            <div class="trajectory-record-grid">
+              <article><code>DTUAV-V1-000007</code><strong>Level hover · 0.0000 m</strong><span>fixed at (147.0149, −47.9795, 70.0388) m</span></article>
+              <article><code>DTUAV-V1-011252</code><strong>30° tilt · 1.0236 m</strong><span>(147.0302, −47.9545, 70.0068) → (147.3050, −46.9686, 70.0068) m</span></article>
+              <article><code>DTUAV-V1-022488</code><strong>45° tilt · 1.0235 m</strong><span>(178.8773, −2.1977, 70.0154) → (179.8439, −1.8614, 70.0154) m</span></article>
+              <article><code>DTUAV-V1-033705</code><strong>Isolated blade · 0.0000 m</strong><span>body center fixed at (170.6565, −6.8912, 70.0499) m</span></article>
+            </div>
+
+            <div class="scene-facts"><span><b>Scene source</b><code>sionna.rt.scene.etoile</code></span><span><b>Base station</b>(78.9293, 32.0468, 28.9687) m</span><span><b>Control points</b>four, P0–P3</span><span><b>Corridor altitude</b>70 m</span></div>
+          </section>
+
+          <section class="shared-params" aria-labelledby="shared-title">
+            <h2 id="shared-title">Generation parameters shared by all four examples</h2>
+            <div class="shared-param-grid">
+              <div><span>Ray tracing</span><b>Sionna RT PathSolver</b></div><div><span>Carrier</span><b>28 GHz</b></div><div><span>Sampling rate</span><b>20 kHz</b></div><div><span>Snapshots and duration</span><b>2,048 · 0.1024 s</b></div>
+              <div><span>STFT</span><b>window 48 · overlap 36</b></div><div><span>NFFT</span><b>512</b></div><div><span>RT settings</span><b>depth 2 · LoS + specular</b></div><div><span>Body trajectory</span><b>single cubic Bézier segment</b></div>
+            </div>
+          </section>
+
+          <div class="gallery-method-note"><p>The three full-model conditions use 25 scatterers: one body point plus 4 rotors × 2 blades × 3 radial points per blade. Rotor frequency, blade radius, noise, and initial position are randomly perturbed within configured ranges, so every sample carries its own exact parameters.</p><a class="button primary" href="../generation/">Learn how the data is generated <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="shell footer-wrap"><div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a><p>A project team at Zhejiang University ISEE</p></div><div class="footer-links"><a href="../">Project home</a><a href="../generation/">Generation</a><a href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3">Hugging Face</a><a href="https://github.com/kygoyuan2004/DeepTelecom_Partial">GitHub</a></div></div></footer>
+  </body>
+</html>

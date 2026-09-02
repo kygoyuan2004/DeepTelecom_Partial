@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DeepTelecom UAV Dataset v1 真实频谱样本画廊：四类正式样本及对应仿真参数。">
+    <link rel="canonical" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/gallery/">
+    <link rel="alternate" hreflang="zh-CN" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/gallery/">
+    <link rel="alternate" hreflang="en" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/gallery/">
+    <meta property="og:title" content="真实频谱样本画廊 · DeepTelecom">
+    <meta property="og:image" content="https://kygoyuan2004.github.io/DeepTelecom_Partial/assets/images/samples/DTUAV-V1-033705.png">
+    <meta name="theme-color" content="#07151d">
+    <title>真实样本画廊 · DeepTelecom</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a>
+        <nav aria-label="主导航"><a href="../#work">整理工作</a><a href="../#conditions">四类工况</a><a href="./" aria-current="page">样本画廊</a><a href="../generation/">生成方法</a><a href="../#quickstart">获取数据</a></nav>
+        <a class="language-link" href="../en/gallery/" lang="en">EN</a>
+      </div>
+    </header>
+
+    <main id="main" class="subpage-main">
+      <section class="subpage-hero">
+        <div class="shell">
+          <div class="breadcrumbs"><a href="../">DeepTelecom</a><span>/</span><span>样本画廊</span></div>
+          <p class="eyebrow"><span class="status-dot"></span> v1.0.0 正式发布样本</p>
+          <h1>看见数据，<span>也看懂参数。</span></h1>
+          <p class="lede">下面四张图不是概念插画，而是从最终 WebDataset TAR 中取出的真实 PNG。我们已经对原始源文件、TAR 成员和公开 manifest 做了三方 SHA-256 核验。</p>
+          <div class="page-meta"><span>4 类各 1 个代表样本</span><span>真实 Étoile 场景</span><span>NPZ 飞行轨迹</span><span>固定 HF commit</span></div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="shell">
+          <div class="intro-note"><b>i</b><p>频谱图横向表示时间，纵向表示多普勒频移，颜色表示相对谱强度（turbo 色图）。PNG 是为快速浏览生成的无坐标轴预览；精确的 <code>t_axis</code>、<code>f_axis</code> 和 <code>S_dB</code> 数组保存在同名 NPZ 中，定量分析应读取 NPZ。</p></div>
+
+          <div class="gallery-grid">
+            <article class="sample-card">
+              <div class="sample-card-head"><h2>水平悬停 <small lang="en">Level hover · <code>level_v0</code></small></h2><code>DTUAV-V1-000007</code></div>
+              <div class="spectrogram-frame"><span class="axis-y">多普勒频移 ↑</span><a href="../assets/images/samples/DTUAV-V1-000007.png"><img src="../assets/images/samples/DTUAV-V1-000007.png" alt="DTUAV-V1-000007 水平悬停微多普勒频谱"></a><span class="axis-x">时间 →</span></div>
+              <div class="plot-range"><span>0 ms</span><span>约 102.4 ms</span></div>
+              <p class="sample-summary">机体不平移，但四个旋翼持续转动。25 个散射点共同形成围绕机体多普勒基线的周期性谱结构。</p>
+              <dl class="parameter-grid">
+                <div><dt>倾斜角</dt><dd>0°</dd></div><div><dt>机体速度</dt><dd>0 m/s</dd></div><div><dt>散射点</dt><dd>25</dd></div>
+                <div><dt>旋翼频率</dt><dd>26.69335 Hz</dd></div><div><dt>叶片半径</dt><dd>19.314 mm</dd></div><div><dt>场景</dt><dd>Étoile</dd></div>
+              </dl>
+              <div class="sample-origin"><span><code>shard-00000.tar</code></span><span title="75dd8fceaca849bb74c8d0be023f93aa670f2ef97d0b1a203fcc09c76c3108fd">PNG SHA-256 · 75dd8fce…108fd</span></div>
+            </article>
+
+            <article class="sample-card">
+              <div class="sample-card-head"><h2>30° 倾斜飞行 <small lang="en">30° pitched flight · <code>pitch30_v10</code></small></h2><code>DTUAV-V1-011252</code></div>
+              <div class="spectrogram-frame"><span class="axis-y">多普勒频移 ↑</span><a href="../assets/images/samples/DTUAV-V1-011252.png"><img src="../assets/images/samples/DTUAV-V1-011252.png" alt="DTUAV-V1-011252 三十度倾斜飞行微多普勒频谱"></a><span class="axis-x">时间 →</span></div>
+              <div class="plot-range"><span>0 ms</span><span>约 102.4 ms</span></div>
+              <p class="sample-summary">四旋翼模型绕仿真 y 轴倾斜 30°，并沿 Bézier 轨迹以 10 m/s 平移；机体多普勒与旋翼微多普勒共同进入频谱。</p>
+              <dl class="parameter-grid">
+                <div><dt>倾斜角</dt><dd>30°</dd></div><div><dt>机体速度</dt><dd>10 m/s</dd></div><div><dt>散射点</dt><dd>25</dd></div>
+                <div><dt>旋翼频率</dt><dd>26.24614 Hz</dd></div><div><dt>叶片半径</dt><dd>18.371 mm</dd></div><div><dt>场景</dt><dd>Étoile</dd></div>
+              </dl>
+              <div class="sample-origin"><span><code>shard-00008.tar</code></span><span title="40e782a84ab4c402f3bb59cbe403f661ec2d248c7bc1116062092da6a987c8fe">PNG SHA-256 · 40e782a8…7c8fe</span></div>
+            </article>
+
+            <article class="sample-card">
+              <div class="sample-card-head"><h2>45° 倾斜飞行 <small lang="en">45° pitched flight · <code>pitch45_v10</code></small></h2><code>DTUAV-V1-022488</code></div>
+              <div class="spectrogram-frame"><span class="axis-y">多普勒频移 ↑</span><a href="../assets/images/samples/DTUAV-V1-022488.png"><img src="../assets/images/samples/DTUAV-V1-022488.png" alt="DTUAV-V1-022488 四十五度倾斜飞行微多普勒频谱"></a><span class="axis-x">时间 →</span></div>
+              <div class="plot-range"><span>0 ms</span><span>约 102.4 ms</span></div>
+              <p class="sample-summary">在相同 10 m/s 平移速度下，模型倾斜角增至 45°。该样本可用于对比更大姿态变化带来的传播与谱形差异。</p>
+              <dl class="parameter-grid">
+                <div><dt>倾斜角</dt><dd>45°</dd></div><div><dt>机体速度</dt><dd>10 m/s</dd></div><div><dt>散射点</dt><dd>25</dd></div>
+                <div><dt>旋翼频率</dt><dd>25.36937 Hz</dd></div><div><dt>叶片半径</dt><dd>19.124 mm</dd></div><div><dt>场景</dt><dd>Étoile</dd></div>
+              </dl>
+              <div class="sample-origin"><span><code>shard-00017.tar</code></span><span title="5be2ae74cc96329a16afcce0f6e3b17d96cfc510754f422f8275e49da7f087b1">PNG SHA-256 · 5be2ae74…087b1</span></div>
+            </article>
+
+            <article class="sample-card">
+              <div class="sample-card-head"><h2>单叶片基准 <small lang="en">Isolated blade baseline · <code>single_blade_v0</code></small></h2><code>DTUAV-V1-033705</code></div>
+              <div class="spectrogram-frame"><span class="axis-y">多普勒频移 ↑</span><a href="../assets/images/samples/DTUAV-V1-033705.png"><img src="../assets/images/samples/DTUAV-V1-033705.png" alt="DTUAV-V1-033705 单叶片基准微多普勒频谱"></a><span class="axis-x">时间 →</span></div>
+              <div class="plot-range"><span>0 ms</span><span>约 102.4 ms</span></div>
+              <p class="sample-summary">只保留一个旋转叶尖散射点，中心不平移，因此呈现清晰的周期性微多普勒轨迹。它是控制样本，不代表单桨无人机。</p>
+              <dl class="parameter-grid">
+                <div><dt>倾斜角</dt><dd>0°</dd></div><div><dt>中心速度</dt><dd>0 m/s</dd></div><div><dt>散射点</dt><dd>1</dd></div>
+                <div><dt>旋翼频率</dt><dd>27.32331 Hz</dd></div><div><dt>叶片半径</dt><dd>19.750 mm</dd></div><div><dt>场景</dt><dd>Étoile</dd></div>
+              </dl>
+              <div class="sample-origin"><span><code>shard-00026.tar</code></span><span title="c9de35751150619056f43183762763cd4ad068ff93eb05f77bc8287b43b16937">PNG SHA-256 · c9de3575…16937</span></div>
+            </article>
+          </div>
+
+          <section class="trajectory-evidence" id="trajectories" aria-labelledby="trajectory-title">
+            <div class="trajectory-heading">
+              <div><p class="kicker">场景与飞行路径</p><h2 id="trajectory-title">频谱来自哪里，飞行器又在哪里？</h2></div>
+              <p>第一张图由正式生成器直接渲染 Sionna RT 内置 Étoile 场景，展示基站与完整的配置轨迹走廊；第二张图只读取四个样本 NPZ 的 <code>uav_positions_m</code>，展示各自 0.1024 s 观测窗口内的真实机体轨迹。</p>
+            </div>
+
+            <figure class="evidence-figure scene-evidence">
+              <a href="../assets/images/scenes/etoile-trajectory-overview.png"><img src="../assets/images/scenes/etoile-trajectory-overview.png" alt="Étoile 射线追踪城市场景中的基站和三次 Bézier 无人机飞行走廊" loading="lazy"></a>
+              <figcaption><strong>Étoile 场景总览</strong><span>橙色：基站 · 绿色：轨迹起点 · 青色：完整 88.914 m Bézier 走廊 · 黄色：终点</span><small>场景图展示完整配置轨迹，不等同于单个样本的 0.1024 s 片段。</small></figcaption>
+            </figure>
+
+            <figure class="evidence-figure">
+              <a href="../assets/images/trajectories/representative-trajectories.png"><img src="../assets/images/trajectories/representative-trajectories.png" alt="四个已核验样本从 NPZ uav_positions_m 数组绘制的无人机机体俯视轨迹" loading="lazy"></a>
+              <figcaption><strong>四个样本的 NPZ 轨迹证据</strong><span>俯视图 · 每个面板等比例坐标 · 坐标相对于样本起点</span><small>悬停与单叶片基准的机体中心保持定点；旋翼或叶尖仍在运动。</small></figcaption>
+            </figure>
+
+            <div class="trajectory-record-grid">
+              <article><code>DTUAV-V1-000007</code><strong>水平悬停 · 0.0000 m</strong><span>定点 (147.0149, −47.9795, 70.0388) m</span></article>
+              <article><code>DTUAV-V1-011252</code><strong>30° 倾斜 · 1.0236 m</strong><span>(147.0302, −47.9545, 70.0068) → (147.3050, −46.9686, 70.0068) m</span></article>
+              <article><code>DTUAV-V1-022488</code><strong>45° 倾斜 · 1.0235 m</strong><span>(178.8773, −2.1977, 70.0154) → (179.8439, −1.8614, 70.0154) m</span></article>
+              <article><code>DTUAV-V1-033705</code><strong>单叶片基准 · 0.0000 m</strong><span>机体中心定点 (170.6565, −6.8912, 70.0499) m</span></article>
+            </div>
+
+            <div class="scene-facts"><span><b>场景来源</b><code>sionna.rt.scene.etoile</code></span><span><b>基站坐标</b>(78.9293, 32.0468, 28.9687) m</span><span><b>控制点</b>P0–P3 共 4 个</span><span><b>轨迹高度</b>70 m</span></div>
+          </section>
+
+          <section class="shared-params" aria-labelledby="shared-title">
+            <h2 id="shared-title">四个示例的共同生成参数</h2>
+            <div class="shared-param-grid">
+              <div><span>射线追踪</span><b>Sionna RT PathSolver</b></div><div><span>载频</span><b>28 GHz</b></div><div><span>采样率</span><b>20 kHz</b></div><div><span>快照与时长</span><b>2,048 · 0.1024 s</b></div>
+              <div><span>STFT</span><b>window 48 · overlap 36</b></div><div><span>NFFT</span><b>512</b></div><div><span>RT 设置</span><b>depth 2 · LoS + specular</b></div><div><span>机体轨迹</span><b>单段三次 Bézier</b></div>
+            </div>
+          </section>
+
+          <div class="gallery-method-note"><p>普通三类的 25 个散射点由“1 个机体点 + 4 旋翼 × 2 叶片 × 每叶片 3 个径向点”构成。生成时，旋翼频率、叶片半径、噪声和初始位置在配置范围内随机扰动，因此每个样本都有自己的确切参数。</p><a class="button primary" href="../generation/">了解生成方法 <span aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="shell footer-wrap"><div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a><p>浙江大学信息与电子工程学院团队</p></div><div class="footer-links"><a href="../">项目首页</a><a href="../generation/">生成方法</a><a href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3">Hugging Face</a><a href="https://github.com/kygoyuan2004/DeepTelecom_Partial">GitHub</a></div></div></footer>
+  </body>
+</html>

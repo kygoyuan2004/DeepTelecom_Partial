@@ -1,0 +1,7 @@
+.conda-env/
+outputs/
+run/
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store

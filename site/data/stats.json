@@ -16,6 +16,55 @@
     "pitch45_v10": 11219,
     "single_blade_v0": 11284
   },
+  "class_profiles": [
+    {
+      "class_id": "level_v0",
+      "name_zh": "水平悬停",
+      "name_en": "Level hover",
+      "degree": 0,
+      "body_speed_m_s": 0,
+      "scatterer_count": 25,
+      "sample_count": 11249
+    },
+    {
+      "class_id": "pitch30_v10",
+      "name_zh": "30° 倾斜飞行",
+      "name_en": "30° pitched flight",
+      "degree": 30,
+      "body_speed_m_s": 10,
+      "scatterer_count": 25,
+      "sample_count": 11236
+    },
+    {
+      "class_id": "pitch45_v10",
+      "name_zh": "45° 倾斜飞行",
+      "name_en": "45° pitched flight",
+      "degree": 45,
+      "body_speed_m_s": 10,
+      "scatterer_count": 25,
+      "sample_count": 11219
+    },
+    {
+      "class_id": "single_blade_v0",
+      "name_zh": "单叶片基准",
+      "name_en": "Isolated blade baseline",
+      "degree": 0,
+      "body_speed_m_s": 0,
+      "scatterer_count": 1,
+      "sample_count": 11284
+    }
+  ],
+  "curation": {
+    "source_inventories": 3,
+    "local_physical_copies_excluded": 39240,
+    "invalid_excluded": 1,
+    "incomplete_excluded": 1077,
+    "nonformal_excluded": 5109,
+    "original_id_conflict_groups": 70,
+    "original_id_conflict_records_retained": 144,
+    "cross_source_duplicates_removed_from_frozen_candidates": 0,
+    "held": 0
+  },
   "sample_members": [
     "npz",
     "png",
