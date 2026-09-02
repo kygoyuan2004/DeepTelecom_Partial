@@ -1,6 +1,7 @@
 ---
 pretty_name: DeepTelecom UAV Dataset v1
 library_name: webdataset
+viewer: false
 tags:
 - wireless
 - ray-tracing
@@ -39,6 +40,8 @@ DeepTelecom v1 是一个面向无人机无线传播与微多普勒研究的、�
 | TAR 总字节数 / bytes | **148,989,562,880** |
 | 张量格式 / tensor schemas | 44,948 × 32-key；40 × legacy 24-key |
 | 预定义 split | 无 / none |
+
+Hugging Face 的通用 Dataset Viewer 已主动关闭：本版本没有预定义 split，且 NPZ 中包含无法由通用 Arrow 预览器无损表示的复数张量。这不影响数据下载或流式读取；请使用下方的 WebDataset 示例或项目加载工具。 / The generic Dataset Viewer is intentionally disabled because this split-free WebDataset contains complex-valued NPZ tensors that cannot be represented losslessly by its Arrow preview. Use the WebDataset example or the project loaders below.
 
 ## 四类工况不是四个难懂的代码
 
