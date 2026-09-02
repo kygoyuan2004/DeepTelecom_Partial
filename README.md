@@ -2,7 +2,6 @@
 
 DeepTelecom UAV Dataset v1 is a ray-tracing-derived UAV wireless sensing dataset published as deterministic, integrity-verifiable WebDataset shards. The frozen `v1.0.0` release contains **44,988 accepted samples** in **140 TAR shards**, with continuous public IDs from `DTUAV-V1-000001` to `DTUAV-V1-044988`.
 
-**中文简介：** DeepTelecom v1 面向无人机无线传播与微多普勒研究。浙江大学信息与电子工程学院项目团队将三套计算环境中的分散输出统一清点、清洗、核验、重新编号并打包，形成 44,988 个可追溯样本。这里发布的不是简单目录快照，而是一套带公开 ID、样本合同、全局 manifest、SHA-256 和固定版本的数据发布。
 
 > Modeling boundary: this is a moving point-scatterer monostatic-return approximation built on Sionna RT. It is neither measured flight data nor a full-wave simulation with a physical UAV mesh/RCS model.
 
