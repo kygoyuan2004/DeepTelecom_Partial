@@ -1,5 +1,6 @@
 ---
 pretty_name: DeepTelecom UAV Dataset v1
+library_name: webdataset
 tags:
 - wireless
 - ray-tracing
