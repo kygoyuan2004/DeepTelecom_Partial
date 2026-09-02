@@ -58,12 +58,12 @@ DeepTelecom v1 是一个面向无人机无线传播与微多普勒研究的、�
 
 <table>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/main/site/assets/images/samples/DTUAV-V1-000007.png" width="330" alt="Level-hover micro-Doppler spectrogram"><br><b>水平悬停</b><br><code>DTUAV-V1-000007</code><br>0° · 0 m/s · 25 points</td>
-    <td align="center"><img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/main/site/assets/images/samples/DTUAV-V1-011252.png" width="330" alt="30-degree pitched-flight micro-Doppler spectrogram"><br><b>30° 倾斜飞行</b><br><code>DTUAV-V1-011252</code><br>30° · 10 m/s · 25 points</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/c125baacc9851561317e3e3f9ab23c62e6e82fb5/site/assets/images/samples/DTUAV-V1-000007.png" width="330" alt="Level-hover micro-Doppler spectrogram"><br><b>水平悬停</b><br><code>DTUAV-V1-000007</code><br>0° · 0 m/s · 25 points</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/c125baacc9851561317e3e3f9ab23c62e6e82fb5/site/assets/images/samples/DTUAV-V1-011252.png" width="330" alt="30-degree pitched-flight micro-Doppler spectrogram"><br><b>30° 倾斜飞行</b><br><code>DTUAV-V1-011252</code><br>30° · 10 m/s · 25 points</td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/main/site/assets/images/samples/DTUAV-V1-022488.png" width="330" alt="45-degree pitched-flight micro-Doppler spectrogram"><br><b>45° 倾斜飞行</b><br><code>DTUAV-V1-022488</code><br>45° · 10 m/s · 25 points</td>
-    <td align="center"><img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/main/site/assets/images/samples/DTUAV-V1-033705.png" width="330" alt="Isolated-blade baseline micro-Doppler spectrogram"><br><b>单叶片基准</b><br><code>DTUAV-V1-033705</code><br>0° · 0 m/s · 1 blade-tip</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/c125baacc9851561317e3e3f9ab23c62e6e82fb5/site/assets/images/samples/DTUAV-V1-022488.png" width="330" alt="45-degree pitched-flight micro-Doppler spectrogram"><br><b>45° 倾斜飞行</b><br><code>DTUAV-V1-022488</code><br>45° · 10 m/s · 25 points</td>
+    <td align="center"><img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/c125baacc9851561317e3e3f9ab23c62e6e82fb5/site/assets/images/samples/DTUAV-V1-033705.png" width="330" alt="Isolated-blade baseline micro-Doppler spectrogram"><br><b>单叶片基准</b><br><code>DTUAV-V1-033705</code><br>0° · 0 m/s · 1 blade-tip</td>
   </tr>
 </table>
 
@@ -71,13 +71,13 @@ DeepTelecom v1 是一个面向无人机无线传播与微多普勒研究的、�
 
 ## 场景与飞行轨迹 / Scene and flight paths
 
-<img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/main/site/assets/images/scenes/etoile-trajectory-overview.png" width="900" alt="Sionna RT Étoile scene with the base station and configured UAV flight corridor">
+<img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/c125baacc9851561317e3e3f9ab23c62e6e82fb5/site/assets/images/scenes/etoile-trajectory-overview.png" width="900" alt="Sionna RT Étoile scene with the base station and configured UAV flight corridor">
 
 场景图由正式生成器直接渲染 Sionna RT 2.0.1 内置 Étoile 资产：橙色点是 `(78.9293, 32.0468, 28.9687) m` 的基站，青色点列是高度 70 m、全长 88.914 m 的完整三次 Bézier 配置走廊。它用于解释场景和完整配置，不表示单个 0.1024 s 样本走完了整条轨迹。
 
-<img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/main/site/assets/images/trajectories/representative-trajectories.png" width="900" alt="Four verified UAV body paths drawn from release NPZ arrays">
+<img src="https://raw.githubusercontent.com/kygoyuan2004/DeepTelecom_Partial/c125baacc9851561317e3e3f9ab23c62e6e82fb5/site/assets/images/trajectories/representative-trajectories.png" width="900" alt="Four verified UAV body paths drawn from release NPZ arrays">
 
-第二张图直接读取上述四个正式 NPZ 的 `uav_positions_m` 数组。两个 10 m/s 样本在观测窗口内分别运动约 1.024 m；水平悬停和单叶片基准的机体中心保持定点，但旋翼或叶尖散射点仍在运动。绝对起终点和图像校验值见[机器可读画廊清单](https://github.com/kygoyuan2004/DeepTelecom_Partial/blob/main/site/data/gallery.json)。
+第二张图直接读取上述四个正式 NPZ 的 `uav_positions_m` 数组。两个 10 m/s 样本在观测窗口内分别运动约 1.024 m；水平悬停和单叶片基准的机体中心保持定点，但旋翼或叶尖散射点仍在运动。绝对起终点和图像校验值见[机器可读画廊清单](https://github.com/kygoyuan2004/DeepTelecom_Partial/blob/c125baacc9851561317e3e3f9ab23c62e6e82fb5/site/data/gallery.json)。
 
 ## 每个样本包含什么 / Sample contract
 
