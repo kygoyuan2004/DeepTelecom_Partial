@@ -8,7 +8,8 @@
     <link rel="alternate" hreflang="zh-CN" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/generation/">
     <link rel="alternate" hreflang="en" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/generation/">
     <meta property="og:title" content="Generation Method and Open-Source Code · DeepTelecom">
-    <meta name="theme-color" content="#07151d">
+    <meta name="theme-color" content="#f7f7f3">
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
     <title>Generation Method and Open-Source Code · DeepTelecom</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
     <script src="../../assets/js/app.js" defer></script>
@@ -18,7 +19,7 @@
     <header class="site-header">
       <div class="shell nav-wrap">
         <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a>
-        <nav aria-label="Main navigation"><a href="../#work">Curation</a><a href="../#conditions">Conditions</a><a href="../gallery/">Sample gallery</a><a href="./" aria-current="page">Generation</a><a href="../#quickstart">Get the data</a></nav>
+        <nav aria-label="Main navigation"><a href="../#overview">Overview</a><a href="../#conditions">Conditions</a><a href="../gallery/">Sample gallery</a><a href="./" aria-current="page">Generation</a><a href="../#quickstart">Access</a></nav>
         <a class="language-link" href="../../generation/" lang="zh-CN" aria-label="切换到中文">中文</a>
       </div>
     </header>
@@ -28,8 +29,8 @@
         <div class="shell">
           <div class="breadcrumbs"><a href="../">DeepTelecom</a><span>/</span><span>Generation</span></div>
           <p class="eyebrow"><span class="status-dot"></span> Open method · Extensible configuration</p>
-          <h1>We publish the data—and <span>explain how it was made.</span></h1>
-          <p class="lede">DeepTelecom uses Sionna RT to model the scene's propagation channel. The UAV body and rotors are discretized as moving point scatterers; the channel is solved snapshot by snapshot and used to construct a monostatic echo approximation, producing tensors, spectrograms, and metadata.</p>
+          <h1>DeepTelecom Data Generation Method</h1>
+          <p class="lede">The reference generator uses Sionna RT to model the scene's propagation channel. The UAV body and rotors are discretized as moving point scatterers; the channel is solved snapshot by snapshot and used to construct a monostatic echo approximation, producing tensors, spectrograms, and run metadata.</p>
           <div class="page-meta"><span>Python 3.11</span><span>Sionna RT 2.0.1</span><span>Configuration-driven</span><span>GPU generation</span><span>Apache-2.0 project code</span></div>
         </div>
       </section>
@@ -58,7 +59,7 @@
 
             <section class="doc-section" id="opensource">
               <p class="kicker">02 · Open-source scope</p>
-              <h2>A cleaned, reusable generator—not a snapshot of a server workspace</h2>
+              <h2>Scope of the public generator</h2>
               <p>The public repository's <code>generator/</code> directory contains only reusable motion models, Sionna RT solving, STFT processing, metadata code, configuration, and smoke tests. Tens of gigabytes of outputs, run logs, legacy ID inventories, device scheduling state, and server-specific absolute paths do not belong in Git history.</p>
               <pre class="source-tree">generator/
 ├── config/etoile.yaml
@@ -104,10 +105,12 @@ DEEPTELECOM_PYTHON="$PWD/.conda-env/bin/python" ./scripts/preflight.py</code></p
               <h2>Add blade scatterers without editing Python</h2>
               <p>For the three full-model conditions, the scatterer count is:</p>
               <div class="callout"><strong>Total = 1 body point + rotor count × blades per rotor × points per blade</strong><p>The default is 1 + 4 × 2 × 3 = 25. Increasing points per blade from 3 to 5 produces 41 total scatterers.</p></div>
-              <div class="doc-code"><div class="code-title"><span>Copy the configuration and edit it</span><button class="copy-button" type="button" data-copy="point-code">Copy</button></div><pre><code id="point-code"># config/my_dense_blades.yaml
-num_rotors: 4
-num_blades_per_rotor: 2
-# Total scatterers increase from 25 to 41
+              <div class="doc-code"><div class="code-title"><span>Copy the complete configuration, then edit it</span><button class="copy-button" type="button" data-copy="point-code">Copy</button></div><pre><code id="point-code">cp config/etoile.yaml config/my_dense_blades.yaml
+
+# In config/my_dense_blades.yaml, keep:
+# num_rotors: 4
+# num_blades_per_rotor: 2
+# and change points_per_blade: 3 to:
 points_per_blade: 5</code></pre></div>
               <ul>
                 <li>Points are spaced uniformly along each blade radius. Adding points increases the number of probes, ray-tracing cost, and NPZ size.</li>
@@ -133,7 +136,7 @@ etoile_trajectory_speed_mode: class_speed
 etoile_control_points_json: "[[146,-52,70],[154,-18,72],[178,14,68],[204,-8,70]]"
 etoile_start_fraction_min: 0.00
 etoile_start_fraction_max: 0.90</code></pre></div>
-              <div class="callout warning"><strong>Arbitrary waypoint/CSV paths and multi-segment Bézier paths are not supported yet</strong><p>For more complex routes, add a trajectory backend that honors the return contract of <code>build_body_path()</code>, then test position continuity, velocity continuity, and path-length boundaries. Do not replace positions alone while leaving velocities inconsistent.</p></div>
+              <div class="callout warning"><strong>Arbitrary waypoint/CSV paths and multi-segment Bézier paths are not supported yet</strong><p>A complex route requires coordinated changes to path construction, the path-attachment branch in <code>generate_case()</code>, and the full trajectory-metadata contract, plus tests for position continuity, velocity continuity, and path-length bounds. Replacing positions alone would leave velocities or labels inconsistent.</p></div>
             </section>
 
             <section class="doc-section" id="parameters">
@@ -158,7 +161,7 @@ etoile_start_fraction_max: 0.90</code></pre></div>
 
             <section class="doc-section" id="limits">
               <p class="kicker">07 · Reproducibility and limits</p>
-              <h2>What can be reproduced—and what should not be overstated</h2>
+              <h2>Reproducibility and implementation boundaries</h2>
               <ul>
                 <li>Public configuration, random seeds, code version, and parameter paths are reproducible. Different GPUs, drivers, and underlying floating-point implementations are not guaranteed to produce byte-identical NPZ files.</li>
                 <li>The generator output is a research simulation approximation and should not be treated as measured ground truth from a physical aircraft.</li>

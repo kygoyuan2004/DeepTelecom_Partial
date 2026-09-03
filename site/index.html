@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DeepTelecom UAV Dataset v1：由浙江大学信息与电子工程学院团队整理发布的无人机无线传播仿真数据集，包含 44,988 个可追溯样本。">
+    <meta name="description" content="DeepTelecom UAV Dataset v1：包含 44,988 个配对 NPZ、微多普勒频谱 PNG 与标准化 JSON 元数据的无人机无线传播仿真数据集。">
     <link rel="canonical" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/">
     <link rel="alternate" hreflang="zh-CN" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/">
     <link rel="alternate" hreflang="en" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/en/">
+    <link rel="alternate" hreflang="x-default" href="https://kygoyuan2004.github.io/DeepTelecom_Partial/">
+    <meta property="og:type" content="website">
     <meta property="og:title" content="DeepTelecom 无人机无线传播数据集">
     <meta property="og:description" content="44,988 个经过清洗、统一编号和完整性校验的无人机无线传播仿真样本。">
-    <meta property="og:image" content="https://kygoyuan2004.github.io/DeepTelecom_Partial/assets/images/samples/DTUAV-V1-033705.png">
-    <meta name="theme-color" content="#07151d">
+    <meta property="og:image" content="https://kygoyuan2004.github.io/DeepTelecom_Partial/assets/images/scenes/etoile-trajectory-overview.png">
+    <meta name="theme-color" content="#f7f7f3">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
     <title>DeepTelecom 无人机无线传播数据集</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/app.js" defer></script>
@@ -25,306 +28,328 @@
           <span>DeepTelecom</span>
         </a>
         <nav aria-label="主导航">
-          <a href="#work">整理工作</a>
+          <a href="#overview">数据概览</a>
+          <a href="#samples">真实样本</a>
           <a href="#conditions">四类工况</a>
-          <a href="./gallery/">样本画廊</a>
           <a href="./generation/">生成方法</a>
-          <a href="#quickstart">获取数据</a>
+          <a href="#quickstart">下载与使用</a>
         </nav>
         <a class="language-link" href="./en/" lang="en" aria-label="Switch to English">EN</a>
       </div>
     </header>
 
     <main id="main">
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="shell hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="status-dot"></span> 浙江大学信息与电子工程学院 · v1.0.0</p>
-            <h1>把分散的无人机传播仿真，整理成一个<span>可复现的数据集。</span></h1>
-            <p class="lede">
-              三套计算环境产生了大量分散的射线追踪结果。我们完成只读清点、清洗去重、冲突核验、
-              统一编号、标准化打包和逐分片校验，最终发布 44,988 个可追溯样本。
-            </p>
-            <div class="hero-tags">
-              <span>射线追踪仿真</span>
-              <span>统一公开命名空间</span>
-              <span>固定版本可校验</span>
+            <p class="eyebrow">DeepTelecom · DTUAV-V1 · v1.0.0</p>
+            <h1 id="hero-title">DeepTelecom 无人机无线传播数据集</h1>
+            <p class="lede">基于 Sionna RT 与无人机点散射体运动模型构建的可复现仿真数据集，提供配对的 NPZ 张量、微多普勒频谱 PNG 和标准化 JSON 元数据。</p>
+            <div class="model-boundary" role="note" aria-label="建模范围">
+              <strong>建模范围</strong>
+              <span>这是仿真数据，不是实飞测量数据；使用点散射体单基地回波近似，不是带完整物理无人机网格或标定 RCS 的全波仿真。</span>
             </div>
             <div class="actions">
-              <a class="button primary" href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3" rel="noreferrer">在 Hugging Face 获取 <span aria-hidden="true">↗</span></a>
-              <a class="button secondary" href="./gallery/">查看真实频谱样本 <span aria-hidden="true">→</span></a>
+              <a class="button primary" href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3" rel="noreferrer">在 Hugging Face 获取数据 <span aria-hidden="true">↗</span></a>
+              <a class="button secondary" href="./gallery/">查看真实样本 <span aria-hidden="true">→</span></a>
             </div>
-            <div class="release-line">
-              <span>固定版本</span><code>de7fc35c…23b3</code><span class="verified-label">已核验</span>
+            <div class="hero-text-links" role="group" aria-label="项目资源">
+              <a href="https://github.com/kygoyuan2004/DeepTelecom_Partial" rel="noreferrer">GitHub 仓库 <span aria-hidden="true">↗</span></a>
+              <a href="./generation/">数据生成方法 <span aria-hidden="true">→</span></a>
             </div>
+            <p class="release-line"><span>冻结版本</span><code>de7fc35c…23b3</code><span class="verified-label">v1.0.0 已核验</span></p>
           </div>
 
-          <div class="release-visual" role="img" aria-label="三份来源清单经过审计、标准化和哈希校验，合并为一个 DTUAV-V1 数据集">
-            <div class="visual-glow"></div>
-            <div class="visual-topline"><span>分散生成结果</span><span>3 份只读清单</span></div>
-            <div class="source-stack" aria-hidden="true">
-              <div class="source-node"><b>01</b><span>样本输出</span><i></i></div>
-              <div class="source-node"><b>02</b><span>样本输出</span><i></i></div>
-              <div class="source-node"><b>03</b><span>样本输出</span><i></i></div>
-            </div>
-            <div class="pipeline-node" aria-hidden="true"><span>审计</span><i></i><span>标准化</span><i></i><span>哈希</span></div>
-            <div class="release-node">
-              <div class="release-node-head"><span>统一发布</span><b>v1.0.0</b></div>
-              <strong>DTUAV-V1</strong>
-              <p>000001 <span aria-hidden="true">→</span> 044988</p>
-              <div class="member-chips"><span>NPZ</span><span>PNG</span><span>JSON</span></div>
-              <small><i></i> 140 个已校验 WebDataset 分片</small>
-            </div>
+          <div class="hero-evidence">
+            <figure class="research-figure scene-figure">
+              <picture>
+                <source srcset="./assets/images/scenes/etoile-trajectory-overview.webp" type="image/webp">
+                <img src="./assets/images/scenes/etoile-trajectory-overview.png" width="1600" height="1000" alt="Sionna RT Étoile 城市场景中的基站与完整三次 Bézier 无人机飞行走廊" fetchpriority="high" decoding="async">
+              </picture>
+              <figcaption><strong>图 1 · Étoile 场景配置</strong><span>基站、70 m 高度与完整 88.914 m 三次 Bézier 走廊。该图展示完整配置，不代表单个 0.1024 s 样本飞完整条路线。</span></figcaption>
+            </figure>
+            <figure class="research-figure hero-spectrum">
+              <img src="./assets/images/samples/DTUAV-V1-011252.png" width="512" height="512" alt="正式样本 DTUAV-V1-011252 的 30 度倾斜飞行微多普勒频谱" decoding="async">
+              <figcaption><strong>发布样本 DTUAV-V1-011252</strong><span>30° 倾斜 · 10 m/s · 25 个散射点</span></figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="stats-band" aria-label="数据集概况">
-        <div class="shell stats-grid">
-          <article><strong data-stat="samples">44,988</strong><span>正式公开样本</span></article>
-          <article><strong>4</strong><span>高度均衡的仿真工况</span></article>
-          <article><strong data-stat="shards">140</strong><span>完成校验的数据分片</span></article>
-          <article><strong data-stat="size">138.76 GiB</strong><span>正式发布数据体积</span></article>
-        </div>
-      </section>
-
-      <section class="section section-dark work-section" id="work">
+      <section class="dataset-overview" id="overview" aria-labelledby="overview-title">
         <div class="shell">
-          <div class="section-heading on-dark">
-            <p class="kicker">我们完成了什么</p>
-            <h2>不是简单上传文件，<br>而是建立一条可复核的数据路径。</h2>
-            <p>公开数据中不再按计算设备分目录。来源只作为 provenance 保留在 manifest 中，所有样本进入同一个编号和分片体系。</p>
+          <div class="overview-heading">
+            <p class="kicker">Dataset at a glance</p>
+            <h2 id="overview-title">数据集概览</h2>
           </div>
-
-          <ol class="process-grid">
-            <li><span class="step-number">01</span><div><h3>只读清点</h3><p>扫描三套计算环境，冻结文件、状态、类别、大小与哈希清单。</p></div></li>
-            <li><span class="step-number">02</span><div><h3>清洗判定</h3><p>区分正式样本、本地副本、未完成输出、测试任务和无效文件。</p></div></li>
-            <li><span class="step-number">03</span><div><h3>全局核验</h3><p>按内容哈希查重，人工规则复核旧编号相同但内容不同的样本。</p></div></li>
-            <li><span class="step-number">04</span><div><h3>统一格式</h3><p>分配连续公开 ID，为每个样本建立 NPZ + PNG + JSON 合同。</p></div></li>
-            <li><span class="step-number">05</span><div><h3>打包发布</h3><p>构建 140 个确定性 TAR，逐一验证 SHA-256、LFS 对象和提交链。</p></div></li>
-          </ol>
-
-          <div class="audit-grid">
-            <article class="audit-card excluded-card">
-              <p class="audit-label"><span aria-hidden="true">−</span> 发布前排除</p>
-              <strong>只排除副本、非正式记录和不可用结果</strong>
-              <div class="audit-metrics">
-                <div><b>39,240</b><span>本地物理副本</span></div>
-                <div><b>1</b><span>零字节无效样本</span></div>
-                <div><b>1,077</b><span>未完成记录</span></div>
-                <div><b>5,109</b><span>测试及非正式记录</span></div>
-              </div>
-              <p class="fine-print">39,240 指同一数据在本地目录中的重复存储，并不代表删除了 39,240 个独立训练样本。</p>
-            </article>
-
-            <article class="audit-card retained-card">
-              <p class="audit-label"><span aria-hidden="true">+</span> 审慎保留</p>
-              <strong>内容不同的有效样本全部保留</strong>
-              <div class="conflict-number"><b>70</b><span>组旧编号冲突<br><small>共 144 条不同内容</small></span></div>
-              <p>这些记录复用了旧编号，但内容并不相同。我们为它们分配不同的全局 ID，没有静默覆盖或误删。</p>
-              <div class="audit-status"><span><i></i> 冻结候选跨来源重复：0</span><span><i></i> 待决冲突：0</span></div>
-            </article>
-          </div>
+          <dl class="metric-grid">
+            <div><dt data-stat="samples">44,988</dt><dd>正式公开样本</dd></div>
+            <div><dt>4</dt><dd>仿真工况</dd></div>
+            <div><dt data-stat="shards">140</dt><dd>已校验 TAR 分片</dd></div>
+            <div><dt data-stat="size">138.76 GiB</dt><dd>发布数据体积</dd></div>
+            <div><dt>NPZ · PNG · JSON</dt><dd>每个公开 ID 的三个成员</dd></div>
+          </dl>
         </div>
       </section>
 
-      <section class="section conditions-section" id="conditions">
+      <section class="section sample-section" id="samples" aria-labelledby="samples-title">
         <div class="shell">
           <div class="section-heading">
-            <p class="kicker">四类仿真工况</p>
-            <h2>保留机器标签，<br>更要讲清它代表什么。</h2>
-            <p>短标签仍作为 <code>class_id</code> 供程序读取；网页同时说明生成器中的倾斜角、机体平移速度与散射模型。</p>
+            <p class="kicker">Release evidence</p>
+            <h2 id="samples-title">真实样本与数据内容</h2>
+            <p>以下频谱 PNG 来自冻结的 v1.0.0 TAR。对应源文件、TAR 成员和公开 manifest 的 SHA-256 已交叉核验；详细参数记录在机器可读的画廊清单中。</p>
           </div>
 
-          <div class="label-decoder">
-            <span>标签怎么读</span><code>pitch30_v10</code>
-            <div><b>pitch30</b><small>绕仿真 y 轴倾斜 30°</small></div><i aria-hidden="true">+</i>
-            <div><b>v10</b><small>机体沿轨迹以 10 m/s 平移</small></div>
+          <div class="sample-content-grid">
+            <div class="preview-grid" id="sample-previews" role="group" aria-label="四类正式发布样本">
+              <figure class="sample-preview">
+                <a href="./gallery/"><img src="./assets/images/samples/DTUAV-V1-000007.png" width="512" height="512" loading="lazy" alt="DTUAV-V1-000007 水平悬停微多普勒频谱"></a>
+                <figcaption><code>DTUAV-V1-000007</code><strong>水平悬停</strong><span>0° · 0 m/s · 25 散射点</span></figcaption>
+              </figure>
+              <figure class="sample-preview">
+                <a href="./gallery/"><img src="./assets/images/samples/DTUAV-V1-011252.png" width="512" height="512" loading="lazy" alt="DTUAV-V1-011252 三十度倾斜飞行微多普勒频谱"></a>
+                <figcaption><code>DTUAV-V1-011252</code><strong>30° 倾斜飞行</strong><span>30° · 10 m/s · 25 散射点</span></figcaption>
+              </figure>
+              <figure class="sample-preview">
+                <a href="./gallery/"><img src="./assets/images/samples/DTUAV-V1-022488.png" width="512" height="512" loading="lazy" alt="DTUAV-V1-022488 四十五度倾斜飞行微多普勒频谱"></a>
+                <figcaption><code>DTUAV-V1-022488</code><strong>45° 倾斜飞行</strong><span>45° · 10 m/s · 25 散射点</span></figcaption>
+              </figure>
+              <figure class="sample-preview">
+                <a href="./gallery/"><img src="./assets/images/samples/DTUAV-V1-033705.png" width="512" height="512" loading="lazy" alt="DTUAV-V1-033705 单叶片基准微多普勒频谱"></a>
+                <figcaption><code>DTUAV-V1-033705</code><strong>单叶片基准</strong><span>0° · 0 m/s · 1 散射点</span></figcaption>
+              </figure>
+            </div>
+
+            <aside class="sample-contract" aria-labelledby="contract-title">
+              <p class="kicker">Sample contract</p>
+              <h3 id="contract-title">一个样本包含什么</h3>
+              <p>以已核验的 <code>DTUAV-V1-000007</code> 为例，同一个 TAR 内包含三个同名成员。</p>
+              <ol class="member-list">
+                <li><span class="file-extension">NPZ</span><div><strong>仿真张量</strong><code>DTUAV-V1-000007.npz</code><p>信道、回波、运动、散射点、STFT 与场景数组。</p></div></li>
+                <li><span class="file-extension">PNG</span><div><strong>频谱预览</strong><code>DTUAV-V1-000007.png</code><p>512 × 512 的配对微多普勒时频图。</p></div></li>
+                <li><span class="file-extension">JSON</span><div><strong>标准化元数据</strong><code>DTUAV-V1-000007.json</code><p>类别、tensor schema、成员校验和与 provenance。</p></div></li>
+              </ol>
+              <div class="contract-links">
+                <a href="./gallery/">查看全部样本参数</a>
+                <a href="./data/gallery.json">读取 gallery.json</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section conditions-section section-alt" id="conditions" aria-labelledby="conditions-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="kicker">Simulation conditions</p>
+            <h2 id="conditions-title">四类仿真工况</h2>
+            <p><code>class_id</code> 保留机器可读短标签；下表同时给出其倾斜角、机体平移速度、散射点模型和样本数量。</p>
           </div>
 
-          <div class="condition-grid" id="class-list">
-            <article class="condition-card level-card" data-class-id="level_v0">
-              <div class="condition-topline"><code>level_v0</code><span data-class-share="level_v0">25.0%</span></div>
-              <div class="attitude-figure" aria-hidden="true"><div class="reference-line"></div><div class="uav-silhouette level"></div><span>0°</span></div>
-              <h3>水平悬停 <small lang="en">Level hover</small></h3>
-              <p>完整四旋翼点散射模型，机体倾斜角为 0°、平移速度为 0 m/s；旋翼仍在转动，因此不是“完全静止”。</p>
-              <div class="condition-specs"><span>0° 倾斜</span><span>0 m/s</span><span>25 散射点</span></div>
-              <div class="condition-count"><strong data-class-count="level_v0">11,249</strong><span>个样本</span></div>
-            </article>
+          <div class="label-decoder" role="note" aria-label="pitch30_v10 标签解释">
+            <span>标签示例</span><code>pitch30_v10</code>
+            <span><strong>pitch30</strong>：绕仿真 y 轴倾斜 30°</span>
+            <span><strong>v10</strong>：沿轨迹以 10 m/s 平移</span>
+          </div>
 
-            <article class="condition-card pitch30-card" data-class-id="pitch30_v10">
-              <div class="condition-topline"><code>pitch30_v10</code><span data-class-share="pitch30_v10">25.0%</span></div>
-              <div class="attitude-figure" aria-hidden="true"><div class="reference-line"></div><div class="uav-silhouette pitch-30"></div><span>30°</span></div>
-              <h3>30° 倾斜飞行 <small lang="en">30° pitched flight</small></h3>
-              <p>完整四旋翼模型绕仿真 y 轴倾斜 30°，机体沿轨迹以 10 m/s（36 km/h）平移，用于观察姿态与运动共同作用。</p>
-              <div class="condition-specs"><span>30° 倾斜</span><span>10 m/s</span><span>25 散射点</span></div>
-              <div class="condition-count"><strong data-class-count="pitch30_v10">11,236</strong><span>个样本</span></div>
+          <div class="condition-table" id="class-list">
+            <article class="condition-row level-card">
+              <div class="condition-name"><span class="condition-swatch" aria-hidden="true"></span><div><h3>水平悬停</h3><code>level_v0</code></div></div>
+              <p>完整四旋翼点散射模型；机体不平移，旋翼仍持续转动。</p>
+              <dl><div><dt>倾斜</dt><dd>0°</dd></div><div><dt>速度</dt><dd>0 m/s</dd></div><div><dt>散射点</dt><dd>25</dd></div></dl>
+              <div class="condition-count"><strong data-class-count="level_v0">11,249</strong><span>样本 · <b data-class-share="level_v0">25.0%</b></span></div>
             </article>
-
-            <article class="condition-card pitch45-card" data-class-id="pitch45_v10">
-              <div class="condition-topline"><code>pitch45_v10</code><span data-class-share="pitch45_v10">24.9%</span></div>
-              <div class="attitude-figure" aria-hidden="true"><div class="reference-line"></div><div class="uav-silhouette pitch-45"></div><span>45°</span></div>
-              <h3>45° 倾斜飞行 <small lang="en">45° pitched flight</small></h3>
-              <p>在相同 10 m/s 速度下将完整四旋翼模型倾斜 45°，用于比较更大姿态变化下的无线传播特征。</p>
-              <div class="condition-specs"><span>45° 倾斜</span><span>10 m/s</span><span>25 散射点</span></div>
-              <div class="condition-count"><strong data-class-count="pitch45_v10">11,219</strong><span>个样本</span></div>
+            <article class="condition-row pitch30-card">
+              <div class="condition-name"><span class="condition-swatch" aria-hidden="true"></span><div><h3>30° 倾斜飞行</h3><code>pitch30_v10</code></div></div>
+              <p>完整四旋翼模型绕仿真 y 轴倾斜 30°，沿轨迹平移。</p>
+              <dl><div><dt>倾斜</dt><dd>30°</dd></div><div><dt>速度</dt><dd>10 m/s</dd></div><div><dt>散射点</dt><dd>25</dd></div></dl>
+              <div class="condition-count"><strong data-class-count="pitch30_v10">11,236</strong><span>样本 · <b data-class-share="pitch30_v10">25.0%</b></span></div>
             </article>
-
-            <article class="condition-card blade-card" data-class-id="single_blade_v0">
-              <div class="condition-topline"><code>single_blade_v0</code><span data-class-share="single_blade_v0">25.1%</span></div>
-              <div class="attitude-figure blade-figure" aria-hidden="true"><div class="blade-orbit"><i></i></div><span>1 个叶尖</span></div>
-              <h3>单叶片基准 <small lang="en">Isolated blade baseline</small></h3>
-              <p>仅保留一个旋转叶尖散射点的对照样本，用于隔离叶片效应；它不是一架“单桨无人机”。中心不发生平移。</p>
-              <div class="condition-specs"><span>0° 倾斜</span><span>0 m/s</span><span>1 散射点</span></div>
-              <div class="condition-count"><strong data-class-count="single_blade_v0">11,284</strong><span>个样本</span></div>
+            <article class="condition-row pitch45-card">
+              <div class="condition-name"><span class="condition-swatch" aria-hidden="true"></span><div><h3>45° 倾斜飞行</h3><code>pitch45_v10</code></div></div>
+              <p>保持 10 m/s 平移速度，将完整四旋翼模型倾斜至 45°。</p>
+              <dl><div><dt>倾斜</dt><dd>45°</dd></div><div><dt>速度</dt><dd>10 m/s</dd></div><div><dt>散射点</dt><dd>25</dd></div></dl>
+              <div class="condition-count"><strong data-class-count="pitch45_v10">11,219</strong><span>样本 · <b data-class-share="pitch45_v10">24.9%</b></span></div>
+            </article>
+            <article class="condition-row blade-card">
+              <div class="condition-name"><span class="condition-swatch" aria-hidden="true"></span><div><h3>单叶片基准</h3><code>single_blade_v0</code></div></div>
+              <p>只保留一个旋转叶尖散射点的控制模型；它不代表单旋翼飞行器。</p>
+              <dl><div><dt>倾斜</dt><dd>0°</dd></div><div><dt>速度</dt><dd>0 m/s</dd></div><div><dt>散射点</dt><dd>1</dd></div></dl>
+              <div class="condition-count"><strong data-class-count="single_blade_v0">11,284</strong><span>样本 · <b data-class-share="single_blade_v0">25.1%</b></span></div>
             </article>
           </div>
 
           <div class="balance-panel">
-            <div class="balance-copy"><strong>类别高度均衡</strong><span>数量最多与最少的工况只相差 65 个样本。</span></div>
-            <div class="stacked-bar" role="img" aria-label="四类样本占总数据集的比例均约为四分之一">
+            <div><strong>类别数量差异</strong><span>最多与最少相差 65 个样本</span></div>
+            <div class="stacked-bar" role="img" aria-label="四类样本各占数据集约四分之一">
               <i class="level" data-class-width="level_v0"></i><i class="pitch30" data-class-width="pitch30_v10"></i><i class="pitch45" data-class-width="pitch45_v10"></i><i class="blade" data-class-width="single_blade_v0"></i>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section gallery-teaser section-tint">
-        <div class="shell gallery-teaser-grid">
-          <div class="teaser-copy">
-            <p class="kicker">真实发布样本</p>
-            <h2>每一张频谱图，<br>都有参数可查。</h2>
-            <p>示例直接来自 v1.0.0 正式 TAR。图片、NPZ 与公开 manifest 的 SHA-256 已交叉核验；画廊还展示真实 Étoile 城市场景、基站、完整 Bézier 走廊，以及从样本 NPZ 读取的机体飞行轨迹。</p>
-            <a class="text-button" href="./gallery/">进入样本画廊 <span aria-hidden="true">→</span></a>
-          </div>
-          <a class="spectra-mosaic" href="./gallery/" aria-label="查看四类频谱样本">
-            <figure><img src="./assets/images/samples/DTUAV-V1-000007.png" alt="水平悬停样本的微多普勒频谱" loading="lazy"><figcaption>水平悬停</figcaption></figure>
-            <figure><img src="./assets/images/samples/DTUAV-V1-011252.png" alt="30 度倾斜飞行样本的微多普勒频谱" loading="lazy"><figcaption>30° 倾斜</figcaption></figure>
-            <figure><img src="./assets/images/samples/DTUAV-V1-022488.png" alt="45 度倾斜飞行样本的微多普勒频谱" loading="lazy"><figcaption>45° 倾斜</figcaption></figure>
-            <figure><img src="./assets/images/samples/DTUAV-V1-033705.png" alt="单叶片基准样本的微多普勒频谱" loading="lazy"><figcaption>单叶片</figcaption></figure>
-          </a>
-        </div>
-      </section>
-
-      <section class="section method-section" id="method">
+      <section class="section format-section" id="contract" aria-labelledby="format-title">
         <div class="shell">
           <div class="section-heading">
-            <p class="kicker">从仿真到数据</p>
-            <h2>一条透明、可修改的生成链路。</h2>
-            <p>核心生成代码与配置随仓库公开。研究者可以调整叶片散射点密度、叶片数、受支持的运动类别与 Bézier 轨迹，再生成遵循同一数据合同的新实验。</p>
+            <p class="kicker">Format and schema</p>
+            <h2 id="format-title">数据格式与 Schema</h2>
+            <p>所有公开样本都遵循 NPZ + PNG + JSON 的外层协议；NPZ 内部存在两个已登记的张量 schema，读取时必须检查 <code>tensor_schema_id</code>。</p>
           </div>
-          <div class="method-flow" role="img" aria-label="数据生成流程：场景与基站、无人机运动、逐快照求解、回波与 STFT、样本与发布">
-            <div><span>01</span><b>场景与基站</b><small>Sionna RT · Étoile</small></div><i>→</i>
-            <div><span>02</span><b>无人机运动</b><small>姿态 · 旋翼 · 轨迹</small></div><i>→</i>
-            <div><span>03</span><b>逐快照求解</b><small>PathSolver · CIR</small></div><i>→</i>
-            <div><span>04</span><b>回波与 STFT</b><small>微多普勒频谱</small></div><i>→</i>
-            <div><span>05</span><b>样本与发布</b><small>NPZ · PNG · JSON</small></div>
-          </div>
-          <div class="method-cta">
-            <div><strong>不只告诉你“数据在哪”</strong><p>生成方法页解释环境安装、冒烟测试、参数含义，以及如何增加每叶片散射点和添加四控制点 Bézier 轨迹。</p></div>
-            <a class="button primary" href="./generation/">阅读生成与扩展指南 <span aria-hidden="true">→</span></a>
+          <div class="format-layout">
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead><tr><th>记录类型</th><th>数量</th><th>说明</th></tr></thead>
+                <tbody>
+                  <tr><td><code>dtuav-etoile-32key-v1</code></td><td>44,948</td><td>v1 主张量结构，包含 32 个数组键。</td></tr>
+                  <tr><td><code>dtuav-floor-wall-24key-v1</code></td><td>40</td><td>早期正式样本的 24-key 结构；未伪造缺失数组。</td></tr>
+                  <tr><td>JSON sidecar</td><td>44,988</td><td>统一记录公开 ID、类别、schema、文件哈希与来源信息。</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="format-notes">
+              <h3>读取约束</h3>
+              <ul>
+                <li>总计 <strong data-stat="members">134,964</strong> 个 TAR 成员，即每个样本 3 个成员。</li>
+                <li>当前发布不预设训练集、验证集或测试集。</li>
+                <li>sidecar 与全局 allocation/provenance manifest 是不同记录类型。</li>
+                <li>来源设备只保留在 provenance，不进入公开目录或文件名。</li>
+              </ul>
+              <div class="inline-links"><a href="./schemas/sample-v1.schema.json">JSON Schema</a><a href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/blob/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3/manifests/v1/all_samples.jsonl.gz" rel="noreferrer">全局 manifest ↗</a></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-tint" id="contract">
+      <section class="section method-section section-alt" id="method" aria-labelledby="method-title">
         <div class="shell">
-          <div class="section-heading compact">
-            <p class="kicker">一个公开样本</p>
-            <h2>同一个 ID，三个同步成员。</h2>
-            <p>每个公开编号在同一 TAR 中对应数值张量、频谱预览和标准化元数据，三者使用相同 basename。</p>
+          <div class="section-heading">
+            <p class="kicker">Generation method</p>
+            <h2 id="method-title">仿真和数据生成方法</h2>
+            <p>公开参考生成器基于 Sionna RT 2.0.1 内置 Étoile 场景。主配置为 28 GHz、20 kHz 和 2,048 个快照。</p>
           </div>
-          <div class="sample-identity">
-            <div class="identity-card"><span>不可变公开编号</span><strong>DTUAV-V1-000001</strong><small>同名 · 同分片 · 可校验</small></div>
-            <div class="identity-connector" aria-hidden="true"><i></i><i></i><i></i></div>
-            <div class="contract-grid">
-              <article class="file-card"><div class="file-icon">NPZ</div><div><h3>仿真张量</h3><p>信道、回波、运动、散射点与场景数值数组。</p><code>DTUAV-V1-000001.npz</code></div></article>
-              <article class="file-card"><div class="file-icon image-icon">PNG</div><div><h3>频谱预览</h3><p>与张量配对的时频图，便于快速检查和质检。</p><code>DTUAV-V1-000001.png</code></div></article>
-              <article class="file-card"><div class="file-icon meta-icon">JSON</div><div><h3>样本元数据</h3><p>类别、schema、成员名、校验和与来源追踪。</p><code>DTUAV-V1-000001.json</code></div></article>
-            </div>
+          <ol class="method-steps">
+            <li><span>01</span><h3>类别与轨迹</h3><p>读取倾斜角、机体速度、初始状态和直线或 Bézier 路径。</p></li>
+            <li><span>02</span><h3>运动点散射体</h3><p>计算机体点、旋翼中心与叶片径向点的位置和速度。</p></li>
+            <li><span>03</span><h3>逐快照射线追踪</h3><p>求解基站到各 passive receiver probe 的单程 CIR。</p></li>
+            <li><span>04</span><h3>单站回波与 STFT</h3><p>以加权复信道平方的相干和近似往返回波，加入 AWGN 后计算 STFT。</p></li>
+            <li><span>05</span><h3>研究输出与发布</h3><p>生成器输出 NPZ、PNG 和运行元数据；正式发布另由 builder 生成 sidecar、TAR 与校验记录。</p></li>
+          </ol>
+          <div class="method-details">
+            <div><h3>当前可配置</h3><p>复制完整配置后，可将 <code>points_per_blade</code> 从 3 调至 5，使标准模型由 25 增至 41 个点；轨迹可选择固定 +x 的直线或单段四控制点三次 Bézier。</p></div>
+            <div><h3>当前实现边界</h3><p>固定一架四旋翼；不支持 waypoint/CSV、多段轨迹或避障规划。新增运动类别需要修改代码并补充测试。模型变化应进入新的实验命名空间。</p></div>
           </div>
-          <div class="contract-footer">
-            <div class="member-total"><strong data-stat="members">134,964</strong><span>个 TAR 成员<br><small>44,988 × 3</small></span></div>
-            <div class="schema-summary">
-              <div><span class="schema-badge">主格式</span><strong>32-key 张量</strong><small>44,948 个样本</small></div>
-              <div><span class="schema-badge muted">早期兼容</span><strong>24-key 张量</strong><small>40 个样本；不伪造缺失字段</small></div>
+          <a class="button primary section-action" href="./generation/">阅读安装、配置与扩展说明 <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="section quality-section" id="quality" aria-labelledby="quality-title">
+        <span id="work" class="anchor-alias" aria-hidden="true"></span>
+        <div class="shell">
+          <div class="section-heading">
+            <p class="kicker">Curation and integrity</p>
+            <h2 id="quality-title">数据质量与可复现性</h2>
+            <p>三套来源环境先完成只读清点，再按内容、状态和发布规则统一核验。不同内容的旧编号冲突样本保留为不同公开 ID。</p>
+          </div>
+          <div class="quality-layout">
+            <ol class="quality-timeline">
+              <li><span>01</span><div><h3>只读清点</h3><p>冻结文件、类别、大小与哈希清单。</p></div></li>
+              <li><span>02</span><div><h3>清洗判定</h3><p>识别本地副本、无效、未完成和非正式记录。</p></div></li>
+              <li><span>03</span><div><h3>全局核验</h3><p>按内容哈希复核重复与旧编号冲突。</p></div></li>
+              <li><span>04</span><div><h3>统一编号</h3><p>分配连续 ID <code>DTUAV-V1-000001–044988</code>。</p></div></li>
+              <li><span>05</span><div><h3>打包校验</h3><p>构建并核验 140 个确定性 WebDataset TAR。</p></div></li>
+            </ol>
+            <div class="quality-evidence">
+              <table class="data-table audit-table">
+                <thead><tr><th>发布前判定</th><th>数量</th><th>处理</th></tr></thead>
+                <tbody>
+                  <tr><td>本地物理副本</td><td>39,240</td><td>排除重复存储，不等同于删除独立训练样本</td></tr>
+                  <tr><td>零字节无效样本</td><td>1</td><td>排除</td></tr>
+                  <tr><td>未完成记录</td><td>1,077</td><td>排除</td></tr>
+                  <tr><td>测试及非正式记录</td><td>5,109</td><td>排除</td></tr>
+                  <tr><td>旧编号冲突</td><td>70 组 / 144 条</td><td>内容不同，全部保留并分配不同全局 ID</td></tr>
+                </tbody>
+              </table>
+              <dl class="version-record">
+                <div><dt>固定版本</dt><dd>v1.0.0</dd></div>
+                <div><dt>HF commit</dt><dd><code>de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3</code></dd></div>
+                <div><dt>校验范围</dt><dd>140 TAR 与发布元数据</dd></div>
+                <div><dt>待决冲突</dt><dd>0</dd></div>
+              </dl>
             </div>
-            <a class="text-link" href="./schemas/sample-v1.schema.json">查看 JSON Schema <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </section>
 
-      <section class="section shell" id="quickstart">
-        <div class="section-heading">
-          <p class="kicker">获取与使用</p>
-          <h2>完整下载，或者按需流式读取。</h2>
-          <p>示例固定到不可变提交，后续仓库更新不会悄悄改变你的实验。公开目录不含任何设备名称，也不预设训练、验证或测试划分。</p>
-        </div>
-        <div class="usage-layout">
-          <article class="layout-panel">
-            <div class="panel-heading"><span>公开目录</span><b>统一命名空间</b></div>
-            <pre class="tree"><span>data/v1/shards/</span>
-├── shard-00000.tar
-├── shard-00001.tar
-├── …
-└── shard-00139.tar
-
-manifests/v1/all_samples.jsonl.gz
-schemas/v1/sample.schema.json
-checksums/v1/SHA256SUMS</pre>
-            <p>可根据任务从统一 manifest 自行构造 split，来源设备不会进入公开路径或文件名。</p>
-          </article>
-          <div class="code-stack">
-            <article class="code-card"><div class="code-title"><span>使用 Python 下载</span><button type="button" class="copy-button" data-copy="download-code">复制</button></div><pre><code id="download-code">from huggingface_hub import snapshot_download
-
-root = snapshot_download(
-    repo_id="KYGOYUAN/DeepTelecom_Partial",
-    repo_type="dataset",
-    revision="de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3",
-)</code></pre></article>
-            <article class="code-card"><div class="code-title"><span>使用 WebDataset 流式读取</span><button type="button" class="copy-button" data-copy="stream-code">复制</button></div><pre><code id="stream-code">import webdataset as wds
+      <section class="section download-section section-alt" id="quickstart" aria-labelledby="download-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="kicker">Access and usage</p>
+            <h2 id="download-title">下载与快速使用</h2>
+            <p>以下示例固定到不可变的 Hugging Face commit，后续主分支更新不会静默改变实验输入。</p>
+          </div>
+          <div class="download-layout">
+            <div class="release-resources">
+              <h3>发布资源</h3>
+              <ul>
+                <li><a href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3" rel="noreferrer"><strong>冻结数据目录</strong><span>Hugging Face · exact revision ↗</span></a></li>
+                <li><a href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/blob/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3/checksums/v1/SHA256SUMS" rel="noreferrer"><strong>SHA256SUMS</strong><span>148 条发布校验记录 ↗</span></a></li>
+                <li><a href="https://github.com/kygoyuan2004/DeepTelecom_Partial/tree/main/scripts" rel="noreferrer"><strong>下载与验证脚本</strong><span>GitHub scripts/ ↗</span></a></li>
+                <li><a href="./data/stats.json"><strong>机器可读统计</strong><span>site/data/stats.json</span></a></li>
+              </ul>
+            </div>
+            <div class="code-stack">
+              <article class="code-card"><div class="code-title"><span>下载前 4 个分片</span><button type="button" class="copy-button" data-copy="download-code">复制</button></div><pre><code id="download-code">python scripts/download_dataset.py \
+  --output-dir DeepTelecom_Partial \
+  --start 0 --end 3</code></pre></article>
+              <article class="code-card"><div class="code-title"><span>使用 WebDataset 流式读取</span><button type="button" class="copy-button" data-copy="stream-code">复制</button></div><pre><code id="stream-code">import webdataset as wds
 
 base = "https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/resolve/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3"
-urls = base + "/data/v1/shards/shard-{00000..00139}.tar"
-samples = wds.WebDataset(urls, shardshuffle=True).decode("pil")</code></pre></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section integrity-section" id="integrity">
-        <div class="shell integrity-grid">
-          <div>
-            <p class="kicker light">版本与完整性</p>
-            <h2>可以追溯到每一个分片。</h2>
-            <p>manifest 将每个公开 ID 映射到具体分片；SHA-256 覆盖全部 140 个 TAR 和发布元数据；固定 tag 则锁定确切的 LFS 对象。</p>
-            <div class="integrity-actions">
-              <a class="button light-button" href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/blob/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3/checksums/v1/SHA256SUMS" rel="noreferrer">查看 SHA256SUMS <span aria-hidden="true">↗</span></a>
-              <a class="button ghost-button" href="https://github.com/kygoyuan2004/DeepTelecom_Partial" rel="noreferrer">代码与文档 <span aria-hidden="true">↗</span></a>
+urls = base + "/data/v1/shards/shard-{00000..00003}.tar"
+samples = wds.WebDataset(urls, shardshuffle=False).to_tuple(
+    "__key__", "npz", "png", "json"
+)</code></pre></article>
             </div>
-            <div class="verify-command"><code id="verify-code">sha256sum --check checksums/v1/SHA256SUMS</code><button type="button" class="copy-button" data-copy="verify-code">复制</button></div>
           </div>
-          <dl class="release-card">
-            <div><dt>发布版本</dt><dd><span class="release-pill">v1.0.0</span></dd></div>
-            <div><dt>公开编号</dt><dd>DTUAV-V1-000001 → 044988</dd></div>
-            <div><dt>数据体积</dt><dd>140 TAR · 148,989,562,880 bytes</dd></div>
-            <div><dt>划分策略</dt><dd>不预设；由任务定义 split</dd></div>
-            <div class="commit-row"><dt>HF commit</dt><dd><code>de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3</code></dd></div>
-          </dl>
         </div>
       </section>
 
-      <section class="institution-section">
+      <section class="section limits-section" id="limits" aria-labelledby="limits-title">
+        <div class="shell limits-layout">
+          <div class="section-heading">
+            <p class="kicker">Scope and limitations</p>
+            <h2 id="limits-title">建模范围与已知限制</h2>
+          </div>
+          <ul class="limits-list">
+            <li><strong>数据来源</strong><span>全部来自仿真，不是无人机实飞采集或测量 ground truth。</span></li>
+            <li><strong>电磁模型</strong><span>运动点散射体单基地回波近似，不是物理网格、标定 RCS 或全波求解。</span></li>
+            <li><strong>张量结构</strong><span>44,948 个样本为 32-key，40 个早期样本为 24-key；不能假定内部字段完全相同。</span></li>
+            <li><strong>数据划分</strong><span>v1.0.0 没有预设 train、validation 或 test split。</span></li>
+            <li><strong>数值复现</strong><span>代码、配置和种子可追踪；不同 GPU、驱动与底层浮点实现不承诺字节级一致。</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="institution-section" aria-labelledby="organization-title">
         <div class="shell institution-grid">
-          <div class="institution-mark" aria-hidden="true">ZJU<br><span>ISEE</span></div>
-          <div><p class="kicker">项目组织</p><h2>浙江大学信息与电子工程学院</h2><p lang="en">College of Information Science and Electronic Engineering, Zhejiang University</p></div>
-          <div class="institution-note"><p>DeepTelecom 由学院团队面向无人机无线传播、射线追踪与微多普勒研究整理发布。网站只陈述本项目工作，不代表未经声明的学院官方背书。</p><a href="https://www.isee.zju.edu.cn/" rel="noreferrer">访问 ISEE 官网 <span aria-hidden="true">↗</span></a></div>
+          <div>
+            <p class="kicker">Project organization</p>
+            <h2 id="organization-title">浙江大学信息与电子工程学院（ISEE）项目团队</h2>
+            <p>DeepTelecom 面向无人机无线传播、射线追踪与微多普勒研究整理发布。该表述用于说明项目组织，不代表未经声明的学院官方背书。</p>
+            <a class="text-link" href="https://www.isee.zju.edu.cn/" rel="noreferrer">访问 ISEE 官方网站 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="license-note">
+            <h3>许可证与引用</h3>
+            <p>GitHub 仓库中的代码和文档采用 Apache-2.0。该许可不自动构成 Hugging Face 数据载荷的独立许可授权。</p>
+            <p>当前仓库未提供正式论文引用或 DOI；引用时可记录数据集名称、版本 <code>v1.0.0</code> 和固定 HF commit。</p>
+            <div class="inline-links"><a href="https://github.com/kygoyuan2004/DeepTelecom_Partial/blob/main/LICENSE" rel="noreferrer">查看 LICENSE ↗</a><a href="https://github.com/kygoyuan2004/DeepTelecom_Partial" rel="noreferrer">GitHub ↗</a></div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="shell footer-wrap">
-        <div><a class="brand footer-brand" href="./"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a><p>面向可复现研究的无人机无线传播数据。</p></div>
+        <div><a class="brand footer-brand" href="./"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>DeepTelecom</span></a><p>面向可复现研究的无人机无线传播仿真数据。</p></div>
         <div class="footer-links"><a href="./gallery/">样本画廊</a><a href="./generation/">生成方法</a><a href="https://huggingface.co/datasets/KYGOYUAN/DeepTelecom_Partial/tree/de7fc35cb41af3d9c5b2f52dab5483e3ceb623b3" rel="noreferrer">Hugging Face</a><a href="https://github.com/kygoyuan2004/DeepTelecom_Partial" rel="noreferrer">GitHub</a><a href="./data/stats.json">机器可读统计</a></div>
       </div>
     </footer>
